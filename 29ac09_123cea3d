@@ -1,333 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
-  <title>75 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="mark  省略号-专业脑洞流产:         自制&amp;nbsp;一个想法，一个好人，和一场戏。|&amp;nbsp;填三年前脑洞坑的剧情练习，没cp。第一次尝试反转剧的感觉，我想知道剧情够不够清楚或者细思恐极，所以答应我repo完再看剧透好吗？    废话看SY帖&amp;nbsp;或者看图         在这里主要说一下Final Cut Pro的进一步评测   之前我写过一个MAC下Final Cut">
-<meta property="og:type" content="article">
-<meta property="og:title" content="75">
-<meta property="og:url" content="http://example.com/29ac09_123cea3d">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="mark  省略号-专业脑洞流产:         自制&amp;nbsp;一个想法，一个好人，和一场戏。|&amp;nbsp;填三年前脑洞坑的剧情练习，没cp。第一次尝试反转剧的感觉，我想知道剧情够不够清楚或者细思恐极，所以答应我repo完再看剧透好吗？    废话看SY帖&amp;nbsp;或者看图         在这里主要说一下Final Cut Pro的进一步评测   之前我写过一个MAC下Final Cut">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2018-02-10T22:45:23.000Z">
-<meta property="article:modified_time" content="2018-02-10T22:45:23.000Z">
-<meta property="article:author" content="John Doe">
-<meta property="article:tag" content="脑洞">
-<meta property="article:tag" content="笔记">
-<meta property="article:tag" content="mv">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-075 2018-02-11 06-45-23" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/29ac09_123cea3d" class="article-date">
-  <time datetime="2018-02-10T22:45:23.000Z" itemprop="datePublished">2018-02-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Video/">Video</a>
-  </div>
+{% block page_class %}page-post-detail{% endblock %}
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      75
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>mark</p> 
-<p reblogfrom="reblogfrom"  ><a target="_blank" href="http://kellipsis.lofter.com/post/2474d2_870657c"  >省略号-专业脑洞流产:</a></p> 
-<blockquote> 
- <blockquote> 
-  <p>自制&nbsp;一个想法，一个好人，和一场戏。|&nbsp;填三年前脑洞坑的剧情练习，没cp。第一次尝试反转剧的感觉，我想知道剧情够不够清楚或者细思恐极，所以答应我repo完再看剧透好吗？</p> 
-  <p>废话看<a target="_blank" rel="nofollow" href="http://www.movietvslash.com/thread-181821-1-1.html"  >SY帖</a>&nbsp;或者<a target="_blank" rel="nofollow" href="http://ww4.sinaimg.cn/large/6fcb652bgw1ewnbxlgvy4j20c82rh45m.jpg"  >看图</a></p> 
- </blockquote> 
- <p><br /></p> 
- <p><strong>在这里主要说一下Final Cut Pro的进一步评测</strong></p> 
- <p>之前我写过一个MAC下<a target="_blank" href="http://kellipsis.lofter.com/post/2474d2_5df4464"  >Final Cut Pro的剪刀手实用性报告</a>，那时候还有不少功能我不会用，现在跟FCP死磕了两个月，大部分问题都解决了。</p> 
- <p><br /></p> 
- <p><strong>【1】如果你不喜欢磁性故事线</strong></p> 
- <p>我十分不喜欢磁性故事线……虽然我剪的是剧情向，但毕竟大部分同人MV的长度是音乐决定的，跟随音乐的情绪发展剧情还是很重要的。我经常会时常抽出或者插入一两个镜头看哪个更符合当时音乐的情绪，碰到会黏在一起的故事线就很崩溃，一个地方掐错了，后面的节拍就整个不对了。</p> 
- <p>不过有一个办法可以从一开始就绕开磁性故事线，我就是这么做的。</p> 
- <p>在导入音乐以后随便导入一个什么素材，然后“从故事线中提取”，这样它的主故事线就变成了一个气泡，把气泡拉到和音乐一样长。</p> 
- <p>然后你可以随意插入自己想要的故事情节，放在气泡的上面或者下面，就是不要插进去（好糟糕），也不要随便缩短或者拉长气泡。原理大概是子母轨什么的，渲染的时候看不出来。</p> 
- <p>这样做还有一个好处，就是你可以在导入素材前，在气泡上标记节拍（M快捷键）。更妙的是，由于所有的素材都抱着气泡主故事线的大腿，多个音乐可以用多个气泡，只要拖动气泡的长短，就可以控制过场的时间。</p> 
- <p>比如这个MV我做了三幕，是一个工程文件，三幕中间黑屏多久都是最后调的。我不需要像在vv里面那样按住shift把素材一个个选中然后拖来拖去，只要调节大腿气泡就行啦。</p> 
- <p><br /></p> 
- <p><strong>【2】音轨提纯</strong></p> 
- <p>做原音太他妈方便了，做原音太他妈方便了，做原音太他妈方便了。</p> 
- <p>我说完了。</p> 
- <p><br /></p> 
- <p><strong>【3】&nbsp;匹配颜色</strong></p> 
- <p>匹配颜色这个功能听起来还是很屌的，不过还是要我们人眼的辅助，不能完全相信电脑orz。</p> 
- <p>不过不用担心，即便色弱+智障如我，也能很快理解调色盘怎么用（比vv用户友好多了）。什么高光阴影中调…好像更懂了一些……</p> 
- <p>调色是真的很不错，嗯。</p> 
- <p>而且有没有人觉得vv导出的颜色天生比较素……FCP的颜色比较鲜艳啦，喜欢。</p> 
- <p><br /></p> 
- <p><strong>【4】字幕</strong></p> 
- <p>之前的评测说我不会用字幕动画，嗯我现在还是不会用（喂）</p> 
- <p>因为做这个MV没有用到移动字幕嘛！……</p> 
- <p>不过对白双语字幕是FCP弄的哦！之前我还以为我要最后上vv了。</p> 
- <p>打字机效果也是自带的，包括音效，对FCP提供了很多预置音效，包括电话和答录机什么的orz……剪剧情真的好方便啊……</p> 
- <p>啊，还有片尾字幕，直接输入就好了……不用跟vv一样分什么大标题小标题，我懒（喂）</p> 
- <p><br /></p> 
- <p><strong>【5】静帧效果</strong></p> 
- <p>片尾我用了静帧效果……当然不是一格一格截图的我傻吗！</p> 
- <p>只要在素材库里找到合适的帧数，ALT+F就行了。一张图片就进来了（就是默认时间有点长你要自己拖）。</p> 
- <p><br /></p> 
- <p><strong>【6】画中画</strong></p> 
- <p>片尾画中画我也研究了半天……是啦我知道一个素材变小怎么做，但是那么多素材一起变小我就搞不定了。</p> 
- <p>在vv里面可以把所有需要画中画的素材放在一个轨道里面，然后改这个轨道的属性——可是FCP的轨道是弹性的！！！</p> 
- <p>据我所知好像AE PR VV哪怕会声会影的轨道都不是这个鸟样……</p> 
- <p>弹性的啊！你可以音频和视频靠一起啊！拖长度的时候手一抖就会把隔壁挤出去啊！</p> 
- <p>当时我就蒙逼了。心想难道最后还是要vv回炉（有点出息好吗）</p> 
- <p>后来发现还是要靠复制粘贴大法……</p> 
- <p>先搞一个素材的画中画，然后复制（mac下是command+c），然后选中你要变形的所有素材。在编辑里面找粘贴属性，把看上去顺眼的勾勾都打上。</p> 
- <p>齐活。</p> 
- <p><br /></p> 
- <p><strong>【7】快捷键</strong></p> 
- <p>多用快捷键，多用快捷键，多用快捷键。</p> 
- <p>A 选择 B 切割 T 移动&nbsp;我主要也就用了这仨</p> 
- <p><br /></p> 
- <p><strong>【8】上下黑条</strong></p> 
- <p>诺兰这个人太&middot;不&middot;讲&middot;究&middot;啦！</p> 
- <p>TDKR这片时而宽屏时而超宽屏……</p> 
- <p>在vv里面这种情况我都会一遮了之，做两个黑色的块，糊在字幕正下方，一遮上一遮下。</p> 
- <p>FCP里面也一样，操作也没什么不同，只是弹性轨道真的玩儿心跳啊，拖个素材心惊胆战的生怕把什么东西挤没了。</p> 
- <p><br /></p> 
- <p><strong>实例测试报告：</strong><br /></p> 
- <p>用到诺兰的《蝙蝠侠三部曲》、《盗梦空间》，加一个凯恩爷爷的《哈里布朗》，其实我的素材库里面还有《星际穿越》（没用上）、凯恩爷爷的《有人在家吗》（没用上）、《禁闭岛》（用了小李说的一个词）</p> 
- <p>期间崩溃了一次，没丢东西因为这个软件它不需要你存……</p> 
- <p>卡，肯定是卡的……毕竟三首歌orz，还一大堆字幕。</p> 
- <p>最后加字幕的时候我的内心是崩溃的。</p> 
- <p>不过FCP没崩溃……</p> 
- <p>说真的，要是感觉慢了就关了重开，别跟它客气，真能快不少。</p> 
- <p>啊啊啊我明明截了个工程图结果切windows就找不到了烦躁……</p> 
- <p><br /></p> 
- <p><strong><span style="text-decoration:underline;"  >【再总结一下】</span></strong></p> 
- <p>优点</p> 
- <p>1、崩溃少，不用存。</p> 
- <p>2、720p、1080p无压力。</p> 
- <p>3、调色、音轨爽歪歪</p> 
- <p>4、输出高清，色彩鲜艳</p> 
- <p><br /></p> 
- <p>缺点</p> 
- <p>1、加转场、淡入淡出不方便，有点接近会会，比不上vv。</p> 
- <p>2、没有轨道！虽然这应该也是FCP特色之一……但是弹性轨道太玩心跳了，我这种不善于整理的人经常做着做着就找不到北了……</p> 
- <p>3、线性编辑模式的预览有点蛋疼，不能调节每个轨道（素材）的高度，素材一多就会晕……vv里面你可以选择把字幕轨、黑条轨这样一轨到底的玩意弄扁，把视频轨弄高，这样看起来主次有分。FCP里面都一样高不能调</p> 
- <p><br /></p> 
- <p><br /></p> 
-</blockquote>
+{% block content %}
 
-<p><a target="_blank" rel="noopener" href="http://www.bilibili.com/video/av2994516/">http://www.bilibili.com/video/av2994516/</a></p>
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/29ac09_123cea3d" data-id="ckfny39lz004tpcvh027bf02p" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mv/" rel="tag">mv</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%84%91%E6%B4%9E/" rel="tag">脑洞</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/29ac09_eeb88688" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Vide Cor Meum，凝视我心-----如果闻劭当时把安全绳递给江停，故事会怎样
-        
-      </div>
-    </a>
-  
-  
-    <a href="/29ac09_123b8e09" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">74</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Photo/">Photo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Text/">Text</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Video/">Video</a></li></ul>
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AnakinSkywalker/" rel="tag">AnakinSkywalker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BVS/" rel="tag">BVS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CG/" rel="tag">CG</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hellsing/" rel="tag">Hellsing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ID-INVADED/" rel="tag">ID:INVADED</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LukeSkywalker/" rel="tag">LukeSkywalker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reylo/" rel="tag">Reylo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Star-Wars/" rel="tag">Star Wars</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YY/" rel="tag">YY</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mv/" rel="tag">mv</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poi/" rel="tag">poi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/star-wars/" rel="tag">star wars</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%B9%E9%BA%A6%E5%A5%B3%E5%AD%A9/" rel="tag">丹麦女孩</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%97%A0%E6%9C%88/" rel="tag">云无月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E7%82%A4/" rel="tag">云炤</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%94%E7%AB%B9/" rel="tag">五竹</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E8%A3%85%E8%80%85/" rel="tag">伪装者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%9C%E5%B8%BD/" rel="tag">兜帽</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B/" rel="tag">全职高手</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/" rel="tag">刺客信条</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" rel="tag">剑网三</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A7%E7%89%88%E9%95%87%E9%AD%82/" rel="tag">剧版镇魂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8C%97%E6%B4%9B/" rel="tag">北洛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" rel="tag">十六夜红月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%A2%E5%85%8B%E5%A4%A9%E8%A1%8C%E8%80%85/" rel="tag">卢克天行者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%A2%E5%85%8B%E6%89%BE%E7%88%B8/" rel="tag">卢克找爸</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D/" rel="tag">印度神话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%8C%E9%81%93%E9%95%BF/" rel="tag">双道长</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" rel="tag">古剑奇谭</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD3/" rel="tag">古剑奇谭3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD%E4%B8%89/" rel="tag">古剑奇谭三</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%96%BB%E6%96%87%E5%B7%9E/" rel="tag">喻文州</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%96%BB%E9%BB%84/" rel="tag">喻黄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A5%8E%E5%B8%88%E9%82%A3/" rel="tag">奎师那</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%89%E7%BA%B3%E9%87%91/" rel="tag">安纳金</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8B%E5%AD%90%E7%90%9B/" rel="tag">宋子琛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%BB%E9%BE%99%E8%AF%80/" rel="tag">寻龙诀</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B1%B1%E6%B2%B3%E6%97%A7%E4%BA%8B/" rel="tag">山河旧事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%8D%E6%BE%9C/" rel="tag">巍澜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%AB%E7%82%A4/" rel="tag">巫炤</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B8%95%E5%B0%94%E5%B8%95%E5%BB%B7/" rel="tag">帕尔帕廷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%86%E4%BD%99%E5%B9%B4/" rel="tag">庆余年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%82%E5%BA%A6%E4%BE%B5%E5%85%A5/" rel="tag">异度侵入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%82%E5%BA%A6%E5%85%A5%E4%BE%B5/" rel="tag">异度入侵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%80%E6%9B%A6/" rel="tag">怀曦</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%89%E8%BE%BE/" rel="tag">拉达</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" rel="tag">摩诃婆罗多</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%8E%E6%A5%BC/" rel="tag">明楼</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%8E%E8%AF%9A/" rel="tag">明诚</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%9F%E6%88%98/" rel="tag">星战</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/" rel="tag">星球大战</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%93%E6%98%9F%E8%BE%B0/" rel="tag">晓星辰</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%A8%E6%98%9F%E4%B8%8A%E8%A1%8C/" rel="tag">木星上行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%8C%E6%B8%B8/" rel="tag">桌游</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A5%BC%E8%AF%9A/" rel="tag">楼诚</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%97%E6%B9%BF%E5%A5%B4/" rel="tag">毗湿奴</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%9F%E5%81%9C/" rel="tag">江停</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E5%B1%B1%E7%8E%A9%E6%B0%B4/" rel="tag">游山玩水</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8B%AC%E6%96%AB/" rel="tag">独斫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%B5%E5%BD%B1/" rel="tag">电影</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A0%B4%E4%BA%91/" rel="tag">破云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%B9%BB/" rel="tag">科幻</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%96%E7%95%A5/" rel="tag">策略</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%B3%E5%A8%9C/" rel="tag">米娜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%99%E4%BA%91/" rel="tag">缙云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3/" rel="tag">罗摩衍那</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%84%91%E6%B4%9E/" rel="tag">脑洞</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%89%B3%E5%85%89/" rel="tag">艳光</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0/" rel="tag">蝙蝠侠</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0%E5%A4%A7%E6%88%98%E8%B6%85%E4%BA%BA/" rel="tag">蝙蝠侠大战超人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" rel="tag">读书札记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E4%BA%BA/" rel="tag">超人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E8%9D%99/" rel="tag">超蝙</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E8%9D%A0/" rel="tag">超蝠</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%A7%E8%AE%B0/" rel="tag">轧记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/" rel="tag">钢之炼金术师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%95%87%E9%AD%82/" rel="tag">镇魂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%BB%E5%8A%AD/" rel="tag">闻劭</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88/" rel="tag">魔道祖师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%84%E5%B0%91%E5%A4%A9/" rel="tag">黄少天</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%91%E6%A1%83K/" rel="tag">黑桃K</a></li></ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/AnakinSkywalker/" style="font-size: 10px;">AnakinSkywalker</a> <a href="/tags/BVS/" style="font-size: 10px;">BVS</a> <a href="/tags/CG/" style="font-size: 10px;">CG</a> <a href="/tags/Hellsing/" style="font-size: 10px;">Hellsing</a> <a href="/tags/ID-INVADED/" style="font-size: 10px;">ID:INVADED</a> <a href="/tags/LukeSkywalker/" style="font-size: 10px;">LukeSkywalker</a> <a href="/tags/Reylo/" style="font-size: 10px;">Reylo</a> <a href="/tags/Star-Wars/" style="font-size: 10px;">Star Wars</a> <a href="/tags/YY/" style="font-size: 10px;">YY</a> <a href="/tags/mv/" style="font-size: 10px;">mv</a> <a href="/tags/poi/" style="font-size: 11px;">poi</a> <a href="/tags/star-wars/" style="font-size: 10px;">star wars</a> <a href="/tags/%E4%B8%B9%E9%BA%A6%E5%A5%B3%E5%AD%A9/" style="font-size: 10px;">丹麦女孩</a> <a href="/tags/%E4%BA%91%E6%97%A0%E6%9C%88/" style="font-size: 10px;">云无月</a> <a href="/tags/%E4%BA%91%E7%82%A4/" style="font-size: 16px;">云炤</a> <a href="/tags/%E4%BA%94%E7%AB%B9/" style="font-size: 10px;">五竹</a> <a href="/tags/%E4%BC%AA%E8%A3%85%E8%80%85/" style="font-size: 11px;">伪装者</a> <a href="/tags/%E5%85%9C%E5%B8%BD/" style="font-size: 10px;">兜帽</a> <a href="/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B/" style="font-size: 10px;">全职高手</a> <a href="/tags/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/" style="font-size: 10px;">刺客信条</a> <a href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" style="font-size: 10px;">剑网三</a> <a href="/tags/%E5%89%A7%E7%89%88%E9%95%87%E9%AD%82/" style="font-size: 10px;">剧版镇魂</a> <a href="/tags/%E5%8C%97%E6%B4%9B/" style="font-size: 10px;">北洛</a> <a href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" style="font-size: 10px;">十六夜红月</a> <a href="/tags/%E5%8D%A2%E5%85%8B%E5%A4%A9%E8%A1%8C%E8%80%85/" style="font-size: 10px;">卢克天行者</a> <a href="/tags/%E5%8D%A2%E5%85%8B%E6%89%BE%E7%88%B8/" style="font-size: 10px;">卢克找爸</a> <a href="/tags/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D/" style="font-size: 17px;">印度神话</a> <a href="/tags/%E5%8F%8C%E9%81%93%E9%95%BF/" style="font-size: 10px;">双道长</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" style="font-size: 13px;">古剑奇谭</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD3/" style="font-size: 15px;">古剑奇谭3</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD%E4%B8%89/" style="font-size: 17px;">古剑奇谭三</a> <a href="/tags/%E5%90%8C%E4%BA%BA/" style="font-size: 18px;">同人</a> <a href="/tags/%E5%96%BB%E6%96%87%E5%B7%9E/" style="font-size: 10px;">喻文州</a> <a href="/tags/%E5%96%BB%E9%BB%84/" style="font-size: 10px;">喻黄</a> <a href="/tags/%E5%A5%8E%E5%B8%88%E9%82%A3/" style="font-size: 10px;">奎师那</a> <a href="/tags/%E5%AE%89%E7%BA%B3%E9%87%91/" style="font-size: 10px;">安纳金</a> <a href="/tags/%E5%AE%8B%E5%AD%90%E7%90%9B/" style="font-size: 10px;">宋子琛</a> <a href="/tags/%E5%AF%BB%E9%BE%99%E8%AF%80/" style="font-size: 10px;">寻龙诀</a> <a href="/tags/%E5%B1%B1%E6%B2%B3%E6%97%A7%E4%BA%8B/" style="font-size: 10px;">山河旧事</a> <a href="/tags/%E5%B7%8D%E6%BE%9C/" style="font-size: 10px;">巍澜</a> <a href="/tags/%E5%B7%AB%E7%82%A4/" style="font-size: 17px;">巫炤</a> <a href="/tags/%E5%B8%95%E5%B0%94%E5%B8%95%E5%BB%B7/" style="font-size: 10px;">帕尔帕廷</a> <a href="/tags/%E5%BA%86%E4%BD%99%E5%B9%B4/" style="font-size: 10px;">庆余年</a> <a href="/tags/%E5%BC%82%E5%BA%A6%E4%BE%B5%E5%85%A5/" style="font-size: 10px;">异度侵入</a> <a href="/tags/%E5%BC%82%E5%BA%A6%E5%85%A5%E4%BE%B5/" style="font-size: 10px;">异度入侵</a> <a href="/tags/%E6%80%80%E6%9B%A6/" style="font-size: 10px;">怀曦</a> <a href="/tags/%E6%8B%89%E8%BE%BE/" style="font-size: 10px;">拉达</a> <a href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" style="font-size: 20px;">摩诃婆罗多</a> <a href="/tags/%E6%98%8E%E6%A5%BC/" style="font-size: 10px;">明楼</a> <a href="/tags/%E6%98%8E%E8%AF%9A/" style="font-size: 10px;">明诚</a> <a href="/tags/%E6%98%9F%E6%88%98/" style="font-size: 10px;">星战</a> <a href="/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/" style="font-size: 11px;">星球大战</a> <a href="/tags/%E6%99%93%E6%98%9F%E8%BE%B0/" style="font-size: 10px;">晓星辰</a> <a href="/tags/%E6%9C%A8%E6%98%9F%E4%B8%8A%E8%A1%8C/" style="font-size: 10px;">木星上行</a> <a href="/tags/%E6%A1%8C%E6%B8%B8/" style="font-size: 11px;">桌游</a> <a href="/tags/%E6%A5%BC%E8%AF%9A/" style="font-size: 11px;">楼诚</a> <a href="/tags/%E6%AF%97%E6%B9%BF%E5%A5%B4/" style="font-size: 10px;">毗湿奴</a> <a href="/tags/%E6%B1%9F%E5%81%9C/" style="font-size: 10px;">江停</a> <a href="/tags/%E6%B8%B8%E5%B1%B1%E7%8E%A9%E6%B0%B4/" style="font-size: 10px;">游山玩水</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 10px;">游戏</a> <a href="/tags/%E7%8B%AC%E6%96%AB/" style="font-size: 10px;">独斫</a> <a href="/tags/%E7%94%B5%E5%BD%B1/" style="font-size: 12px;">电影</a> <a href="/tags/%E7%A0%B4%E4%BA%91/" style="font-size: 10px;">破云</a> <a href="/tags/%E7%A7%91%E5%B9%BB/" style="font-size: 12px;">科幻</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">笔记</a> <a href="/tags/%E7%AD%96%E7%95%A5/" style="font-size: 10px;">策略</a> <a href="/tags/%E7%B1%B3%E5%A8%9C/" style="font-size: 10px;">米娜</a> <a href="/tags/%E7%BC%99%E4%BA%91/" style="font-size: 17px;">缙云</a> <a href="/tags/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3/" style="font-size: 10px;">罗摩衍那</a> <a href="/tags/%E7%BF%BB%E8%AF%91/" style="font-size: 10px;">翻译</a> <a href="/tags/%E8%84%91%E6%B4%9E/" style="font-size: 14px;">脑洞</a> <a href="/tags/%E8%89%B3%E5%85%89/" style="font-size: 10px;">艳光</a> <a href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0/" style="font-size: 10px;">蝙蝠侠</a> <a href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0%E5%A4%A7%E6%88%98%E8%B6%85%E4%BA%BA/" style="font-size: 10px;">蝙蝠侠大战超人</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" style="font-size: 19px;">读书札记</a> <a href="/tags/%E8%B6%85%E4%BA%BA/" style="font-size: 10px;">超人</a> <a href="/tags/%E8%B6%85%E8%9D%99/" style="font-size: 10px;">超蝙</a> <a href="/tags/%E8%B6%85%E8%9D%A0/" style="font-size: 10px;">超蝠</a> <a href="/tags/%E8%BD%A7%E8%AE%B0/" style="font-size: 10px;">轧记</a> <a href="/tags/%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/" style="font-size: 10px;">钢之炼金术师</a> <a href="/tags/%E9%95%87%E9%AD%82/" style="font-size: 10px;">镇魂</a> <a href="/tags/%E9%97%BB%E5%8A%AD/" style="font-size: 10px;">闻劭</a> <a href="/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88/" style="font-size: 10px;">魔道祖师</a> <a href="/tags/%E9%BB%84%E5%B0%91%E5%A4%A9/" style="font-size: 10px;">黄少天</a> <a href="/tags/%E9%BB%91%E6%A1%83K/" style="font-size: 10px;">黑桃K</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/09/29/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c8846536">异度侵入最后的TRUE END</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c6702885">【原著向后续】【云炤】草莓糖 十七 尾声+ 后记</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c66e1785">【原著向后续】【云炤】草莓糖 十六</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c66bddf9">【原著向后续】【云炤】草莓糖 十五</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}

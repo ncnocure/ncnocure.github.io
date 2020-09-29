@@ -1,351 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
-  <title>#4-布罗曼篇##摩诃婆罗多# 读后感（已经是相对连贯的一章了） | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="历声到飘忽林讲摩诃婆罗多的故事：&#x2F;&#x2F;基本是第一章前半部分的缩写  ｛  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;婆利古有个可爱的儿子叫行落：  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;｛  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;行落有个可爱的儿子叫谋远：  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs">
-<meta property="og:type" content="article">
-<meta property="og:title" content="#4-布罗曼篇##摩诃婆罗多# 读后感（已经是相对连贯的一章了）">
-<meta property="og:url" content="http://example.com/29ac09_5e280db">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="历声到飘忽林讲摩诃婆罗多的故事：&#x2F;&#x2F;基本是第一章前半部分的缩写  ｛  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;婆利古有个可爱的儿子叫行落：  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;｛  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;行落有个可爱的儿子叫谋远：  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2015-02-16T21:42:26.000Z">
-<meta property="article:modified_time" content="2015-02-16T21:49:01.000Z">
-<meta property="article:author" content="John Doe">
-<meta property="article:tag" content="摩诃婆罗多">
-<meta property="article:tag" content="读书札记">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-004 #4-布罗曼篇##摩诃婆罗多# 读后感（已经是相对连贯的一章了）" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/29ac09_5e280db" class="article-date">
-  <time datetime="2015-02-16T21:42:26.000Z" itemprop="datePublished">2015-02-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Text/">Text</a>
-  </div>
+{% block page_class %}page-post-detail{% endblock %}
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      #4-布罗曼篇##摩诃婆罗多# 读后感（已经是相对连贯的一章了）
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>历声到飘忽林讲摩诃婆罗多的故事：//基本是第一章前半部分的缩写</p> 
-<p>｛</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;婆利古有个可爱的儿子叫行落：</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;｛</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行落有个可爱的儿子叫谋远：</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谋远有个可爱的儿子叫羚羊:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊也有个可爱的儿子叫修那伽:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修那伽很牛掰.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;｝</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;从行落讲起:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;婆利古有个可爱的妻子1://妻子1=布罗曼</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他们ooxx，妻子1怀了孩子.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;婆利古外出.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗刹看上了妻子1,要抢://这妻子1的别名叫美臀女...神奇绰号</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗刹问火神,妻子1是谁的老婆.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火神不能说谎,只能乖乖说实话.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;于是罗刹抢了妻子1.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗刹变成野猪驮着妻子1走了,驮行中,妻子生下了孩子,于是起名叫行落.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行落一生下来就大展神威,把罗刹化为灰烬.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;妻子1抱起孩子十分伤心:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;眼泪变成了河流,世尊命名为妇泪河.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;差点被ntr,婆利古很生气.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;妻子1供出火神.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;婆利古怒而诅咒火神,将以一切为食:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火神被诅咒之后非常愤怒.下凡找婆利古对峙:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火神不能说谎.//古印度人真的把语言当成神圣的东西</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人用火将贡品给神,诅咒火神就是切断人与神的联系.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火神让婆利古考虑清楚,自己熄灭了圣火离开了.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;圣火熄灭，祭祀难以进行。</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仙人们非常焦虑,去找大梵天.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大梵天说服火神:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先奉承一番.//一切世界的创造者,一切世界的毁灭者,护持三重世界,推动着诸般法事正常进行的火神为什么会怕诅咒...</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你不会因为诅咒而不洁.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火神乖乖听命了.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从此人神幸福快乐的生活在一起了.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;行落和妻子2生了谋远.//妻子2=美娘</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;谋远又生了一个孩子叫羚羊.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;羚羊生了修那伽.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;羚羊的故事:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个伟大的仙人叫披发.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建达缚王广慈:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广慈和天女1 ooxx生下女婴.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;婴儿放在披发仙人的道院附近.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女婴长的很漂亮.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;披发闲人收养了她,把她养成大美女.取名嬉姑.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊爱上嬉姑.告诉父亲,最终如愿与嬉姑订婚.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结婚前,嬉姑被毒蛇咬死了.//原文这样描述,她已经气绝身亡,依然现出婉丽的形象,仿佛在地上甜甜睡去,腰肢苗条,平添夺人心魄之美,总觉得在恋尸...</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊抱着嬉姑的尸体,祈求嬉姑死而复生.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天神告知拿出一半生命给嬉姑,即可让她复活.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊答应.//这孩子真是痴情</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊顺利娶了嬉姑.立下誓言要杀光蛇类.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他遇到一只蜥蜴,决定杀掉蜥蜴.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蜥蜴开口:</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我不是蛇.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我本来是个仙人.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我吓唬自己的朋友,结果一怒把我给变成蛇了...</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我求放过,他给了我解咒的方案.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就是你,遇到你我就能解咒了.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蜥蜴恢复本相,告知羚羊不要再杀蛇了.这不是婆罗门应该干的,这刹帝利应该干的.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曾经有刹帝利镇群王大灭群蛇.//注意,镇群王上线了,宝沙篇结束的时候,子门徒1正要告诉:&quot;你爹被蛇害死了&quot;.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蛇们非常害怕,蛇界救世主出现名叫阿斯谛伽.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊明显入坑了,急着要听下一段.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;镇群王为何灭蛇</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阿斯谛伽为何就蛇</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仙人消失了,镇群王灭蛇的故事太监了.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羚羊为了催坑跑遍整个森林,累晕了,最后回家,对父亲讲述了一切.</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//布罗曼篇到此结束，总觉得跟布罗曼没什么关系</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p> 
-<p>｝</p> 
-<p>这篇相对连贯，讲述了仙人世家的故事，主要是行落出生，火神被咒，羚羊爱妻，羚羊灭蛇引出蜥蜴的故事，蜥蜴又引出镇群王灭蛇的故事。</p> 
-<p>上一章宝沙篇结尾，作者留下悬念，镇群王的父亲是怎么死的，为什么跟蛇王有关。</p> 
-<p>这一篇，作者借仙人家族的一系列小故事，跑了十万八千里，终于跑回了镇群王主线。</p> 
-<p>但依然没告诉你，镇群王父亲是怎么死的，他只是讲述了镇群王灭蛇，显然镇群王灭蛇与他父亲的死有莫大关系。然而拼图依然缺失中间一块。</p> 
-<p>而羚羊舍弃一半生命，恐怕也会成为之后决定命运的因果。</p> 
-<p>这个故事讲的不是某个主线，难道是冥冥之中的因果之网？</p> 
-<p>这里让我想起博尔赫斯的名作，时空交叉的小径。</p>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/29ac09_5e280db" data-id="ckfny39jt0005pcvh75tuhych" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" rel="tag">摩诃婆罗多</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" rel="tag">读书札记</a></li></ul>
+{% block content %}
 
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/29ac09_5e280e0" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          #5-阿斯谛伽篇# #摩诃婆罗多# 读后感（无尽连环坑，终于进入主线剧情了。。。）
-        
-      </div>
-    </a>
-  
-  
-    <a href="/29ac09_5e280d3" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">#3-宝沙篇# #摩诃婆罗多# 概述和感想：（果然用中括号和程序员排版才能讲清楚前因后果）</div>
-    </a>
-  
-</nav>
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
 
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Photo/">Photo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Text/">Text</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Video/">Video</a></li></ul>
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AnakinSkywalker/" rel="tag">AnakinSkywalker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BVS/" rel="tag">BVS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CG/" rel="tag">CG</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hellsing/" rel="tag">Hellsing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ID-INVADED/" rel="tag">ID:INVADED</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LukeSkywalker/" rel="tag">LukeSkywalker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reylo/" rel="tag">Reylo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Star-Wars/" rel="tag">Star Wars</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YY/" rel="tag">YY</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mv/" rel="tag">mv</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poi/" rel="tag">poi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/star-wars/" rel="tag">star wars</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%B9%E9%BA%A6%E5%A5%B3%E5%AD%A9/" rel="tag">丹麦女孩</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%97%A0%E6%9C%88/" rel="tag">云无月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E7%82%A4/" rel="tag">云炤</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%94%E7%AB%B9/" rel="tag">五竹</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E8%A3%85%E8%80%85/" rel="tag">伪装者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%9C%E5%B8%BD/" rel="tag">兜帽</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B/" rel="tag">全职高手</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/" rel="tag">刺客信条</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" rel="tag">剑网三</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A7%E7%89%88%E9%95%87%E9%AD%82/" rel="tag">剧版镇魂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8C%97%E6%B4%9B/" rel="tag">北洛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" rel="tag">十六夜红月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%A2%E5%85%8B%E5%A4%A9%E8%A1%8C%E8%80%85/" rel="tag">卢克天行者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%A2%E5%85%8B%E6%89%BE%E7%88%B8/" rel="tag">卢克找爸</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D/" rel="tag">印度神话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%8C%E9%81%93%E9%95%BF/" rel="tag">双道长</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" rel="tag">古剑奇谭</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD3/" rel="tag">古剑奇谭3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD%E4%B8%89/" rel="tag">古剑奇谭三</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%96%BB%E6%96%87%E5%B7%9E/" rel="tag">喻文州</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%96%BB%E9%BB%84/" rel="tag">喻黄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A5%8E%E5%B8%88%E9%82%A3/" rel="tag">奎师那</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%89%E7%BA%B3%E9%87%91/" rel="tag">安纳金</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8B%E5%AD%90%E7%90%9B/" rel="tag">宋子琛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%BB%E9%BE%99%E8%AF%80/" rel="tag">寻龙诀</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B1%B1%E6%B2%B3%E6%97%A7%E4%BA%8B/" rel="tag">山河旧事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%8D%E6%BE%9C/" rel="tag">巍澜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%AB%E7%82%A4/" rel="tag">巫炤</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B8%95%E5%B0%94%E5%B8%95%E5%BB%B7/" rel="tag">帕尔帕廷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%86%E4%BD%99%E5%B9%B4/" rel="tag">庆余年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%82%E5%BA%A6%E4%BE%B5%E5%85%A5/" rel="tag">异度侵入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%82%E5%BA%A6%E5%85%A5%E4%BE%B5/" rel="tag">异度入侵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%80%E6%9B%A6/" rel="tag">怀曦</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%89%E8%BE%BE/" rel="tag">拉达</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" rel="tag">摩诃婆罗多</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%8E%E6%A5%BC/" rel="tag">明楼</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%8E%E8%AF%9A/" rel="tag">明诚</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%9F%E6%88%98/" rel="tag">星战</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/" rel="tag">星球大战</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%93%E6%98%9F%E8%BE%B0/" rel="tag">晓星辰</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%A8%E6%98%9F%E4%B8%8A%E8%A1%8C/" rel="tag">木星上行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%8C%E6%B8%B8/" rel="tag">桌游</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A5%BC%E8%AF%9A/" rel="tag">楼诚</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%97%E6%B9%BF%E5%A5%B4/" rel="tag">毗湿奴</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%9F%E5%81%9C/" rel="tag">江停</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E5%B1%B1%E7%8E%A9%E6%B0%B4/" rel="tag">游山玩水</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8B%AC%E6%96%AB/" rel="tag">独斫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%B5%E5%BD%B1/" rel="tag">电影</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A0%B4%E4%BA%91/" rel="tag">破云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%B9%BB/" rel="tag">科幻</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%96%E7%95%A5/" rel="tag">策略</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%B3%E5%A8%9C/" rel="tag">米娜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%99%E4%BA%91/" rel="tag">缙云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3/" rel="tag">罗摩衍那</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%84%91%E6%B4%9E/" rel="tag">脑洞</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%89%B3%E5%85%89/" rel="tag">艳光</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0/" rel="tag">蝙蝠侠</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0%E5%A4%A7%E6%88%98%E8%B6%85%E4%BA%BA/" rel="tag">蝙蝠侠大战超人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" rel="tag">读书札记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E4%BA%BA/" rel="tag">超人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E8%9D%99/" rel="tag">超蝙</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E8%9D%A0/" rel="tag">超蝠</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%A7%E8%AE%B0/" rel="tag">轧记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/" rel="tag">钢之炼金术师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%95%87%E9%AD%82/" rel="tag">镇魂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%BB%E5%8A%AD/" rel="tag">闻劭</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88/" rel="tag">魔道祖师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%84%E5%B0%91%E5%A4%A9/" rel="tag">黄少天</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%91%E6%A1%83K/" rel="tag">黑桃K</a></li></ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/AnakinSkywalker/" style="font-size: 10px;">AnakinSkywalker</a> <a href="/tags/BVS/" style="font-size: 10px;">BVS</a> <a href="/tags/CG/" style="font-size: 10px;">CG</a> <a href="/tags/Hellsing/" style="font-size: 10px;">Hellsing</a> <a href="/tags/ID-INVADED/" style="font-size: 10px;">ID:INVADED</a> <a href="/tags/LukeSkywalker/" style="font-size: 10px;">LukeSkywalker</a> <a href="/tags/Reylo/" style="font-size: 10px;">Reylo</a> <a href="/tags/Star-Wars/" style="font-size: 10px;">Star Wars</a> <a href="/tags/YY/" style="font-size: 10px;">YY</a> <a href="/tags/mv/" style="font-size: 10px;">mv</a> <a href="/tags/poi/" style="font-size: 11px;">poi</a> <a href="/tags/star-wars/" style="font-size: 10px;">star wars</a> <a href="/tags/%E4%B8%B9%E9%BA%A6%E5%A5%B3%E5%AD%A9/" style="font-size: 10px;">丹麦女孩</a> <a href="/tags/%E4%BA%91%E6%97%A0%E6%9C%88/" style="font-size: 10px;">云无月</a> <a href="/tags/%E4%BA%91%E7%82%A4/" style="font-size: 16px;">云炤</a> <a href="/tags/%E4%BA%94%E7%AB%B9/" style="font-size: 10px;">五竹</a> <a href="/tags/%E4%BC%AA%E8%A3%85%E8%80%85/" style="font-size: 11px;">伪装者</a> <a href="/tags/%E5%85%9C%E5%B8%BD/" style="font-size: 10px;">兜帽</a> <a href="/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B/" style="font-size: 10px;">全职高手</a> <a href="/tags/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/" style="font-size: 10px;">刺客信条</a> <a href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" style="font-size: 10px;">剑网三</a> <a href="/tags/%E5%89%A7%E7%89%88%E9%95%87%E9%AD%82/" style="font-size: 10px;">剧版镇魂</a> <a href="/tags/%E5%8C%97%E6%B4%9B/" style="font-size: 10px;">北洛</a> <a href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" style="font-size: 10px;">十六夜红月</a> <a href="/tags/%E5%8D%A2%E5%85%8B%E5%A4%A9%E8%A1%8C%E8%80%85/" style="font-size: 10px;">卢克天行者</a> <a href="/tags/%E5%8D%A2%E5%85%8B%E6%89%BE%E7%88%B8/" style="font-size: 10px;">卢克找爸</a> <a href="/tags/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D/" style="font-size: 17px;">印度神话</a> <a href="/tags/%E5%8F%8C%E9%81%93%E9%95%BF/" style="font-size: 10px;">双道长</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" style="font-size: 13px;">古剑奇谭</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD3/" style="font-size: 15px;">古剑奇谭3</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD%E4%B8%89/" style="font-size: 17px;">古剑奇谭三</a> <a href="/tags/%E5%90%8C%E4%BA%BA/" style="font-size: 18px;">同人</a> <a href="/tags/%E5%96%BB%E6%96%87%E5%B7%9E/" style="font-size: 10px;">喻文州</a> <a href="/tags/%E5%96%BB%E9%BB%84/" style="font-size: 10px;">喻黄</a> <a href="/tags/%E5%A5%8E%E5%B8%88%E9%82%A3/" style="font-size: 10px;">奎师那</a> <a href="/tags/%E5%AE%89%E7%BA%B3%E9%87%91/" style="font-size: 10px;">安纳金</a> <a href="/tags/%E5%AE%8B%E5%AD%90%E7%90%9B/" style="font-size: 10px;">宋子琛</a> <a href="/tags/%E5%AF%BB%E9%BE%99%E8%AF%80/" style="font-size: 10px;">寻龙诀</a> <a href="/tags/%E5%B1%B1%E6%B2%B3%E6%97%A7%E4%BA%8B/" style="font-size: 10px;">山河旧事</a> <a href="/tags/%E5%B7%8D%E6%BE%9C/" style="font-size: 10px;">巍澜</a> <a href="/tags/%E5%B7%AB%E7%82%A4/" style="font-size: 17px;">巫炤</a> <a href="/tags/%E5%B8%95%E5%B0%94%E5%B8%95%E5%BB%B7/" style="font-size: 10px;">帕尔帕廷</a> <a href="/tags/%E5%BA%86%E4%BD%99%E5%B9%B4/" style="font-size: 10px;">庆余年</a> <a href="/tags/%E5%BC%82%E5%BA%A6%E4%BE%B5%E5%85%A5/" style="font-size: 10px;">异度侵入</a> <a href="/tags/%E5%BC%82%E5%BA%A6%E5%85%A5%E4%BE%B5/" style="font-size: 10px;">异度入侵</a> <a href="/tags/%E6%80%80%E6%9B%A6/" style="font-size: 10px;">怀曦</a> <a href="/tags/%E6%8B%89%E8%BE%BE/" style="font-size: 10px;">拉达</a> <a href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" style="font-size: 20px;">摩诃婆罗多</a> <a href="/tags/%E6%98%8E%E6%A5%BC/" style="font-size: 10px;">明楼</a> <a href="/tags/%E6%98%8E%E8%AF%9A/" style="font-size: 10px;">明诚</a> <a href="/tags/%E6%98%9F%E6%88%98/" style="font-size: 10px;">星战</a> <a href="/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/" style="font-size: 11px;">星球大战</a> <a href="/tags/%E6%99%93%E6%98%9F%E8%BE%B0/" style="font-size: 10px;">晓星辰</a> <a href="/tags/%E6%9C%A8%E6%98%9F%E4%B8%8A%E8%A1%8C/" style="font-size: 10px;">木星上行</a> <a href="/tags/%E6%A1%8C%E6%B8%B8/" style="font-size: 11px;">桌游</a> <a href="/tags/%E6%A5%BC%E8%AF%9A/" style="font-size: 11px;">楼诚</a> <a href="/tags/%E6%AF%97%E6%B9%BF%E5%A5%B4/" style="font-size: 10px;">毗湿奴</a> <a href="/tags/%E6%B1%9F%E5%81%9C/" style="font-size: 10px;">江停</a> <a href="/tags/%E6%B8%B8%E5%B1%B1%E7%8E%A9%E6%B0%B4/" style="font-size: 10px;">游山玩水</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 10px;">游戏</a> <a href="/tags/%E7%8B%AC%E6%96%AB/" style="font-size: 10px;">独斫</a> <a href="/tags/%E7%94%B5%E5%BD%B1/" style="font-size: 12px;">电影</a> <a href="/tags/%E7%A0%B4%E4%BA%91/" style="font-size: 10px;">破云</a> <a href="/tags/%E7%A7%91%E5%B9%BB/" style="font-size: 12px;">科幻</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">笔记</a> <a href="/tags/%E7%AD%96%E7%95%A5/" style="font-size: 10px;">策略</a> <a href="/tags/%E7%B1%B3%E5%A8%9C/" style="font-size: 10px;">米娜</a> <a href="/tags/%E7%BC%99%E4%BA%91/" style="font-size: 17px;">缙云</a> <a href="/tags/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3/" style="font-size: 10px;">罗摩衍那</a> <a href="/tags/%E7%BF%BB%E8%AF%91/" style="font-size: 10px;">翻译</a> <a href="/tags/%E8%84%91%E6%B4%9E/" style="font-size: 14px;">脑洞</a> <a href="/tags/%E8%89%B3%E5%85%89/" style="font-size: 10px;">艳光</a> <a href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0/" style="font-size: 10px;">蝙蝠侠</a> <a href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0%E5%A4%A7%E6%88%98%E8%B6%85%E4%BA%BA/" style="font-size: 10px;">蝙蝠侠大战超人</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" style="font-size: 19px;">读书札记</a> <a href="/tags/%E8%B6%85%E4%BA%BA/" style="font-size: 10px;">超人</a> <a href="/tags/%E8%B6%85%E8%9D%99/" style="font-size: 10px;">超蝙</a> <a href="/tags/%E8%B6%85%E8%9D%A0/" style="font-size: 10px;">超蝠</a> <a href="/tags/%E8%BD%A7%E8%AE%B0/" style="font-size: 10px;">轧记</a> <a href="/tags/%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/" style="font-size: 10px;">钢之炼金术师</a> <a href="/tags/%E9%95%87%E9%AD%82/" style="font-size: 10px;">镇魂</a> <a href="/tags/%E9%97%BB%E5%8A%AD/" style="font-size: 10px;">闻劭</a> <a href="/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88/" style="font-size: 10px;">魔道祖师</a> <a href="/tags/%E9%BB%84%E5%B0%91%E5%A4%A9/" style="font-size: 10px;">黄少天</a> <a href="/tags/%E9%BB%91%E6%A1%83K/" style="font-size: 10px;">黑桃K</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/09/29/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c8846536">异度侵入最后的TRUE END</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c6702885">【原著向后续】【云炤】草莓糖 十七 尾声+ 后记</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c66e1785">【原著向后续】【云炤】草莓糖 十六</a>
-          </li>
-        
-          <li>
-            <a href="/29ac09_1c66bddf9">【原著向后续】【云炤】草莓糖 十五</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}
