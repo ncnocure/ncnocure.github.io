@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>十六夜红月传奇 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="十六夜红月传奇  &amp;nbsp;  玩过的剑网三的人，肯定知道十六夜红月。它是江湖里阴魂不散的鬼魂，是剑三世界里永恒的传奇。  但是策划和美术以及营销才会信这些封建迷信，我们程序是唯物的！  当我以程序员身份进入西山居的时候，我就暗暗决定修复这个bug，当时我还年轻，以为这只是一个简单的数据BUG。  当网络正常的时候，从数据库取得玩家的用户名，网络故障时，取不到用户名怎么办？必须显示一个默认字符串">
+<meta property="og:type" content="article">
+<meta property="og:title" content="十六夜红月传奇">
+<meta property="og:url" content="http://example.com/29ac09_9541e33">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="十六夜红月传奇  &amp;nbsp;  玩过的剑网三的人，肯定知道十六夜红月。它是江湖里阴魂不散的鬼魂，是剑三世界里永恒的传奇。  但是策划和美术以及营销才会信这些封建迷信，我们程序是唯物的！  当我以程序员身份进入西山居的时候，我就暗暗决定修复这个bug，当时我还年轻，以为这只是一个简单的数据BUG。  当网络正常的时候，从数据库取得玩家的用户名，网络故障时，取不到用户名怎么办？必须显示一个默认字符串">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2015-12-19T20:10:31.000Z">
+<meta property="article:modified_time" content="2019-01-24T15:28:19.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="脑洞">
+<meta property="article:tag" content="剑网三">
+<meta property="article:tag" content="十六夜红月">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-062 十六夜红月传奇" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/29ac09_9541e33" class="article-date">
+  <time datetime="2015-12-19T20:10:31.000Z" itemprop="datePublished">2015-12-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Text/">Text</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      十六夜红月传奇
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p dir="ltr"  ><b>十六夜红月传奇</b></p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >玩过的剑网三的人，肯定知道十六夜红月。它是江湖里阴魂不散的鬼魂，是剑三世界里永恒的传奇。</p> 
+<p dir="ltr"  >但是策划和美术以及营销才会信这些封建迷信，我们程序是唯物的！</p> 
+<p dir="ltr"  >当我以程序员身份进入西山居的时候，我就暗暗决定修复这个bug，当时我还年轻，以为这只是一个简单的数据BUG。</p> 
+<p dir="ltr"  >当网络正常的时候，从数据库取得玩家的用户名，网络故障时，取不到用户名怎么办？必须显示一个默认字符串。</p> 
+<p dir="ltr"  >好吧，要是取不到用户名，我们就显示“十六夜红月”，把玩家吓哭。哈哈，我们多聪明，玩家会把“十六夜红月”当成灵异事件，而不是剑网三小霸王服务器宕机，他们就不会投诉我们了。</p> 
+<p dir="ltr"  >但现实并非这么简单。</p> 
+<p dir="ltr"  >1.&nbsp;有据可查的是1293次“十六夜红月”事件中，网络故障只占1%。也就是网络故障不导致十六夜红月出现。</p> 
+<p dir="ltr"  >2.&nbsp;如果“十六夜红月”是默认字符串，那么会写死在程序里。但我翻遍了所有代码都找不到这个字符串。</p> 
+<p dir="ltr"  >还有一种可能的是，内存溢出。即读取玩家姓名的代码，访问了未知的地址，读取了未知信息，显示出来就是十六夜红月。这就头疼了，内存溢出是我们程序员的灵异事件，这种bug极难发现和修复。</p> 
+<p dir="ltr"  >在追查“十六夜红月”的过程中，我也顺便读完了整个剑三引擎代码，也算收益匪浅，但是寻找bug的过程并不顺利。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >但是这个时候，我在另一个渠道找到十六夜红月的信息，来自几个早已离职的西山居同事。</p> 
+<p dir="ltr"  >策划A：当时剑三的一个系统策划，她很喜欢武侠和游戏，工作很努力，但是因为情商低经常跟同事吵架，后来在项目组被孤立。她跟美术关系也很紧张。</p> 
+<p dir="ltr"  >美术B：十六夜红月很有想法，是策划里最有趣的一个，很多玩家后来喜欢的设定都源于她的坚持，比如大轻功。当然在职策划不会这么说，中国嘛，自古有想法有想象力的人，都是被压制被窃取的。</p> 
+<p dir="ltr"  >程序C：十六夜红月，那家伙是个工作狂，天天给我开单子写需求，我经常在凌晨4点收到她的单子，都吓哭了～～～我就是一客户端程序，又不是超人，也不是她男朋友，要不要这么把我当牲口使唤啊～～～不过在她的凌虐下，我也搞出了很多厉害的东西，成为传说中的技术大牛，还是挺有成就感的。另外她好像也会编程，还能自己改游戏引擎，也是个Hack吧。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >当我问及十六夜红月现状的时候，他们都沉默了，只说有一天她从西山居消失了，去哪不知道，生死不明。</p> 
+<p dir="ltr"  >我是程序员，有程序员的手段，把他们说的信息综合一下：</p> 
+<p dir="ltr"  >1.&nbsp;大轻功出现之前在职。</p> 
+<p dir="ltr"  >2.&nbsp;系统策划。</p> 
+<p dir="ltr"  >3.&nbsp;已经离职。</p> 
+<p dir="ltr"  >4.&nbsp;女的。</p> 
+<p dir="ltr"  >5.&nbsp;给程序C开了大量需求单子。</p> 
+<p dir="ltr"  >这样一过滤，此人真名一目了然。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >我向这位策划留下的email写了一封信，大义是：闻名江湖的十六夜红月姐姐，你好，我是西山居的一个小小程序员，你留下的bug很难修复，可以指点我一下吗？</p> 
+<p dir="ltr"  >我没指望她会回信，况且一个策划应该也不懂底层程序bug。这个bug之所以叫十六夜红月大概只是个巧合，与这位策划姐姐无关。除非程序C暗恋她，把她名字写进程序。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >但是当天晚上当我登录游戏的时候，十六夜红月来找我了。作为一个坚定的唯物主义程序员，我还是党员，我不该相信这些封建迷信，但是，十六夜红月真的来找我了。</p> 
+<p dir="ltr"  >当时我正在成都拍卖行，突然自己裸体了，周围玩家的名字变成了十六夜红月，叮的一声，聊天框出现紫色字。</p> 
+<p dir="ltr"  >十六夜红月：在吗～～</p> 
+<p dir="ltr"  >我忍住关电脑的冲动，颤颤悠悠的回了一个：在</p> 
+<p dir="ltr"  >十六夜红月：别害怕，小程序。我不会伤害你滴～</p> 
+<p dir="ltr"  >十六夜红月：我就是偶尔出来吓吓玩家，毕竟这个世界太寂寞了～～～</p> 
+<p dir="ltr"  >十六夜红月：你居然找到我，真是聪明又勇敢的娃～～～</p> 
+<p dir="ltr"  >我：红月。。。姐姐。。。难道你真的。。。</p> 
+<p dir="ltr"  >十六夜红月：此事说来话长。你不害怕的话，我就全都告诉你吧，反正我困在这里很久很久了，真的想找人唠嗑，你不要嫌我唠叨。</p> 
+<p dir="ltr"  >我：好啊。。。</p> 
+<p dir="ltr"  >十六夜红月：我呢，剑网三的策划，一个很糟糕很糟糕的策划。明明想实现很多好玩的东西，却又没有说服别人的能力和气量，所以经常跟人吵架～～</p> 
+<p dir="ltr"  >十六夜红月：所以，我越来越孤独，越来越累，最后主策找我谈话了，打算劝退我。</p> 
+<p dir="ltr"  >十六夜红月：那天我在厕所里哭了，然后回去改bug，毕竟要站好最后一班岗，不能给玩家留下有瑕疵的东西。</p> 
+<p dir="ltr"  >十六夜红月：那天晚上，我改到太晚，因为新版本快上线了，好多好多bug呢。</p> 
+<p dir="ltr"  >十六夜红月：大概是凌晨4点的时候，我心脏突然特别疼，然后就睡过去了。</p> 
+<p dir="ltr"  >十六夜红月：等我醒来的时候～～～我该怎么说呢？我在游戏里了～～～</p> 
+<p dir="ltr"  >十六夜红月：我并不是一个角色在游戏里，而是以一段代码生存在游戏里，或者说一段人工智能AI。</p> 
+<p dir="ltr"  >十六夜红月：人的灵魂就是存储在大脑神经网络中的代码，但是灵魂代码怎么进入游戏成为程序代码，我直到现在都没搞清楚～～</p> 
+<p dir="ltr"  >十六夜红月：我生存在剑三数据库的某个角落里，可以把自己复制到任意地方，所以也躲过了一次又一次的数据检查。</p> 
+<p dir="ltr"  >十六夜红月：有一样东西跟我一起被复制进剑三数据库，是一本电子书，名为《游戏引擎架构》，是Jason Gregory编写的，存储在我死前电脑里。我本来打算离开西山居之后，自己研究游戏引擎，自己写游戏～～～</p> 
+<p dir="ltr"  >我：那本书我也有，是游戏引擎的入门必选。</p> 
+<p dir="ltr"  >十六夜红月：嗯，是本不错的书，是这个游戏引擎世界的“神器”，某种程度也挽救了我。</p> 
+<p dir="ltr"  >十六夜红月：生活在数据库的时候，我很无聊，就开始读这本书，学习游戏引擎的方方面面，渐渐的，我好像能掌控剑三游戏引擎了。</p> 
+<p dir="ltr"  >十六夜红月：游戏引擎是个从低到高的系统，低层是数据，资源，高层就是展现在玩家面前的东西，玩法，角色，关卡，场景。我生活的地方是数据库，也就是比较底层的地方，但是通过对游戏引擎的学习，我可以控制显示层面，也就是可以跑到屏幕面前，吓唬你们这些小玩家～～～哇咔咔咔～～～</p> 
+<p dir="ltr"  >十六夜红月：把你们衣服剥光～～～</p> 
+<p dir="ltr"  >十六夜红月：在装备栏显示我的名字～～～</p> 
+<p dir="ltr"  >十六夜红月：在你们面前显示一个大红脸～～～</p> 
+<p dir="ltr"  >十六夜红月：在莫名其妙的地方刷一些灵异的怪物～～～</p> 
+<p dir="ltr"  >十六夜红月：放真诚之心的时候，整个奇葩的特效，哇咔咔卡～～～</p> 
+<p dir="ltr"  >十六夜红月：反正你们可以把我解释成内存溢出～～～哇咔咔卡，你们这些程序员就是这么敷衍，所有没法解释的bug，都说成内存溢出～～～</p> 
+<p dir="ltr"  >我：也就是说，您现在是3D网游引擎界的高手了！有些问题，我可以请教你吗？</p> 
+<p dir="ltr"  >十六夜红月：好啊，有什么问题一起探讨吧～～～</p> 
+<p dir="ltr"  >省略探讨游戏引擎架构的6000字。</p> 
+<p dir="ltr"  >我：你现在对游戏引擎的理解已经非常透彻，超过很多大牛了，可以去个中型公司当主程了。</p> 
+<p dir="ltr"  >十六夜红月：额，这么多年，我一直生活在游戏引擎里，多少有点长进吧。</p> 
+<p dir="ltr"  >我：你现在在做什么呢？有没有别的打算。</p> 
+<p dir="ltr"  >十六夜红月：我可以控制这个游戏世界里很多东西，比如天气，武功，我还能让叶英，夜帝给我表白，还能让莫雨毛毛演GV呢，哇咔咔卡～～～</p> 
+<p dir="ltr"  >十六夜红月：但还是很孤独，很孤独～～～因为这里，除了我之外没有活人了～～～当然，我也不能算活人～～～</p> 
+<p dir="ltr"  >十六夜红月：我只能吓唬那些玩家，也不敢跟他们开口说话。因为我很害怕跟人交流，以前在西山居的时候，几乎所有策划都讨厌我～～～</p> 
+<p dir="ltr"  >十六夜红月：我喜欢江湖，也喜欢江湖中相遇的人，我想在策划们看不到的地方，继续完善这个游戏～～～</p> 
+<p dir="ltr"  >十六夜红月：还有就是～～～我想把跟我一样被孤立不被人接受的孩子拉进这个世界～～～</p> 
+<p dir="ltr"  >我：听起来有点恐怖。</p> 
+<p dir="ltr"  >十六夜红月：是呀，像个恐怖故事的开头。一群玩游戏过度的小孩，在计算机前猝死～～～</p> 
+<p dir="ltr"  >十六夜红月：可我相信，有些人自愿在游戏里中生存，因为他们不喜欢现实世界。我遇到一个这样的人～～～</p> 
+<p dir="ltr"  >十六夜红月：他是个渐冻症患者，身体慢慢不能动了，以前他可是阵营指挥，但是现在只有两根手指能动，连插旗都不行了～～～</p> 
+<p dir="ltr"  >十六夜红月：我问他，愿意到游戏里，跟我一起玩耍吗？</p> 
+<p dir="ltr"  >十六夜红月：他说愿意～～～</p> 
+<p dir="ltr"  >十六夜红月：我正在研究怎么把他拉近游戏里呢，这样那些渐冻症，瘫痪，抑郁症，被孤立等等一切想进游戏的娃们都有个可以去的地方了～～～</p> 
+<p dir="ltr"  >十六夜红月：呵呵，可能我有点疯了～～～</p> 
+<p dir="ltr"  >我：只要对方自主选择进入游戏，这个计划也不算疯狂了～～～</p> 
+<p dir="ltr"  >十六夜红月：总之谢谢你，我会通过这种方式继续跟你联系的，而且要研究灵魂代码转换成程序代码，我还需要大量的资料，可以帮我吗～～～</p> 
+<p dir="ltr"  >我：当然！作为一个程序员能参与破译灵魂代码，是件超级酷的事情～～～</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >以上我们两个的对话，我不信鬼神，但是我面前的这个鬼魂，却又非常唯物。</p> 
+<p dir="ltr"  >当然，我有更唯物的解释。</p> 
+<p dir="ltr"  >十六夜红月还活着，我没找到她的死亡证据。她是一个策划兼程序高手，目前已经离职，但离职之前在剑三引擎里留下了一个后门，然后她通过这个后门来调戏我这个小小程序员。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >不过我宁愿相信，十六夜红月姐姐活在剑三世界里，维护她心爱的世界，吓唬那些小玩家。</p>
+
+<a id="more"></a>
+
+<hr>
+<p><code>2018-04-21 09:54:45</code> 【白桃味_】 我也相信</p>
+<p><code>2020-03-11 17:25:21</code> 【꧁Time is not old】 我也会相信，</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/29ac09_9541e33" data-id="ckfny39lk003tpcvh1wgsa1du" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" rel="tag">剑网三</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" rel="tag">十六夜红月</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%84%91%E6%B4%9E/" rel="tag">脑洞</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/29ac09_974c884" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          寻龙诀：他那么丑，丑到连深情都变得好笑
+        
+      </div>
+    </a>
+  
+  
+    <a href="/29ac09_9249066" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">61</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Photo/">Photo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Text/">Text</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Video/">Video</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AnakinSkywalker/" rel="tag">AnakinSkywalker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BVS/" rel="tag">BVS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CG/" rel="tag">CG</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hellsing/" rel="tag">Hellsing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ID-INVADED/" rel="tag">ID:INVADED</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LukeSkywalker/" rel="tag">LukeSkywalker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reylo/" rel="tag">Reylo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Star-Wars/" rel="tag">Star Wars</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YY/" rel="tag">YY</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mv/" rel="tag">mv</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poi/" rel="tag">poi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/star-wars/" rel="tag">star wars</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%B9%E9%BA%A6%E5%A5%B3%E5%AD%A9/" rel="tag">丹麦女孩</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%97%A0%E6%9C%88/" rel="tag">云无月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E7%82%A4/" rel="tag">云炤</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%94%E7%AB%B9/" rel="tag">五竹</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E8%A3%85%E8%80%85/" rel="tag">伪装者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%9C%E5%B8%BD/" rel="tag">兜帽</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B/" rel="tag">全职高手</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/" rel="tag">刺客信条</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" rel="tag">剑网三</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A7%E7%89%88%E9%95%87%E9%AD%82/" rel="tag">剧版镇魂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8C%97%E6%B4%9B/" rel="tag">北洛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" rel="tag">十六夜红月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%A2%E5%85%8B%E5%A4%A9%E8%A1%8C%E8%80%85/" rel="tag">卢克天行者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%A2%E5%85%8B%E6%89%BE%E7%88%B8/" rel="tag">卢克找爸</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D/" rel="tag">印度神话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%8C%E9%81%93%E9%95%BF/" rel="tag">双道长</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" rel="tag">古剑奇谭</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD3/" rel="tag">古剑奇谭3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD%E4%B8%89/" rel="tag">古剑奇谭三</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%96%BB%E6%96%87%E5%B7%9E/" rel="tag">喻文州</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%96%BB%E9%BB%84/" rel="tag">喻黄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A5%8E%E5%B8%88%E9%82%A3/" rel="tag">奎师那</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%89%E7%BA%B3%E9%87%91/" rel="tag">安纳金</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8B%E5%AD%90%E7%90%9B/" rel="tag">宋子琛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%BB%E9%BE%99%E8%AF%80/" rel="tag">寻龙诀</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B1%B1%E6%B2%B3%E6%97%A7%E4%BA%8B/" rel="tag">山河旧事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%8D%E6%BE%9C/" rel="tag">巍澜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%AB%E7%82%A4/" rel="tag">巫炤</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B8%95%E5%B0%94%E5%B8%95%E5%BB%B7/" rel="tag">帕尔帕廷</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%86%E4%BD%99%E5%B9%B4/" rel="tag">庆余年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%82%E5%BA%A6%E4%BE%B5%E5%85%A5/" rel="tag">异度侵入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%82%E5%BA%A6%E5%85%A5%E4%BE%B5/" rel="tag">异度入侵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%80%E6%9B%A6/" rel="tag">怀曦</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%89%E8%BE%BE/" rel="tag">拉达</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" rel="tag">摩诃婆罗多</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%8E%E6%A5%BC/" rel="tag">明楼</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%8E%E8%AF%9A/" rel="tag">明诚</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%9F%E6%88%98/" rel="tag">星战</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/" rel="tag">星球大战</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%93%E6%98%9F%E8%BE%B0/" rel="tag">晓星辰</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%A8%E6%98%9F%E4%B8%8A%E8%A1%8C/" rel="tag">木星上行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%8C%E6%B8%B8/" rel="tag">桌游</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A5%BC%E8%AF%9A/" rel="tag">楼诚</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%97%E6%B9%BF%E5%A5%B4/" rel="tag">毗湿奴</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%9F%E5%81%9C/" rel="tag">江停</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E5%B1%B1%E7%8E%A9%E6%B0%B4/" rel="tag">游山玩水</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8B%AC%E6%96%AB/" rel="tag">独斫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%B5%E5%BD%B1/" rel="tag">电影</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A0%B4%E4%BA%91/" rel="tag">破云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%B9%BB/" rel="tag">科幻</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%96%E7%95%A5/" rel="tag">策略</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%B3%E5%A8%9C/" rel="tag">米娜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%99%E4%BA%91/" rel="tag">缙云</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3/" rel="tag">罗摩衍那</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%84%91%E6%B4%9E/" rel="tag">脑洞</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%89%B3%E5%85%89/" rel="tag">艳光</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0/" rel="tag">蝙蝠侠</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0%E5%A4%A7%E6%88%98%E8%B6%85%E4%BA%BA/" rel="tag">蝙蝠侠大战超人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" rel="tag">读书札记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E4%BA%BA/" rel="tag">超人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E8%9D%99/" rel="tag">超蝙</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E8%9D%A0/" rel="tag">超蝠</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%A7%E8%AE%B0/" rel="tag">轧记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/" rel="tag">钢之炼金术师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%95%87%E9%AD%82/" rel="tag">镇魂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%BB%E5%8A%AD/" rel="tag">闻劭</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88/" rel="tag">魔道祖师</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%84%E5%B0%91%E5%A4%A9/" rel="tag">黄少天</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%91%E6%A1%83K/" rel="tag">黑桃K</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AnakinSkywalker/" style="font-size: 10px;">AnakinSkywalker</a> <a href="/tags/BVS/" style="font-size: 10px;">BVS</a> <a href="/tags/CG/" style="font-size: 10px;">CG</a> <a href="/tags/Hellsing/" style="font-size: 10px;">Hellsing</a> <a href="/tags/ID-INVADED/" style="font-size: 10px;">ID:INVADED</a> <a href="/tags/LukeSkywalker/" style="font-size: 10px;">LukeSkywalker</a> <a href="/tags/Reylo/" style="font-size: 10px;">Reylo</a> <a href="/tags/Star-Wars/" style="font-size: 10px;">Star Wars</a> <a href="/tags/YY/" style="font-size: 10px;">YY</a> <a href="/tags/mv/" style="font-size: 10px;">mv</a> <a href="/tags/poi/" style="font-size: 11px;">poi</a> <a href="/tags/star-wars/" style="font-size: 10px;">star wars</a> <a href="/tags/%E4%B8%B9%E9%BA%A6%E5%A5%B3%E5%AD%A9/" style="font-size: 10px;">丹麦女孩</a> <a href="/tags/%E4%BA%91%E6%97%A0%E6%9C%88/" style="font-size: 10px;">云无月</a> <a href="/tags/%E4%BA%91%E7%82%A4/" style="font-size: 16px;">云炤</a> <a href="/tags/%E4%BA%94%E7%AB%B9/" style="font-size: 10px;">五竹</a> <a href="/tags/%E4%BC%AA%E8%A3%85%E8%80%85/" style="font-size: 11px;">伪装者</a> <a href="/tags/%E5%85%9C%E5%B8%BD/" style="font-size: 10px;">兜帽</a> <a href="/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B/" style="font-size: 10px;">全职高手</a> <a href="/tags/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/" style="font-size: 10px;">刺客信条</a> <a href="/tags/%E5%89%91%E7%BD%91%E4%B8%89/" style="font-size: 10px;">剑网三</a> <a href="/tags/%E5%89%A7%E7%89%88%E9%95%87%E9%AD%82/" style="font-size: 10px;">剧版镇魂</a> <a href="/tags/%E5%8C%97%E6%B4%9B/" style="font-size: 10px;">北洛</a> <a href="/tags/%E5%8D%81%E5%85%AD%E5%A4%9C%E7%BA%A2%E6%9C%88/" style="font-size: 10px;">十六夜红月</a> <a href="/tags/%E5%8D%A2%E5%85%8B%E5%A4%A9%E8%A1%8C%E8%80%85/" style="font-size: 10px;">卢克天行者</a> <a href="/tags/%E5%8D%A2%E5%85%8B%E6%89%BE%E7%88%B8/" style="font-size: 10px;">卢克找爸</a> <a href="/tags/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D/" style="font-size: 17px;">印度神话</a> <a href="/tags/%E5%8F%8C%E9%81%93%E9%95%BF/" style="font-size: 10px;">双道长</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" style="font-size: 13px;">古剑奇谭</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD3/" style="font-size: 15px;">古剑奇谭3</a> <a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD%E4%B8%89/" style="font-size: 17px;">古剑奇谭三</a> <a href="/tags/%E5%90%8C%E4%BA%BA/" style="font-size: 18px;">同人</a> <a href="/tags/%E5%96%BB%E6%96%87%E5%B7%9E/" style="font-size: 10px;">喻文州</a> <a href="/tags/%E5%96%BB%E9%BB%84/" style="font-size: 10px;">喻黄</a> <a href="/tags/%E5%A5%8E%E5%B8%88%E9%82%A3/" style="font-size: 10px;">奎师那</a> <a href="/tags/%E5%AE%89%E7%BA%B3%E9%87%91/" style="font-size: 10px;">安纳金</a> <a href="/tags/%E5%AE%8B%E5%AD%90%E7%90%9B/" style="font-size: 10px;">宋子琛</a> <a href="/tags/%E5%AF%BB%E9%BE%99%E8%AF%80/" style="font-size: 10px;">寻龙诀</a> <a href="/tags/%E5%B1%B1%E6%B2%B3%E6%97%A7%E4%BA%8B/" style="font-size: 10px;">山河旧事</a> <a href="/tags/%E5%B7%8D%E6%BE%9C/" style="font-size: 10px;">巍澜</a> <a href="/tags/%E5%B7%AB%E7%82%A4/" style="font-size: 17px;">巫炤</a> <a href="/tags/%E5%B8%95%E5%B0%94%E5%B8%95%E5%BB%B7/" style="font-size: 10px;">帕尔帕廷</a> <a href="/tags/%E5%BA%86%E4%BD%99%E5%B9%B4/" style="font-size: 10px;">庆余年</a> <a href="/tags/%E5%BC%82%E5%BA%A6%E4%BE%B5%E5%85%A5/" style="font-size: 10px;">异度侵入</a> <a href="/tags/%E5%BC%82%E5%BA%A6%E5%85%A5%E4%BE%B5/" style="font-size: 10px;">异度入侵</a> <a href="/tags/%E6%80%80%E6%9B%A6/" style="font-size: 10px;">怀曦</a> <a href="/tags/%E6%8B%89%E8%BE%BE/" style="font-size: 10px;">拉达</a> <a href="/tags/%E6%91%A9%E8%AF%83%E5%A9%86%E7%BD%97%E5%A4%9A/" style="font-size: 20px;">摩诃婆罗多</a> <a href="/tags/%E6%98%8E%E6%A5%BC/" style="font-size: 10px;">明楼</a> <a href="/tags/%E6%98%8E%E8%AF%9A/" style="font-size: 10px;">明诚</a> <a href="/tags/%E6%98%9F%E6%88%98/" style="font-size: 10px;">星战</a> <a href="/tags/%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98/" style="font-size: 11px;">星球大战</a> <a href="/tags/%E6%99%93%E6%98%9F%E8%BE%B0/" style="font-size: 10px;">晓星辰</a> <a href="/tags/%E6%9C%A8%E6%98%9F%E4%B8%8A%E8%A1%8C/" style="font-size: 10px;">木星上行</a> <a href="/tags/%E6%A1%8C%E6%B8%B8/" style="font-size: 11px;">桌游</a> <a href="/tags/%E6%A5%BC%E8%AF%9A/" style="font-size: 11px;">楼诚</a> <a href="/tags/%E6%AF%97%E6%B9%BF%E5%A5%B4/" style="font-size: 10px;">毗湿奴</a> <a href="/tags/%E6%B1%9F%E5%81%9C/" style="font-size: 10px;">江停</a> <a href="/tags/%E6%B8%B8%E5%B1%B1%E7%8E%A9%E6%B0%B4/" style="font-size: 10px;">游山玩水</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 10px;">游戏</a> <a href="/tags/%E7%8B%AC%E6%96%AB/" style="font-size: 10px;">独斫</a> <a href="/tags/%E7%94%B5%E5%BD%B1/" style="font-size: 12px;">电影</a> <a href="/tags/%E7%A0%B4%E4%BA%91/" style="font-size: 10px;">破云</a> <a href="/tags/%E7%A7%91%E5%B9%BB/" style="font-size: 12px;">科幻</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">笔记</a> <a href="/tags/%E7%AD%96%E7%95%A5/" style="font-size: 10px;">策略</a> <a href="/tags/%E7%B1%B3%E5%A8%9C/" style="font-size: 10px;">米娜</a> <a href="/tags/%E7%BC%99%E4%BA%91/" style="font-size: 17px;">缙云</a> <a href="/tags/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3/" style="font-size: 10px;">罗摩衍那</a> <a href="/tags/%E7%BF%BB%E8%AF%91/" style="font-size: 10px;">翻译</a> <a href="/tags/%E8%84%91%E6%B4%9E/" style="font-size: 14px;">脑洞</a> <a href="/tags/%E8%89%B3%E5%85%89/" style="font-size: 10px;">艳光</a> <a href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0/" style="font-size: 10px;">蝙蝠侠</a> <a href="/tags/%E8%9D%99%E8%9D%A0%E4%BE%A0%E5%A4%A7%E6%88%98%E8%B6%85%E4%BA%BA/" style="font-size: 10px;">蝙蝠侠大战超人</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E6%9C%AD%E8%AE%B0/" style="font-size: 19px;">读书札记</a> <a href="/tags/%E8%B6%85%E4%BA%BA/" style="font-size: 10px;">超人</a> <a href="/tags/%E8%B6%85%E8%9D%99/" style="font-size: 10px;">超蝙</a> <a href="/tags/%E8%B6%85%E8%9D%A0/" style="font-size: 10px;">超蝠</a> <a href="/tags/%E8%BD%A7%E8%AE%B0/" style="font-size: 10px;">轧记</a> <a href="/tags/%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/" style="font-size: 10px;">钢之炼金术师</a> <a href="/tags/%E9%95%87%E9%AD%82/" style="font-size: 10px;">镇魂</a> <a href="/tags/%E9%97%BB%E5%8A%AD/" style="font-size: 10px;">闻劭</a> <a href="/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88/" style="font-size: 10px;">魔道祖师</a> <a href="/tags/%E9%BB%84%E5%B0%91%E5%A4%A9/" style="font-size: 10px;">黄少天</a> <a href="/tags/%E9%BB%91%E6%A1%83K/" style="font-size: 10px;">黑桃K</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/29ac09_1c8846536">异度侵入最后的TRUE END</a>
+          </li>
+        
+          <li>
+            <a href="/29ac09_1c6702885">【原著向后续】【云炤】草莓糖 十七 尾声+ 后记</a>
+          </li>
+        
+          <li>
+            <a href="/29ac09_1c66e1785">【原著向后续】【云炤】草莓糖 十六</a>
+          </li>
+        
+          <li>
+            <a href="/29ac09_1c66bddf9">【原著向后续】【云炤】草莓糖 十五</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
