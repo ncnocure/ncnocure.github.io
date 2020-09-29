@@ -1,23 +1,1426 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+<link rel="stylesheet" href="/css/main.css">
 
-{% block page_class %}
-  {% if is_home() %}page-home{% endif -%}
-{% endblock %}
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-    {% endfor %}
-  </section>
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12de65e40">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12de65e40" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 十一 尾声</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-20 14:13:27" itemprop="dateCreated datePublished" datetime="2019-02-20T14:13:27+08:00">2019-02-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-10 14:52:26" itemprop="dateModified" datetime="2019-03-10T14:52:26+08:00">2019-03-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>缙云和巫炤质朴的远古部落青少年爱情故事。<a href="https://music.163.com/#/song?id=501316" target="_blank"  >本章bgm</a></p></li> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd57440" target="_blank"  >六</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd95b80" target="_blank"  >七</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12ddbac18" target="_blank"  >八</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12ddf9804" target="_blank"  >九</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12de39e73" target="_blank"  >十</a></p></li> 
+</ul> 
+<p><br /></p> 
+<p>“这就是幽暗之间。您的身体尚未完全恢复，请千万小心。”怀曦伸手想要扶住缙云。</p> 
+<p>缙云推开怀曦伸过来的手，他还不熟悉黑暗，只能在房间里缓慢的摸索着前行。</p> 
+<p>“这里的东西，都包着角。”他碰触到的地方没有一处锐角。</p> 
+<p>“老师担心巫炤受伤。”</p> 
+<p>缙云慢慢适应了黑暗，他摸到一只柔软的东西，好像是麻布做的。</p> 
+<p>“这是什么？”</p> 
+<p>“这是嫘祖大人给他做的小熊。嫘祖大人当年特别宠巫炤，看着他一个人在黑屋子里住总哭，就给他做了一个小熊娃娃。那个时候，嫘祖大人经常跟老师吵架，把一个小孩放在黑暗中长大，实在太不近人情了。”</p> 
+<p>又摸索了会儿，他摸到一支细嫩的东西。</p> 
+<p>“是花吗？”</p> 
+<p>“嗯，这是能在黑暗中生长的血晶兰，这花依靠灵力为生，用肉眼看是白色的，据说用灵视看是红色的。当年他开灵视之眼的时候，最早看到的就是血晶兰，他见过红宝石之后，就说这花美得像红宝石。”</p> 
+<p>“用灵视看到的世界是什么样的？”</p> 
+<p>“我也不知道，只是按照巫炤的描述，能看到万物本来面目，细微到难以想象的程度，还能看到上面蕴含的灵力。对了，巫炤小时候说起过缙云大人，说你的灵气是深蓝色的，像剑锋一样凌厉。”</p> 
+<p>“他看到的世界跟我们完全不一样。”</p> 
+<p>“是呀，因为看到的世界不一样，所以很难理解他。我从小受命照顾他，也总觉得跟他有些隔阂。巫炤。。。好像对人间最普通的情感都一无所知。可是他对身边人很温柔，他照顾司危，送礼物给我，还会用十年时间去找你。所以巫炤只是不懂，但他拥有感情。”</p> 
+<p>缙云摸到一处极柔软的丝布制成的小床铺，比狐狸皮软多了，睡在这床上的孩子，该是多娇嫩。</p> 
+<p>“巫之纹纹上去的时候，一定很疼吧。”他那么怕疼，被虫蛰了都差点哭。</p> 
+<p>“是很疼的，鬼师的巫之纹有别于普通巫纹，针刺破皮肤后，要浸入半魂莲汁液上色。半魂莲有毒性，入血肉之后是被腐蚀的酸痛，伤口很难愈合，远比一般纹身疼，事后要卧床一两个月，伤疤才能结痂脱落。师父刚死的时候，巫炤就接受了鬼师的巫之纹，哼都没哼一下，过后他在床上躺了两个月，伤疤还没好透，就撑着进行鬼师继承仪式。。。好像是一夜间就从孩子变成西陵鬼师。”</p> 
+<p>缙云小心的坐在小床铺上：“你先回去吧，我想在这里多呆一会儿。”</p> 
+<p>“好的，只是您刚恢复，请千万小心。鬼师大人外出剿魔就快回来了，要是您受伤，我会受罚的。”</p> 
+<p><br /></p> 
+<p>从魔域归来第三个月，缙云恢复到能下地行走，他在幽暗之间呆了五天后，回到有熊。魔域归来的缙云头发尽白，身体上也出现了雪白的纹路，虽实力更强，却被众人视为异类。他如今的身体状况已无法上战场，负责传授剑术训练战士。闲暇时光里，他跟魇魅住在白梦泽。</p> 
+<p>西陵的鬼师有时到访，白梦泽就会漫起迷雾，有人误入迷雾，看到水中长发掩背的细白身影，就传闻白梦泽里有美艳女鬼会蛊惑男人。</p> 
+<p>缙云向有熊和天鹿战士们传授了毕生绝学，就带着魇魅四处游历，远方不断传来他的消息，无非是又挑了哪个门派，诛杀哪个作恶多端的大妖。</p> 
+<p>这天清晨，巫炤骑着獍妖准备出征乱羽山剿灭魔物，嫘祖与全城战士持剑列队送别他，信使带来了缙云的礼物。</p> 
+<p>“又是缙云送来的，你送他那么贵重的玉扳指，他就送你这些破瓦片破碗。。。”司危嫌弃的将一个描绘有血色眼睛的瓦片递给巫炤。</p> 
+<p>“巫之国的遗物。”巫炤在地图上标示下一个红点，地图上已经留下无数个红点。“缙云在洛水，赤水这几个地方发现了巫之后裔的痕迹，这几个点连接起来，就是巫之国败落之后，其中一支遗民流亡的路线，将所有流亡路线连起来，必然会交汇在海外的某个点。。。那个地方就是巫之国。”</p> 
+<p>那瓦片上还有血迹，不知是缙云的还是别人的。</p> 
+<p>巫炤摸着那血迹，沉思片刻，他驱使獍妖来到嫘祖面前：“嫘祖大人，您若是见到缙云，请替我带个口信：等我从乱羽山回来，一起去找巫之国。”</p> 
+<p><br /></p> 
+<p><br /></p> 
+<p>The End.</p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><br /></p> 
+<p><a href="http://ncnocure.lofter.com/post/29ac09_12e1317a3" target="_blank"  >番外一</a></p> 
+<p>=======================================</p> 
+<p><strong><br /></strong></p> 
+<p><strong>饮水自知</strong></p> 
+<p>本意是人的感受无法互通，饮水时的冷暖只有自己知道。人再怎么渴望靠近，但感受依然无法互通。</p> 
+<p>打算写两个出身差异极大的娃，从青梅竹马到干柴烈火再到平淡幸福，中间面临误会，克服阻碍，互相努力理解对方，最后还是相杀的be故事。<br /></p> 
+<p>因为自己没法接受游戏悲催的结局，所以要写个故事帮助自己接受这个结局。</p> 
+<p>第十一章之后应该是西陵城灭之后，缙云试图安慰巫炤，可他又不会治疗禁术，只能看对方崩溃，却没法帮对方分担半点痛苦，这要点题饮水自知了。然而刀和flag都埋下了，就等着插刀了，我写不下去了，云炤已经那么努力去靠近对方了，他们对彼此认识也更加深刻，结局有多种可能，不再局限于原著游戏，所以还是停留在巫炤去乱羽山的路上吧。</p> 
+<p><strong><br /></strong></p> 
+<p><strong>角色</strong></p> 
+<p>本文的缙云是我流的缙云，北洛介绍缙云说他对感情很贪妄，看他处理自己父母的关系，又非常清醒，应该是又贪妄又清醒的人。因为贪妄渴求永远的感情，因为清醒又知道自己注定求不到，所以对人很疏离。写的时候，在想怎么表达贪妄和清醒，其实我对这个表达结果不完全满意，贪妄是够了，去魔界之前还不够清醒，对巫炤有些幻想，但找不到更好的处理方式，如果一开始两方都没幻想，也谈不了恋爱，只能说年少时的情欲，多少会带点虚妄，性爱带来巨大快乐也会让人抱有过多期待。</p> 
+<p>巫炤也是我流的，他正常状态的剧情太少，只能靠少量信息脑补，从花食节剧情来看，他对西陵之外的人缺乏共情，言语间有种不食人间烟火的温柔，推测他可能幼年生活比较特殊，很难对普通人产生同理心，也不太理解常人的感情，怀疑他可能没跟父母在一起生活过，巫之堂这个神秘的组织，还真有可能把孩子们从小带走培训。</p> 
+<p><br /></p> 
+<p><strong>大概是HE</strong></p> 
+<p>这两个人有巨大差异，别说理想理念，就连对待感情的态度都差异巨大。能成为朋友都很难了，成为爱人更是每一步都步履蹒跚。</p> 
+<p>两个差异巨大的独立人格突破自身的局限靠近彼此，虽然世事难料，人自身有局限性，被环境限制，即使努力靠近之后，依然相隔山海。不管结局如何，能够试图靠近本身就非常美好了，所以我认为本文应该是HE。。。（萌过云炤之后，我对HE的标准已经这么低了。）</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12de65e40#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12de39e73">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12de39e73" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 十</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-19 15:58:51" itemprop="dateCreated datePublished" datetime="2019-02-19T15:58:51+08:00">2019-02-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-20 14:14:11" itemprop="dateModified" datetime="2019-02-20T14:14:11+08:00">2019-02-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>缙云和巫炤质朴的远古部落青少年爱情故事，元宵节快乐。<a href="https://music.163.com/#/song?id=501316" target="_blank"  >本章bgm</a></p></li> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd57440" target="_blank"  >六</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd95b80" target="_blank"  >七</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12ddbac18" target="_blank"  >八</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12ddf9804" target="_blank"  >九</a></p></li> 
+</ul> 
+<p>&nbsp;在巫炤缓慢恢复的灵力之眼中，身下是遍地尸骸绵延到天际尽头，流着脓液，散发着腐臭味，有些尸体涨成两倍大，踩过去会爆开，释出恶臭的气体，阴郁的天上盘旋着秃鹫不时从地上争抢腐肉。巫炤上过战场，一直高居天上俯视群魔和人群，从不沾尘，这还是第一次站在地上的战场。</p> 
+<p>此地是缙云的梦，就是他记忆的一隅。巫炤听嫘祖提起过缙云作为战奴的过去，他顺着无边尸骸望过去，一个小小身影正在尸堆中翻找着，巫炤绕过尸骸走到那孩子身边。</p> 
+<p>“缙云，是你吗？”这孩子比当年见到巫炤时候的缙云小多了。</p> 
+<p>干瘦的孩子抬起头看了看巫炤，默不作声，呆滞的眼神更像兽类。</p> 
+<p>巫炤伸出想拍拍孩子的肩膀，孩子下意识的往后躲开，转身跑掉了，像只受惊的小野兽。</p> 
+<p>这次的心魔有点难对付，巫炤想着，心魔分为内外，外心魔只能读取人们的内心，诱人误入歧途，内心魔生于人心，以怨怒贪怖的回忆为食，平日被压制，一旦宿主魂魄受损即兴风作浪，将人无意识的引入最痛苦的梦境。</p> 
+<p>那孩子可能会跑到更深的梦境中，巫炤追着孩子跑过去，他再没法绕开脚下的死尸，长袍下摆沾染腐臭的脓液，一只死不瞑目的尸骸绊倒了他。西陵的鬼师跪倒在尸身中，长发落在尸骸上沾染了些许腐液，天上秃鹫盘旋而下想啄食新鲜的血肉，被几块石头赶开，巫炤抬头看到那孩子为他赶开秃鹫。</p> 
+<p>那小孩翻了翻自己身上的口袋，挑出最干净的肉块递给他，是死去战士带着的干粮。</p> 
+<p>巫炤从孩子手中接过肉干，上面有几块的淡绿色霉点，比起孩子手中那几块也是干净太多了。</p> 
+<p>“吃。。。吃，饱了，有力。。。气。”小孩断断续续的说出来，他已经很久没跟人说过话了。</p> 
+<p>巫炤擦去霉点，把肉干放进嘴里，忍住干呕的恶感，用力的咀嚼：“真难吃呀，缙云，你吃这东西，长大以后还能那么壮。”但是吃完到真的有点力气了。</p> 
+<p>孩子伸出小手把巫炤拉起来，带着他向前走。</p> 
+<p>“这是你的梦，也只有你知道往哪走。”</p> 
+<p>慢慢尸体变少了，远处仿佛有温暖的光点，他们向着光的方向走去，那光中间是一片黄昏中的紫蓝色的花田，花田中央燃着篝火，一个温柔年轻的长发妇人正在烤鱼，鱼焙至两面金黄，撒了一些馨香的野菜，中和了鱼肉原有的腥味，即使巫炤这么挑嘴的人，也觉得饿了。孩子从妇人手里接过两串鱼，将其中一串吹了吹热气递给巫炤。巫炤尝了尝，是很熟悉的味道。孩子啃着另一串，笑着的看着母亲，那眼神很熟悉，巫炤心念一动，正是是欢爱之后，缙云看着自己的眼神。</p> 
+<p>“若你想要爱和依恋，任意一个贤惠温柔的女人都比我更适合吧。”巫炤叹息着。“究竟是哪里产生了误解，让你觉得我跟你妈很像。”</p> 
+<p>吃完鱼，孩子拉着巫炤的手，来到母亲面前。妇人看着两人微笑，顺手送给巫炤一朵紫蓝色的花，这花似乎叫刺荆心，最早在童年的树洞里见过，后来又开在白梦泽。巫炤握着花，无端的想起某些部族的传统，外嫁的女人从夫君母亲手里拿到花，就意味着这段姻缘收到父辈的祝福。他叹了口气，鬼师不能婚嫁，自己公务缠身也实在没这个想法，可看了看小孩的笑脸，还是把花收进怀里。</p> 
+<p>“算了，你的梦，你想干什么都行。”这样温暖的梦境可以修复魂魄，比任何灵力和咒术管用，也是抵抗内心魔的手段之一。</p> 
+<p>傍晚，幼年的缙云拉着巫炤在童年的家乡闲逛，紫蓝色花田外面，有个简陋的小院子，里面种了一些花，院子中间是个茅草屋子，屋子里摆放了许多玉器，一位肤色黝黑的男人在里面专注的雕琢玉器。</p> 
+<p>缙云的母亲带着几串烤鱼回到小屋里，喂给正在干活的男人。男人没停下手继续工作，吃了几口烤鱼，又亲了亲递过烤鱼的手，笑着露出洁白的牙齿，有几分像缙云。不久，夜深了，男人手中的玉石女像成型，正是缙云的母亲。男人把人像递给妇人，而后温柔抱住她，在这简陋的小屋中，两人缠绵在一起，说这甜美至极的情话。幼年的缙云在门外玩耍，偶尔抬头看看屋中沉浸欢愉的父母。当时部落还没什么羞耻观念，父母欢爱不避子女，子女也多是从父母那里学会怎样男女交合生育繁衍。</p> 
+<p>“跟你欢爱的人就是最亲密的人，误解是这样来的。可我们西陵人知母而不知父，女人有多个情人，和谁欢爱，纯为了快乐。”</p> 
+<p>此时天上飘起雪花，落在紫蓝色的花上，屋中欢爱之声，变成吵闹厮打，玉器摔碎的声音，随着一声女人的惨叫，男人浑身是血的跑出门。幼年的缙云缓缓走向虚掩的屋门，伸出小手，抚在门上。</p> 
+<p>“别去，缙云，那是心魔。。。”巫炤蹲下去，拉住小孩，用力搂在怀里。</p> 
+<p>一阵寒风吹开了屋门，雪飘入屋中，落在碎掉玉器上，落在身首异处的尸身上，落在尚且温热的血中。幼年缙云扭头看到了，巫炤感觉到怀里孩子身体微微震了一下，胸口跳动的地方被永远的挖去了。</p> 
+<p>小孩挣脱了巫炤的怀抱，走进简陋的茅草屋，他还不明白死亡，抱起母亲的头颅想接在身体上，而头颅滚开了。雪越下越大，他趴在母亲怀里想要温暖这具渐渐冰冷的尸体。连哭泣的声音都没有，只有雪落下的声音。这段往事，缙云简短的描述过。</p> 
+<p>内心魔生于人心，几无战力，但对宿主的痛楚了如指掌，造出的梦境能让最坚强的人生无可恋，能与之抗衡的只有最美好情感。缙云的身体早已濒临崩溃，只靠一股意志撑着，若是在梦里放弃求生，在现实世界中也会死去。</p> 
+<p>巫炤想走进屋子，被一道无形的门阻挡。这个梦属于缙云，他最恐惧痛苦的回忆，拒绝任何人靠近，也只能靠他自己走出来。</p> 
+<p>屋子开着门，冷风和雪直接灌进去，落在母亲和孩子身上。</p> 
+<p>“缙云，你以后会成为轩辕丘的战神，有值得一生奋斗的伟大理想，去保护所有人，西陵最好的匠人会给你打造长剑，巫之堂为你的铠甲祝福，你还会有个最好的朋友，好到能跟你欢爱的程度。现在只要你走这屋子，这一切都是你的。”巫炤站在门口用他温和声音所能达到极限大声说，屋子里孩子毫无反应。</p> 
+<p>巫炤自己也觉得这话轻浮可笑。人的感情永远互相隔离，即使身体亲近，他却从未了解好友的内心：缙云真正渴望的东西，巫炤一直想问的问题。即使现在，站在缙云鲜血淋漓的回忆里，依然无法感同身受，巫炤连父母都没有，无法理解失去母亲的痛苦，他想起老师死去那天，自己也只是懊恼没能早点回去，亲耳听到老师的遗言。</p> 
+<p>“是不是，我嫁给你，你就能出来，这也。。。太。。。”巫炤掩面叹息，他没法眼睁睁看着缙云死，但也做不到亲近任何人到夫妻的程度。缙云是外表疏离，内里对感情渴望乃至贪妄，巫炤则是真正对感情没需求，他在巫之堂长大，从未享过天伦之乐，周遭人对他恭敬有礼，幼年的缺失，以至于感受不到常人的情感。他一直觉得有个好朋友就足够了，看到好东西，给那人留着，不忙的时候去拜访一下，聊天，切磋都好，少年时沉溺欢愉，后来年龄大了，就算不欢爱也是极开心的。朋友失踪了，他觉得自己能救，就每日把研究空间魔法排入日程，按部就班的实验，测试，打开空间裂隙，繁重的任务均摊在十年时间里，并不难。就连入梦，他也确定自己能打败心魔，却没想到，这次是罕见的内心魔，从缙云失去母亲的一刻，就生在好友心上。</p> 
+<p>巫炤指尖写下咒文，想用灵力强行突破，然而灵力，咒术都救不了一个悲痛欲绝的人，这是巫炤有生以来第一次感到无力，缙云身陷魔界的十年里，他至少有努力的方向。</p> 
+<p>他想起骨片中记录过的治疗禁术，巫之国并不擅医术，只能微弱的治愈血肉，需要伤者自身也有强大求生欲才管用，那禁术可以治愈灵魂，能让生无所恋之人重燃灵魂之火，代价是施术者自身的部分魂魄。人若魂魄受损，易怨怒，心魔缠身。</p> 
+<p>巫炤确信自己能承受得起，伸手在半空中画起那禁忌的咒法，将自己灵魂的一部分注入到幼年缙云的身体里，一根红线突破无形之门，从自己的胸口连到缙云的胸口。瞬间的灵魂相交让巫炤感受到巨大痛楚，失去母亲，在战场上孤独求生，被辟邪之力侵蚀，自己带给缙云的痛苦，即将到来并最终摧毁缙云的情绪，席卷而来，包裹了他，一头乌黑长发尽数变灰。眼睛里温热的液体流到手上，巫炤睁开鲜红的眼睛惊讶看着手心的眼泪，被光线刺痛和欢爱时，也流过眼泪，但这次不一样。巫炤从未失去过什么，即使缙云失踪，他也只是按照自己的计划把好友救出来，这是他第一次感受到伤痛从眼睛里溢出的感觉，<strong>原来人们是这样心痛的</strong>。</p> 
+<p>门中，孩子在母亲尸体旁站起来，在雪中飞速的长大，少年，青年，一直到魔域十年之后白发男人。</p> 
+<p>缙云摸到胸口红线，顺着那红线，看着门外的和自己连在一起的巫炤，顺着红线传来的是无穷无尽的孤独和空寂。不知道是哪种更倒霉，一开始就没有，所以根本不知道，也不渴望；还是原本拥有的，被挖掉。</p> 
+<p>缙云拿起太岁斩碎心魔构建的梦境，玉器，小屋，紫蓝色的刺荆花，以及母亲的尸骸连同心魔在一剑之下化为碎片。</p> 
+<p>碎片落尽，周遭是最初相遇的白色花海，他们站在花海的两侧，咒术建立的红线连住他们的胸口的空洞，一个没有心，一个心被挖去了一块，两人向着对方走去，每一步都步履蹒跚，终于在花海中间，他们相遇了。</p> 
+<p>“永远不离开我。。。我也不会离开你，永远。”缙云伸手抱住巫炤，眼里倒映着流泪的血红双目。</p> 
+<p>“当然不会离开你。”巫炤流着泪说。“可我给不了你想要的东西。。。你会后悔的。”</p> 
+<p>“只要是你就可以了。我绝不后悔。”</p> 
+<p>缙云亲吻着巫炤，在这吻中真正醒来。</p> 
+<p><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12de65e40" target="_blank"  >十一</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12de39e73#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12ddf9804">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12ddf9804" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 九</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-18 15:41:11" itemprop="dateCreated datePublished" datetime="2019-02-18T15:41:11+08:00">2019-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-19 16:15:54" itemprop="dateModified" datetime="2019-02-19T16:15:54+08:00">2019-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>缙云和巫炤质朴的远古部落青少年爱情故事。<a href="https://music.163.com/#/song?id=28853524" target="_blank"  >本章bgm</a></p></li> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd57440" target="_blank"  >六</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd95b80" target="_blank"  >七</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12ddbac18" target="_blank"  >八</a></p></li> 
+</ul> 
+<p>在缙云失踪的乱羽山中，巫炤部下法阵，献祭十二头獍妖，在空中以血写下咒文。</p> 
+<p>獍妖的血液流入法阵，血色的咒文从法阵中漂浮起来，围绕阵中心旋转，引得巫炤长发风中四散，一道裂隙隐约浮现，却突然合上，巫炤嘴角流血跪倒在地，乌黑长发落在地上沾染了獍妖的血迹，血色咒文纷纷落下。</p> 
+<p>司危冲上去扶住巫炤，摸到他身上温热的血，大哭着说：“巫炤，别试了。已经试了那么多次了。”</p> 
+<p>“魔域那边有东西应和我的力量，只要再试一次。。。最后一次。”</p> 
+<p>巫炤推开司危，用灵力轻柔的将她送到法阵之外，一边咳出鲜血，一边以指尖的血液再次写下咒文。</p> 
+<p>灵力波动的大风中，裂隙终于打开。里面冲出一个白发苍苍的战士，后面是一只辟邪。</p> 
+<p>五次呼吸之后，身着战甲的缙云从裂隙中缓缓走出来，就像过去十年所做过的梦一样，他经历漫长的搏杀，带着一身的疲惫，来到阵中的巫炤面前，伸手想要拥抱好友，却无力的倒下去，任由对方扶着自己。</p> 
+<p>“缙云大人在魔域就算再疲惫，从来不让人搀扶的。”白发战士有些惊讶。</p> 
+<p>“缙云，不用再硬撑了。可以休息了。”巫炤摘下骸骨面具，轻轻抚摸好友的头发，手上残留的鲜血染红白发。缙云伸手想去触碰巫炤，而手骤然垂下，倒在好友的怀里。在灵视之眼中，缙云周身的深蓝色灵力已虚弱到接近透明。</p> 
+<p>“怀曦司危准备出发，我带他去百神祭所。”<br /><br /><br /></p> 
+<p>百神祭所里，部下一处聚灵阵，缙云躺在阵的中心，原本用于攻击的灵力通过阵转化为治愈力，渐渐修复缙云几近衰竭的身体，然而他身上灵力却依然微弱。</p> 
+<p>“人救回来了，却醒不过来？”嫘祖站在阵外，多少有些焦躁。</p> 
+<p>“他的身体已经开始恢复，但魂魄还困在梦中，继续受辟邪之力侵蚀。”巫炤用灵视之眼窥探到缙云的梦境。</p> 
+<p>“魂魄受损，会怎样？”嫘祖摸着背后的剑问到。</p> 
+<p>“轻则一段时间意识模糊，重则心魔缠身，最严重会生无可恋，主动放弃生命，任由自己的身体衰竭。。。怀曦，准备梦魂枝，我进梦域拉他回来。”</p> 
+<p>怀曦：“巫炤大人，让我去吧。开启空间裂缝的时候，您的灵力损耗过大，现在入梦会一起困在里面。”</p> 
+<p>“你对梦域不如我了解。去了也是送死。”巫炤在缙云附近部下入梦的法阵。</p> 
+<p>“巫炤大人，您不能。。。”</p> 
+<p>“让他去吧，怀曦。”嫘祖突然出声，而后转身拉住巫炤的手：“你一定要回来，若是真的救不回来，就算了，保护好自己，才能保护其他人。”</p> 
+<p>“我会带着缙云回来的。别担心。嫘祖大人。”巫炤难得拍了拍嫘祖的肩膀，跟老鬼师一样，这是他极少的表达亲切的动作。<br /><br /></p> 
+<p>魔物尖锐声的嚎叫声惊醒了缙云，睁开眼时，自己依然身处魔域，所幸战士和辟邪已经逃走了，只剩他孤身一人。</p> 
+<p>大概是走过空间裂隙的时，出现幻觉晕倒了，撑了十年，没想到会倒在最后一步，可刚刚躺在巫炤怀里的感觉，似乎不是梦。</p> 
+<p>眼前的魔物越围越近，缙云用太岁撑着摇摇晃晃的站起来，既然没死，就继续战下去吧，体内的辟邪之力又开始灼烧着身体，被烧掉的肌体不再新生，仿佛烧到最后的蜡烛，随时可能燃尽。</p> 
+<p>他想过自己的结局，作为轩辕丘的利刃战死，在巫炤身边，也幻想过另一种结局，然而何时死去，怎样死去的确由不得自己。缙云带上骸骨面具，太岁出鞘，终于不用再保护谁了，只需最后一场畅快淋漓的厮杀。</p> 
+<p>在飞行的群魔之中，一人被魔物衔在空中，乌黑长发在空中飞散，缙云追上去，心头一惊，巫炤也来到这里了，是做梦，还是刚刚的空间裂隙中，被卷进来了。缙云杀退群魔，巫炤从空中落到他怀里，面无血色，灵力微弱，指尖有伤，跟晕倒之前看到的一样，但怀中温暖充实的感觉不是梦，那么刚刚并非幻觉，巫炤打开了空间来救自己。</p> 
+<p>“缙云。。。”怀中人悠悠醒转。</p> 
+<p>缙云单手搂着巫炤在群魔中且战且退，到一处安全之地，长满鲜红的花叶，血色的花瓣随着两人移动飘向天空。</p> 
+<p>“一直在找我，找了多久？”缙云摘下面具问到，那声音沙哑，仿佛从喉咙深处发出。</p> 
+<p>“十。。。”</p> 
+<p>话尚未说完，缙云就抱住巫炤，两人在无边的血色花叶中紧紧相拥，在彼此颈边呼吸，仿佛将自己最后的生命都注入进去。</p> 
+<p><strong>不需要答案了，我只要抱着你就足够了，作为朋友也好</strong>，缙云在心里说，肌肤接触间身体克制不住的发抖。</p> 
+<p>而巫炤感觉到缙云在颤抖，又哭了吗，在魔界太痛苦了吗，他轻轻拍着缙云的背，在这绝境中，两人却仿佛回到了童年的花海里。</p> 
+<p>群魔被人的血气吸引缓缓靠近，缙云很快松开巫炤，带回面具拿起太岁，体内辟邪之力侵蚀依旧，肌体新生快了一点，他估算着，应该可以撑久点，久到能带着巫炤离开就好了。</p> 
+<p>“先离开这里。等你灵力恢复，可尝试再次打开空间，外面有个辟邪接应你，我为你猎一些魔物，用血肉来助你回复灵力。”</p> 
+<p>巫炤低头斟酌了片刻，缓缓地说：“缙云，你已经离开魔域了，只是灵魂被困在魔域的梦里，我通过梦魂枝来到你的梦中，但回去的方法，只有你自己能找到。”</p> 
+<p>“我的梦？”</p> 
+<p>“这个世界里，除我之外，都是你自己，那些追杀你我的魔物，是你的心魔。”</p> 
+<p>梦中魔之骸骤然坍塌，地上裂开一道大缝，缙云踩着碎石凌空冲向巫炤，还是被裂缝隔开，眼看着灵力虚弱的巫炤落入深渊，毫无犹豫，他也随之跳入深渊。</p> 
+<p><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12de39e73" target="_blank"  >十</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12ddf9804#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12ddbac18">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12ddbac18" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 八</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-17 13:22:32" itemprop="dateCreated datePublished" datetime="2019-02-17T13:22:32+08:00">2019-02-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-19 16:16:25" itemprop="dateModified" datetime="2019-02-19T16:16:25+08:00">2019-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>缙云和巫炤质朴的远古部落青少年爱情故事。</p></li> 
+</ul> 
+<ul> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd57440" target="_blank"  >六</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd95b80" target="_blank"  >七</a></p></li> 
+</ul> 
+<p><br /></p> 
+<p>远处的亮光中是童年相遇的白色花海，那人背对自己站着，慢慢走近，近到伸手就能碰到头发，而他化为灰烬，骨笛落在地上。找遍了整个花海，跪着查看每朵花下，却再也找不到。</p> 
+<p><br /></p> 
+<p>缙云满身冷汗的挣扎醒来，逐渐清晰的视野中是灰暗的天空，幸好只是梦。又梦到巫炤，这是误入魔界的第十年。</p> 
+<p>有熊花食节之后，缙云疏远了巫炤。他身着战甲的时间越来越长，他是轩辕丘的利刃，也只是轩辕丘的利刃。偶尔想跟魇魅倾诉，又什么都说不出来。<br /></p> 
+<p>嫘祖很担心，问他“真正想要保护的人”，缙云也是只是冷冷的回了一句，不需要。巫炤什么都有，也不需要他。</p> 
+<p>在破獍之战不断的杀戮中，缙云压下那些虚弱的感受。</p> 
+<p>坠入魔界后，缙云接受了辟邪之力，这力量强化了能力，也吞噬着他的身体和灵魂，身体和灵魂仿佛在烈火中挣扎求生，被烧掉再长新肉，然后再被烧掉。醒的时候，他还能在杀戮中转移注意力，入睡的时候，吞噬之苦无处可逃，他终于控制不住自己的梦，每次都梦到巫炤，幼年，少年，青年。</p> 
+<p>在梦境中，他经历漫长的搏杀，沾满魔物的血，看到黑暗深处一道亮光，顺着亮光走过去，某个年龄的巫炤正等着他。</p> 
+<p>如果是幼年的巫炤，会站在花海深处，少年的巫炤会坐在树洞里，青年的巫炤会倚着白梦泽的大树吹骨笛。</p> 
+<p>缙云满身疲惫的走进光亮里，拉起那只白嫩的小手，带着他在林子漫游，给他抓鱼吃，堆雪人，在树洞里听着他讲述巫之国的传说，白梦泽听他吹笛子，和他切磋，抱着他，亲吻他，帮他洗澡，看着水流过白皙身体上的血红纹路。。。哪怕只是碰到那柔顺长发，心就会平静下来，烈火吞噬身体的痛苦便被隔绝在这光明之外。</p> 
+<p>这是一种生存技能，身处极其困难的境地，只要在梦中围上一块小小地方，放着自己最安全幸福的回忆，就能稍事休息，醒来时才有力气与天争命。童年被扔上战场，缙云也是这样活下去的，那时的梦里是正在烤鱼的母亲。</p> 
+<p>在梦里难得的幸福中，他总是想到巫炤现在在做什么，灵矩之眼会加入西陵的大阵，百神祭所建成了吗，天星尽摇是否降临，若是魔族大举入侵，姬轩辕他们一定有办法。巫炤一个人的时候会不会到白梦泽照看魇魅，他最喜欢的吃的烤鱼，一定有人给他做吧，上次在西陵见到的那个缠着他的小女孩，也快长大了吧，巫炤说过她体内巫之血很纯，有资质成为鬼师继任者，如果一切顺利的话。巫炤能去巫之国了，跟怀曦他们一起上路，离别宴会的时候他也会吹起骨笛，迎合姬轩辕的歌声，那时嫘祖会打趣要把西陵第一美人嫁出去。。。没有我，他也过的很好。</p> 
+<p>轩辕丘需要战无不胜的战神，姬轩辕嫘祖需要志同道合的战友，饕餮部的战士需要将领，整个轩辕丘，人们为了活下去，聚集在一起，各自发挥特长，团结协作，完成更大的目标。人因为需要才会相聚。可是巫炤并不需要缙云，只是因为在一起很开心，才在一起的。</p> 
+<p>真的有人会为了“在一起很开心”这样的简单的理由，永远留在另一个人身边吗？</p> 
+<p>缙云还有好多事情没想清楚，只能问梦里的巫炤。</p> 
+<p>那是第一次外出玩耍的巫炤，蹲在地上摸到一只蚂蚁，好奇的看着那蚂蚁在手上爬，最后很开心的摁死了那蚂蚁。<br /></p> 
+<p>“这就是你对西陵之外弱者的态度，若是我不是从小与你相遇，在你眼中与蝼蚁有何不同呢？”</p> 
+<p><br /></p> 
+<p>少年巫炤第一次见到男女欢爱。</p> 
+<p>“那我们也试一试吧。说不定很好玩呢？”</p> 
+<p>“从一开始，我就是你的玩伴，你为了快乐才和我在一起？连欢爱也只是快乐的一种。你沉溺的只是我带给你的欢愉？可就算欢爱，你也是说舍弃就舍弃。你需要的东西，到底哪一样，是我能给的？”</p> 
+<p><br /></p> 
+<p>童年巫炤从花食节上带了礼物。<br /></p> 
+<p>“给你带了礼物。”</p> 
+<p>巫炤伸开白嫩的小手，里面是个亮晶晶的红色小珠子，这礼物不能吃，不能穿，也不能变得强大，实在没什么用。</p> 
+<p>“喜欢吗？”巫炤问。</p> 
+<p>“你送的礼物，从来都是用不着的东西，也只是因为你想要送礼物的快乐？没有想过我需要什么。。。虽然我需要的，也只是收到你送的礼物。”</p> 
+<p><br /></p> 
+<p>他们第一次欢爱之后。</p> 
+<p>“永远在我身边，永远不要离开我，永远。”</p> 
+<p>“当然不会离开你，我们是最好的朋友。”梦里的巫炤回答。</p> 
+<p>“你是我最好的朋友，还会跟我欢爱，这已经足够了吗？可我。。。还是想要更多。但你又怎么可能为了开心，永远留在我身边。你不需要利刃，你就是西陵的利刃。我对你没用，你为什么一直对我这么好，让我以为。。。”</p> 
+<p><br /></p> 
+<p>他问了很多，但是梦中的巫炤从来不回答。就算去问现实中的巫炤，这些问题也没有答案吧。人的感受如人饮水冷暖自知，几乎永远无法互通。身体可以交合，心却不能，真是一点办法都没有。</p> 
+<p>魔界的生活极其枯燥，清醒的时候，缙云有漫长的时间回顾复盘。人若是太渴求，就看不清渴求之物真实的样子，看到的只是自己的幻想。真实的巫炤并非温柔的情感寄托，他出身高贵，冷静疏离，对着最亲密的好友都留有距离，不可能属于任何人。欢爱中占有他的感觉，只是错觉。梦里那些幸福的回忆，大部分源于误解。将自己的心系于一人，多可怕又多可笑。即便想的清楚，在梦看到巫炤的时候，依然满心甜蜜和痛楚，就像蜜糖兑上毒药，饮鸠止渴，完全由不得自己。</p> 
+<p>在魔界的第十年，一直保护的两位战士去世，第三位也眼看着不行了，或许不久就只剩下缙云一人了，他开始梦到巫炤死去，被斩首，被穿心，化为灰烬，每每他满身冷汗的惊醒。终于，辟邪之力入侵到梦中了，再也没有休息之地，这具身体也终于到了尽头。</p> 
+<p><br /></p> 
+<p><br /></p> 
+<p>“代价如此昂贵的治愈禁术，真的会有人用吗？”巫炤暗自疑虑，将那混在空间咒法中的禁术骨片放回书架。</p> 
+<p>人间西陵，巫炤正在巫之堂的翻阅古老典籍，记载巫术的骨片串成册子，册子码放成直到屋顶的书架，这样书架堆满巫之堂庞大的禁地。而巫炤每晚从一个架子翻到另一个架子，已过了十年。</p> 
+<p>烛光中，小魇魅睡起来，看到巫炤还在看书，叫了两声。<br /></p> 
+<p>“你醒了？”巫炤摸了摸魇魅的脑袋。</p> 
+<p>小魇魅哇唔的两声，巫炤跟它呆在一起时间久了，大概理解的它的意思。</p> 
+<p>“别害怕，缙云一定会回来的。”</p> 
+<p>门外传来克制的敲门声。</p> 
+<p>“请进，嫘祖大人。”</p> 
+<p>“是怀曦请我来的，让我劝劝你。”</p> 
+<p>“收手吗？”</p> 
+<p>“缙云的事情，我们都很心痛，但是他已经失踪十年了，魔界不适宜人类居住，他可能已经。。。”</p> 
+<p>“我知道，很可能已经死了。”</p> 
+<p>“缙云永远都回不来，你该接受现实了。这些年你研究空间魔法，也一直没放下西陵。。。但你这样日夜操劳，何时是个头，巫炤，你毕竟是血肉之躯，如果鬼师垮了，巫之堂和西陵怎么办？”</p> 
+<p>“我已做好安排。而且我没那么容易垮。”</p> 
+<p>“如果缙云已经死了，你这样做，就毫无意义了。”</p> 
+<p>“如果迷失魔界的是姬轩辕，你也会为他做到这种程度吧。”</p> 
+<p>嫘祖沉默了一下：“看来，之前那些传闻都是真的，你们不只是朋友。”</p> 
+<p>“他是我最好的朋友，仅此而已。可我愿意为了朋友，一直找下去。而且我还有话要问他。”</p> 
+<p>“如果缙云知道，你为了他不惜一切代价，他一定。。。”嫘祖想到了什么，又说不下去。</p> 
+<p><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12ddf9804" target="_blank"  >九</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12ddbac18#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12dd95b80">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12dd95b80" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 七</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-16 16:30:01" itemprop="dateCreated datePublished" datetime="2019-02-16T16:30:01+08:00">2019-02-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-19 16:16:33" itemprop="dateModified" datetime="2019-02-19T16:16:33+08:00">2019-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>缙云和巫炤质朴的远古部落青少年爱情故事。内有一点肉渣结果被屏了。</p></li> 
+</ul> 
+<ul> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd57440" target="_blank"  >六</a></p></li> 
+</ul> 
+<p><br /></p> 
+<p><a rel="nofollow" href="https://archiveofourown.org/works/17812313" target="_blank"  >全文@AO3</a></p> 
+<p><a rel="nofollow" href="https://shimo.im/docs/RaYOcQX4jLEx9HcX/" target="_blank"  >全文@石墨文档</a></p> 
+<p><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12ddbac18" target="_blank"  >八</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12dd95b80#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12dd57440">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12dd57440" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 六</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-15 15:03:15" itemprop="dateCreated datePublished" datetime="2019-02-15T15:03:15+08:00">2019-02-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-18 04:31:46" itemprop="dateModified" datetime="2019-02-18T04:31:46+08:00">2019-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p dir="ltr"  >缙云和巫炤质朴的远古部落青少年爱情故事。<br /> </p> 
+<p dir="ltr"  ><br /> </p> 
+<p dir="ltr"  >前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a><br /> </p> 
+<p dir="ltr"  >撕碎的长袍下面白皙身体和血色纹身，扭动的腰肢，腰上鲜红的莲花，细微的喘息，半掩在长发下的面容，只露出红唇和下巴，这个春梦太真实了。半梦半醒中，缙云看到长发下白皙的背部，若隐若现的暗红色的巫之纹，梦还没结束，他忍不住摸着那白皙的身体，这么细密的纹身一定很疼，巫炤那么怕疼，一定吃了不少苦头，他怜惜的吻上去，从脖子一直吻到腰，纤细的腰上是妖娆的半魂莲花，昨晚巫炤在他身下扭动时候，莲花简直要从皮肤里透出来，看久了，像是被蛊惑了，缙云又一次掰开圆润臀瓣，想把自己送进去。</p> 
+<p dir="ltr"  >“啊。。。”巫炤被疼醒了，他挣扎着想逃掉，刺激那处更疼了。</p> 
+<p dir="ltr"  >“巫炤？”缙云被吓醒了。</p> 
+<p dir="ltr"  >“从我身上滚下来，否则我杀了你。”巫炤想起无数杀人的法术，声音愈发冷静。缙云强忍着欲望抽出来，自己都做了什么，巫炤一定很疼，他那么怕疼。。。</p> 
+<p dir="ltr"  >巫炤艰难的翻过身，用灵力看着许久未见的好友，两人都尴尬的裸着，缙云的确更好看了，昨天只看到脸和铠甲，今天看到全身，野性的身体还硬着随时可能扑过来，脸上却是清澈无辜甚至懊恼的表情，昨晚做了那么粗暴的事，居然还哭了，好像巫炤是个始乱终弃的败类，真不知道是谁侵犯了谁。巫炤叹了口气，对这位好友一点办法都没有。</p> 
+<p dir="ltr"  >“先穿上衣服。”巫炤裹着斗篷坐在水边，看着远处的水鸟捕鱼。</p> 
+<p dir="ltr"  >缙云沉默的穿好衣服并排坐在巫炤身边，相隔一拳的距离。</p> 
+<p dir="ltr"  >“嫘祖给你的信。”巫炤捡起昨晚湖水边被太岁斩落的骨片，递给缙云。</p> 
+<p dir="ltr"  >骨片绘制着符咒，握在手心，能听到嫘祖姐姐般的家常话，而这话语下面，是似有若无的对不起。</p> 
+<p dir="ltr"  >巫炤想说点什么，一直开不了头，而缙云只是紧紧握住骨片，一遍又一遍分辨里面的对不起，白梦泽只有水鸟落入湖中的声音。</p> 
+<p dir="ltr"  >“我给怀曦发了密信，他会带着衣服来找我。。。我要走了。”巫炤裹紧了斗篷，准备起身。</p> 
+<p dir="ltr"  >缙云侧身抱住了巫炤，怀里的人好像瘦了点，没有小时候那种软乎乎的感觉，靠近看，巫炤的脸比几年前硬朗了一些，小时候像小女孩，现在带着少年独有的雌雄莫辨。</p> 
+<p dir="ltr"  >巫炤看了一眼好友，缙云什么话都说不出来，就是单纯的抱着僵持着，力量不大，但也足以限制一个术士，就这样过了许久，久到水鸟吃完鱼飞起来。巫炤叹了口气：“我真的要走了，嫘祖他们还在等我。昨天嫘祖硬要我给你送信，我顺便来看看你，结果。。。”</p> 
+<p dir="ltr"  >“对不起。”可依然没放开。</p> 
+<p dir="ltr"  >“我也该说，对不起。。。那天不告而别。”道完歉，巫炤终于开了头，慢慢的说下去：“那天我回去晚了，老师走了，连他最后一面都没见到。他本该亲口交代我的话变成了遗言，用灵力留在骨片上。他说不该把我从小关在幽暗之间，可他别无选择，因为天星尽摇降至。在巫之堂里，天星尽摇意味着群魔入侵的大灾祸，老师推算出，下次群星陨落的就在这几十年，而自己是风烛残年之身，身旁唯一拥有鬼师资质的孩子是我，所以他逼迫我成长，开启灵视之眼，修行巫之堂各种术法，去迎接这场灾祸保住西陵。我接受了鬼师职位，过后两个月准备继承鬼师仪式，我。。。出不来。那时，我求了身边所有能求的人，想让他们给你送信：告诉你，我们还是朋友，我没有离开你，许下的诺言，我一直记得。可是没人帮我送信，就连怀曦都拒绝了我。现在想想，那天早上回去身上的痕迹太骇人了吧，任何有理性的人，都不会帮我联系你。继承仪式结束，就是加固西陵大阵。当时獍妖入侵在即，时间紧迫，巫之堂全力以赴。完成西陵大阵之后，我去找过你，没找到。你已经去了轩辕丘。而后姬轩辕研制灵矩之眼邀请巫之堂参与，我负责灵矩之眼上的攻击术法，经常到轩辕丘和其他工匠探讨。可是各种场合，你都躲着我，我以为你不想见我。而且见到你，我也不知道该怎么办。。。”</p> 
+<p dir="ltr"  >缙云的呼吸越发浓重，巫炤停了一会儿才接着说：“老师说过，我可以喜欢你，不能沉溺你。可我连老师最后的嘱托，早点回来，都没做到，我。。。大概真的沉溺于你。鬼师身系西陵，不该沉溺色欲，不该沉溺情感，不该着迷任何引诱人下坠的东西。那时的我太小了，根本无法克制。”</p> 
+<p dir="ltr"  >“现在呢？”缙云凑近问，近到巫炤的脖颈能感受到那热烈的气息。</p> 
+<p dir="ltr"  >巫炤回过头睁开血红的眼睛，直视缙云，认命的叹了口气：“大概，更加无法克制。只是不会误了正事吧。”缙云温柔有力的吻上去，巫炤错开脸问：“我们这样就算扯平了吧，我不告而别，你也。。。我们还是和以前一样。”</p> 
+<p dir="ltr"  >“嗯。跟以前一样。”缙云转过巫炤的脸，小心的吻上去。</p> 
+<p dir="ltr"  >湖面的倒影中，他们终于重逢。</p> 
+<p dir="ltr"  >白梦泽泛起大雾。<br /></p> 
+<p dir="ltr"  >缠绵过后，巫炤在烤鱼的香味里醒过来，摸到自己身下垫着的狐皮会心一笑。缙云抓了些鱼，穿在树枝上，撒了点馨香的野菜，烤到两面金黄，一支递给巫炤，另一支递给轻轻凑过来的小魇魅。</p> 
+<p dir="ltr"  >“你跟我做。。。不回避它吗？”巫炤接过烤鱼，想起刚刚魇魅也在场，有些别扭。</p> 
+<p dir="ltr"  >“再长两千年，它才能理解我们俩干了什么。也不知道能不能活到那时候，明明很弱，却那么懒。”小魇魅吃不了鱼，只能闻闻香味，它感觉提到自己，抬头看了看缙云和巫炤，巫炤伸手摸摸它的头，它也顺着蹭了蹭巫炤的手。</p> 
+<p dir="ltr"  >“戍冬他们都觉得它挺丑的，你讨厌它吗？”缙云小心翼翼的问。</p> 
+<p dir="ltr"  >“魇魅。。。我觉得它是你的一部分，或者说很像你。就好像是一个又弱小又无助的你。所以一点也不讨厌它。”巫炤咬了一口烤鱼，味道真好，跟小时候一样好，他没有看到缙云听到回答时发亮的眼睛。</p> 
+<p dir="ltr"  >“如果我战死了，能不能帮我照顾它。”</p> 
+<p dir="ltr"  >“嗯，若是我也战死了，它就只能靠自己了。”</p> 
+<p dir="ltr"  >缙云从背后抱住正在吃鱼的巫炤，脸蹭了蹭他的脖子。</p> 
+<p dir="ltr"  >“我们两个都不要战死，好不好，一直活到最后。”</p> 
+<p dir="ltr"  >“嗯，但是何时死去，怎样死也由不得你我。。。不对，还是能死而复生，只是太痛苦了。”巫炤嚼着鱼，想起了苏生之术。这年，巫炤16岁，缙云17岁，死去和复活还是很遥远的事情。</p> 
+<p dir="ltr"  >后续：http://ncnocure.lofter.com/post/29ac09_12dd95b80</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12dd57440#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12dd20048">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12dd20048" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 五</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-14 13:43:03" itemprop="dateCreated datePublished" datetime="2019-02-14T13:43:03+08:00">2019-02-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-19 16:16:46" itemprop="dateModified" datetime="2019-02-19T16:16:46+08:00">2019-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>缙云和巫炤质朴的远古部落青少年爱情故事。</p></li> 
+ <li><p>情人节快乐，内有剧情和一辆强制小车。。。</p></li> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a></p></li> 
+</ul> 
+<p><br /></p> 
+<p><a rel="nofollow" href="https://shimo.im/docs/2wJd2tUeT8YJ5pRE/" target="_blank"  >全文@石墨文档</a></p> 
+<p><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12dd57440" target="_blank"  >六</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12dd20048#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12dcd35ca">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12dcd35ca" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 四</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-13 13:30:42" itemprop="dateCreated datePublished" datetime="2019-02-13T13:30:42+08:00">2019-02-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-19 16:16:55" itemprop="dateModified" datetime="2019-02-19T16:16:55+08:00">2019-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a></p></li> 
+</ul> 
+<p>第二天清晨，巫炤醒来时，一朵紫蓝色的花在晨光中绽放，树洞有一处缝隙，光芒从缝隙中透过来，刚好照到那朵花上。</p> 
+<p>巫炤看到整个树洞里全是花，身下多了一层狐皮，背也没有受伤。他低头看着缙云睡着的侧颜，醒的时候有些冷峻的脸，睡着时却很可怜，巫炤笑着碰了一下这张脸，穿好衣服悄悄离开，希望老师不生气。</p> 
+<p>巫炤走后，小魇魅偷偷回来，它用小爪子搭在缙云的胸口，感受到暖暖的情绪。缙云极少睡的这么沉，没被噩梦惊醒。</p> 
+<p>远处西陵城吹响了凄凉悠远的号角，仿佛苍穹在哭泣，西陵的鬼师陨落了。<br /></p> 
+<p><br /></p> 
+<p>此后数日，巫炤再没出现过，缙云在他们约好的花海中等待，也去过他们一起玩耍的大树和水塘，最后他找到了嫘祖。</p> 
+<p>嫘祖摸了摸他的头，叹了口气：“巫炤要继任鬼师了，很忙，以后都会非常忙。”</p> 
+<p>半大的少年对忙的看法，就是巫炤从天天和自己一起玩，变成每隔五天，每隔十天，最后每隔很多很多天。过了两个月祭祀大典上，缙云跪在西陵信徒中，才再次看到巫炤。祭坛上，巫炤被一群成年祭祀簇拥着，表情严肃，裹在厚重的丝质礼服中，看起来更小了。</p> 
+<p>仿佛一根针刺痛心脏，缙云终于意识到，巫炤不会再来了，他不会跟自己玩了，他的朋友只能是巫之堂的高级祭祀或嫘祖。</p> 
+<p>缙云回到树洞里，剑上的红珠子收起来，每天都换的花扔掉，把巫炤躺过狐狸皮卷起来，想扔掉，最后还是找了个干燥的地方藏起来。</p> 
+<p>他变回沉默寡言，所有时间都投入练剑，天赋加上对剑术可怕的偏执，一年之后，他第一次战胜嫘祖。</p> 
+<p>“你可以上战场了，和姬轩辕一起出征。”嫘祖收起手中训练用的钝剑如是说。“请巫之堂备上一套铠甲，令婆烨为他铸剑。”</p> 
+<p>属下一片哗然，战奴出身如何能。。。一场大战过后，人们不再提起战奴的这个身份。</p> 
+<p>这点变化其实跟缙云没多大关系，不打仗的时候，他依然离群索居，睡在已经显小的树洞里，望着树洞缝隙外的星星，该搬了，找个大点的树洞吧。可这是巫炤睡过的地方，约好的花海变了颜色，一起玩过的那棵大树已经倒了，水塘里生满浮藻，看不出本来的样子，只有这个树洞能让巫炤找到自己。。。巫炤不会来的。</p> 
+<p>缙云还是走了，他用狐皮包起巫炤送的所有礼物，和小魇魅去了轩辕丘，在那里似乎过的更快乐，他看到无数小的部落聚集起来，去完成原本无力完成的壮举，看到各种新奇的发明，文字，音乐，战甲，武器，陶器，整个蓬勃发展的人族，姬轩辕和嫘祖万世不灭的千秋梦想，在那庞大梦想之前，个人痛苦变得的渺小了。他终于明白为何而战，不是为了虚无的名号，不是为了让一个人看到自己，而是为了保护所有人。战场上，鬼神皆斩的太岁成了无畏旗帜，伴随着无数场胜利，战神之名响彻轩辕丘。</p> 
+<p>只是深夜时分，还是克制不住的想到巫炤现在在做什么。</p> 
+<p>虽然远离人群，也一直躲着鬼师可能出现的所有场合，缙云总能听到鬼师的消息，鬼师带领巫之堂在西陵设置了防护大阵，鬼师协助制造了灵矩之眼，鬼师和姬轩辕合作设计百神祭所，鬼师在赤水杀掉了一只天魔，鬼师丹书骨劾之下万千尸身起身而战，一个人就是一个军队。</p> 
+<p>他似乎过的很好。</p> 
+<p><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12dd20048" target="_blank"  >五</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12dcd35ca#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12dc64021">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12dc64021" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 三</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-12 03:28:38" itemprop="dateCreated datePublished" datetime="2019-02-12T03:28:38+08:00">2019-02-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-19 16:17:02" itemprop="dateModified" datetime="2019-02-19T16:17:02+08:00">2019-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>包含剧情和青梅竹马小轿车一辆，终于到初夜，发外链了。石墨都屏蔽我了，补了档，如果再被屏，回一下。</p></li> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a>&nbsp;<a href="http://ncnocure.lofter.com/post/29ac09_12dc2e59d" target="_blank"  >二</a></p></li> 
+</ul> 
+<p>缙云追了一只狐狸三天，终于将那狐狸击毙，为了避免伤到皮毛，他选了一个极为刁钻但角度下手。他将血红色的皮毛剥下晾干，垫在自己的小窝里，狐狸毛虽然不如丝布顺滑，但不会伤到巫炤细嫩的背。鲜红的颜色又很衬那白色的皮肤，想着巫炤在上面翻滚的样子，缙云又觉得口渴。</p> 
+<p>他还带了一些花用来装饰这个树洞，给小魇魅头上也带了一朵紫蓝色花，更诡异了，又给摘掉了。</p> 
+<p>他摸摸小魇魅脑袋想着，同为战奴的族人们都觉得魇魅很丑，虽然他从来不在意，但巫炤会不会不喜欢，可巫炤从来不说出来，大概只是默默的不喜欢吧。</p> 
+<p>“今天晚上，巫炤要来，你要出去自己玩了。”</p> 
+<p>小魇魅看着他，察觉到一种陌生的情绪，甜蜜和痛苦掺在一起，就像蜂蜜兑上毒药，它弱弱的叫了两声。</p> 
+<p>“是思慕。”</p> 
+<p>它很茫然，幼年魇魅理解不了，成年的魇魅都很少能理解。</p> 
+<p>“就像渴了要喝水，饿了要吃饭一样。。。你现在不懂，只要一直活下去，总有一天会懂。”</p> 
+<p>很久很久以后，魇魅从北洛手中接过鲜花的时，想起缙云说过的话，她终于懂得思慕的感受，只是已经过去很多年了。</p> 
+<p><a rel="nofollow" href="https://shimo.im/docs/VwattH1pflQzwLHH/" target="_blank"  >全文@石墨文档</a><br /></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12dcd35ca" target="_blank"  >四</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12dc64021#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_12dc2e59d">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_12dc2e59d" class="post-title-link" itemprop="url">【原著向】【云炤】饮水自知 二</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-02-11 01:40:52" itemprop="dateCreated datePublished" datetime="2019-02-11T01:40:52+08:00">2019-02-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-02-12 08:29:10" itemprop="dateModified" datetime="2019-02-12T08:29:10+08:00">2019-02-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul> 
+ <li><p>包含剧情以及青梅竹马小推车一辆，lofter连敏感词都不给，直接屏蔽，全文走外链了。石墨都屏蔽我了。。。2.12补档</p></li> 
+ <li><p>前情：<a href="http://ncnocure.lofter.com/post/29ac09_12dc00773" target="_blank"  >一</a></p></li> 
+</ul> 
+<p><a rel="nofollow" href="https://shimo.im/docs/CCadYA8GRYg4HsUz/" target="_blank"  >全文@石墨文档</a></p> 
+<p>后续：<a href="http://ncnocure.lofter.com/post/29ac09_12dc64021" target="_blank"  >三</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_12dc2e59d#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">112</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">82</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

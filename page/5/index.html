@@ -1,23 +1,1559 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+<link rel="stylesheet" href="/css/main.css">
 
-{% block page_class %}
-  {% if is_home() %}page-home{% endif -%}
-{% endblock %}
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-    {% endfor %}
-  </section>
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/5/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_e079296">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_e079296" class="post-title-link" itemprop="url">【喻黄】习惯 03</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2017-02-02 01:20:25" itemprop="dateCreated datePublished" datetime="2017-02-02T01:20:25+08:00">2017-02-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>喻文州对狗版黄少天的养成计划。。。当年在战队也是这样养成的吧。</p> 
+<p reblogfrom="reblogfrom"  ><a target="_blank" href="http://satty13th.lofter.com/post/1bedfb_975702"  >游千:</a></p> 
+<blockquote> 
+ <p><br />黄少天适应力极强。<br />在金毛时代，喻文州不止一次的带他外出旅行，环境变得大，甚至有一次徒步遇上了暴雨泥石流，他们被堵在山里整整三天，喻文州怕黄少天不适应怕他生病，事实证明是自己想太多了。黄少天该吃的时候吃该睡的时候睡，无聊的时候就嗷嗷的叫个不停。<br />从那次之后，喻文州再也不用担心黄少天的学习！<br />这种极强的适应力在黄少天变成了人之后也没有被削弱。<br />他们那天打了一上午的雪仗，从一开始的黄少天反射性狗接飞盘，到后来的扔出的雪球百发百中。<br />喻文州觉得这个上午过得如同一个周那样的漫长。<br />回家的时候他的衣领里面全是雪，脱鞋子的时候发现鞋里也是雪，甚至鼻子耳朵里也全都是雪。他觉得自己已经被冻得没了知觉，全身冰凉。<br />当然，黄少天也没有好到哪去。<br />他爱闹腾，虽然滚得像个雪人，不过身上仍然有着不低的温度，此刻鞋也没脱就蹦蹦跳跳的冲进屋子里。<br />喻文州无力阻拦。<br />他给自己放了一缸热水，没管那个多动症人形黄少天，先是把冻得快麻木的自己泡进了浴缸里解冻。<br />黄少天闹腾的声音很大，一路扑扑腾腾也不知道弄翻了多少东西，嘴里也是当然不能闲着的，说个不停，而且，似乎是发现了「自己不说话喻文州就听不懂」这个真理，所以说出来的东西里面开始夹杂好多的人类语言。<br />比如现在？<br />喻文州躺在浴缸里，死人一样的一动不动，默默感受着自己的知觉从指间慢慢的恢复。<br />门外传来巨大响动：「文州文州文州文州！！」<br />「……」<br />「嗷嗷嗷嗷衣服好冰啊我脱掉了！」<br />「……那记得关好门窗，打开空调，不然会冷。」<br />「好的文州嗷嗷嗷嗷！」<br />「……」<br />喻文州没在意。<br />歪着头继续泡。<br />所以他完全没有心理准备——<br />在他推开浴室门出来的那个瞬间，他先是被30几度的室温来了个气势汹汹的正面攻击，然后眼睁睁的看着一只裸奔人形黄少天从自己的面前撒欢儿跑过。<br />……<br />喻文州愣了两秒……<br />然后默默的转移了视线。<br />他捂着心口，觉得自己这一个周之内，折了至少十年的命。<br />想的挺好，想一直陪着黄少天。<br />不好现在看来，自己活不活得过黄少天都是个问题，有待商榷。<br />&nbsp;<br />没用上几天，黄少天就已经几乎用所有的人类语言代替了他以前的汪星人语言。<br />「文州文州文州！说话的感觉真好！」<br />「恩呢。」不知为何总感觉能听懂了之后话唠属性更烦人了？<br />「文州文州文州我们出去遛弯吧！！」<br />「好。」喻文州笑着摸了摸黄少天的头发。<br />黄少天跳起来，十分自觉的去衣柜里找外套。<br />才多久啊这，就练成这样了。<br />估计再过上一阵子，能学会的都学会了，自己恐怕都不会相信这家伙原来曾经是一只金毛吧。<br />喻文州想了想，觉得一定不能让这种事情发生。<br />他不知道为什么有些恐慌。<br />金毛是金毛，人是人，虽然黄少天曾经是只汪星人，可是现在他已经对人类习性适应的毫无障碍。<br />他总会真正的变成人。<br />然后说不定，以后背着包自己出去玩也像现在去衣柜找衣服这样的家常便饭，万一突然有一天被谁给拐走了……<br />喻文州烦恼的挠挠头发。<br />黄少天这时候已经拎着衣服跑出来了，他手很快，可能是原来刨沙发的时候练出来的，但是手指并不是很灵活，毕竟作为狗狗的时候，每个手指的神经没这么发达，所以现在突然有了这么几根灵敏的神经，反而让黄少天特别难受。<br />比如现在，黄少天两只手夹着衣服，手指微微蜷曲并没有用力，喻文州知道，他也用不上力。<br />这点的确要困难一些，只能靠慢慢训练了。<br />或者可以给黄少天买个PSP玩？说不定玩游戏能锻炼锻炼手指灵活性。<br />喻文州自顾自的想着，穿外套拿钥匙穿鞋关门，黄少天没什么反应的手被他捏在手里，软软的跟狗爪好像也没有什么区别。<br />唔。<br />喻文州坏心的挠了挠黄少天的手心。<br />黄少天嗷呜一声抽回手，目光戒备的看着喻文州的脸，喻文州奉上一个无辜的笑脸，伸手把黄少天的手又给拽了回来。<br />再挠，再缩手，再扯回来。<br />两个人智障一样，在门前的走廊拉拉扯扯了好一阵子，黄少天被挠手心挠的咯咯咯直笑，跳到一边想躲，喻文州也没追，就那么看着黄少天一边笑一边脚下飞快的冲下楼梯，一口气跑了好几层楼下去，才好像刚刚发现喻文州并没有跟在自己后面一样的开始大声喊着「文州文州文州文州！」<br />&nbsp;<br />先去超市买晚饭要用的材料，然后去旁边的花市买几盆花，最后去卖鱼的那里买几条鲤鱼回来养。<br />以上是计划。<br />只是计划而已。<br />有黄少天在，计划这种东西的存在又有什么意义呢？<br />所以在超市里就先闹了一堆事情出来。<br />黄少天自打盯上了货架上的狗粮之后，就挪不动腿了。<br />喻文州好说歹说，说你现在是人类了不能再吃狗粮了，说人类吃狗粮会肚子痛的而且狗粮有什么好吃的。<br />黄少天仍然恋恋不舍。最后喻文州使出杀手锏，他买了个项圈套在黄少天的脖子上，以半命令的姿态把黄少天拖走了。<br />一路上黄少天目光甚是可怜的回头不住张望那个放着狗粮的货架，嘴里低声不停的叫唤着什么，而喻文州，则是面色坦然牵着手里的狗绳。<br />……当然遭到了各种围观。<br />隐隐还有些路人甲乙丙的碎碎念钻进了喻文州的耳朵里。<br />——这是现场SM的节奏吗！<br />——活了几十年！第一次见到活的好嘛！<br />——长！姿！势！<br />面对滚滚流言！喻文州充耳不闻百毒不侵！<br />目标明确的买了需要的材料，又挑了队最短的收银台，两人外加一条狗绳，就这么动作迅猛丝毫不耽搁的逃出了超市。<br />喻文州这才把狗绳解开。<br />黄少天皱着眉不满的看着他。<br />「乖。」喻文州揉了揉黄少天的头发。<br />黄少天不情不愿的蹭了蹭。<br />「以后不会再用这东西了，乖。」喻文州只能把狗绳扔进垃圾桶。<br />黄少天这才活泼了一些，看来他十分反感被拴住了拉着走。<br />「不过我做的饭难道就真的没有狗粮好吃吗？」喻文州笑。<br />「没有啦。只是有点……不习惯。」黄少天用肩膀蹭了蹭耳朵，这也是一个比较常见的动作了，因为狗狗很少用到前爪，所以成了现在这样，黄少天也不太习惯用手抓头发什么的。<br />喻文州发现了这个细小的动作，然后他微微思考了一下，悲剧的发现，自己后面的两项购物计划不得不取消了。<br />买花买鱼，花盆鱼缸，这些都不是什么好拿的东西，可现在自己的手已经被晚饭材料占满了，黄少天的手又等于是废的，完全不能算在劳动力之列。<br />看来，真的不能把黄少天当成一个纯种人类来看，至少现在看来，出来买趟东西，跟以前遛狗的时候一样，只会给自己找麻烦，完全帮不上自己的忙。<br />喻文州叹气，撕开一包牛肉干，黄少天头一低，啊呜一口，敏捷的叼了一块肉撒腿跑走了。<br />……动作真快。<br />……真是天生的机会主义者。<br />&nbsp;<br />那天两个人回家路上步行节奏有些奇特，一会走得慢一会又突然加速跑起来，喻文州意在锻炼黄少天，想让他彻底的习惯直立行走，他观察发现，黄少天正常状态已经很少会反射性四脚着地了，可是在突发状况的时候，节奏突然转换，尤其是突然加快的时候，黄少天总是惯性的想要用四条腿跑路。<br />这是汪星人留给黄少天的应激性。<br />一路上训练进行的也算顺利，就是在快到家的时候，黄少天有些不太正常。<br />黄少天刹不住车了，喻文州减速步行的时候，黄少天没有停，而是仍然一路冲了过去。<br />喻文州伸手想拦，可黄少天跑的太快，没拦住。<br />「少天？」<br />「嗷嗷嗷嗷嗷嗷嗷！！」黄少天叫唤。这也是黄少天目前的特点：着急的时候就开始乱嗷嗷。<br />「……说人话。」喻文州扶额。<br />「我我我我！！我……」<br />黄少天显然脑子有些不够用，至少组织人类语言是做不到的，他急急忙忙的跑这跑那，左右寻找着什么东西。<br />「嗷！」<br />黄少天突然一声，好像终于发现了什么，嗖的窜了出去，步伐十分欢快。<br />喻文州实在不懂黄少天到底要干嘛，他一头雾水的追在后面，然后便眼睁睁的看见了令自己永生难忘的一幕。<br />——只见人形黄少天同学倍儿开心的冲向了一个墙角，抬起了一条腿。<br />……诶。<br />……这是。<br />…………我勒个去！！！<br />喻文州眼前一黑险些昏倒。<br />他连忙冲上前去从后面抱住黄少天把人形犬用力的从墙角拖走。<br />「文州！」黄少天焦急而不满。<br />「这种事情外面不能做，回家，乖。」喻文州反射性规劝，可说完这句话有觉得哪里有些不对。<br />等等……<br />喻文州脑中一亮，如同一个小灯泡啵的在自己的面前炸开，整个人都斯巴达了啊！<br />他小心翼翼的开口：「少天啊，这几天……你都是在厕所里……？」<br />「对啊对啊！」<br />喻文州心中的石头落了半块：还好嘛！至少是在厕所里！<br />「那是厕所里的……？」他又小心翼翼的问。<br />「靠窗户的墙角！」黄少天颇为自豪，语速有些快，他正带着喻文州往家里跑，他是真的憋不住了啊喂！<br />「靠窗户的墙角……」<br />喻文州一边跟着跑，一边在脑中飞快的画出了一张自家厕所平面图，然后他绝望的发现，靠近窗户的角落那边贴墙放着自己的浴缸。<br />自己的浴缸。<br />……是自己的浴缸耶！！！<br />喻文州近而飞快的在脑中回忆着自己最近一周的浴缸使用状况！好吧，这过程简直就是自虐。<br />喻文州不说话了。<br />喻文州闭嘴。<br />喻文州沉默。<br />喻文州想死。<br />恶意，赤裸裸的恶意！难以言喻不可名状的森森恶意！<br />黄少天已经跑到了家门口，此刻正跳着脚蹦跶着嘴里不停的念叨着什么，目光急切的看着跑在后面的喻文州。<br />喻文州行尸走肉的跟上，一言不发的默默打开了门锁，然后眼看着黄少天飞奔进屋冲进厕所。<br />他喉咙一堵刚想开口说「少天啊厕所不是那么上的啊」……<br />可是却又没有勇气跟进厕所里目睹黄少天面对墙角抬起一条腿踩墙的惨状。<br />喻文州浑身无力。<br />自暴自弃的想着：还是下次再说吧。<br />于是当黄少天嗷嗷嗷嗷一身轻松的从厕所里跑出来的时候，正好看见喻文州面朝下直挺挺的趴在沙发上一动不动。<br />「文州文州文州文州！」黄少天欢快的扑上来。<br />「……」喻文州没有回答，死狗一条。<br />能把喻文州逼到这种程度的人，不多。<br />能把喻文州逼到这种程度的活人，更是不多。<br />哦对，如果仍旧把黄少天当成汪星人看的话……那似乎倒说得通了。<br />黄少天嗷嗷嗷嗷嘟囔着，一阵风的跑进卧室，乒乒乓乓一阵子之后又一阵风的跑出来冲进了厨房。<br />喻文州……<br />喻文州死透了。<br />&nbsp;<br />tbc<br />搞了一整章的喻队！<br />摸摸可怜被玩死的喻队233333<br />心脏喻你也有被玩死的一天啊23333<br /></p> 
+</blockquote>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_d524dc1">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_d524dc1" class="post-title-link" itemprop="url">【双道长】论盲人和哑巴之间快速交流的可行性</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2016-12-14 13:28:57 / Modified: 23:44:27" itemprop="dateCreated datePublished" datetime="2016-12-14T13:28:57+08:00">2016-12-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如果晓星辰和小瞎子都被救回来成了活尸，大概是这种结局吧~~~<br /></p> 
+<p><br /></p> 
+<p>晓星辰盲，宋子琛哑。两人在一起多少有点麻烦，交流都成问题。宋子琛想把看见的东西告诉晓星辰，只能咿咿呀呀的比划，但他比划，瞎子又看不见。身边另一个小瞎子也同样看不见。宋子琛想到一个招，就是拉着晓星辰的手，在他手里写字。刚开始还不熟练，半天也写不清楚一句话。<br /></p> 
+<p>写的多了，他找到一种能让好友迅速领悟的方式。比如前面有走尸，他就会写个尸字，往往他刚写一横一竖，晓星辰就知道了，握住他正在写字的手，说我们去前面的镇子看看。</p> 
+<p>一路上事情太多了，最开始只说夜猎必须的事情，后来熟练了就无话不谈了。比如今天的天气，树上的鸟，水里的小鱼，还有地上的狗，那个表情有点奇怪的走尸，以及对晓道长不停抛媚眼的酒店女老板。傲雪凌霜宋子琛看似高冷无比，其实是个话唠，当然只有在晓星辰道长面前才如此。</p> 
+<p>但小瞎子不愿意了，她觉得两个人只要手握在一起就没完没了的聊天，完全就把她排除在外了。于是晓星辰道长就兼任了翻译。宋道长刚在他手中写下一横一撇，他就翻译出：子琛想闻闻刀削面的味道（活尸吃不了饭，但每到饭点闻闻也很舒服）。后来连写都不用了，宋道长握住星辰的手稍微一紧，星辰就知道宋道长的心思，几乎百发百中。后来星辰道长又教阿箐一点粗浅的文字。她也能在星辰道长手里歪歪扭扭的写字。星辰道长就一手拉着宋道长一手拉着阿箐，把他们想说的话说出来。</p> 
+<p>三个活尸，只有一双眼睛，一条舌头，宋道长觉得这样的日子也不错，最好持续个十几年，直到阿箐怨气散尽投胎了，他们两个在阿箐投胎的地方附近找个地方隐居，平日修行夜猎，没事再来看看她，等到天长地久，兴许两人就同时坐化了。</p> 
+<p>这想法，宋道长也没跟晓星辰说，总觉得不用说，对方大概也是一样的想法。</p> 
+<p>可惜好日子不久，三人在闹市里遇到一个人，是那个少了根手指的少年，一身狼狈，刚刚千辛万苦从金光瑶的地窖里逃出来。</p> 
+<p>宋道长眼里，对方已经决定大开杀戒了，尸毒粉随时可能漫天飞舞，要是洒在普通人身上，霜华又会受到干扰误杀活人。</p> 
+<p>事情一触即发，宋子琛心里发慌，到底该在他手心写什么，洋字？薛字？晓星辰最是宅心仁厚，即使是薛洋，他也不会直接格杀，看着敌人手已经扬起，宋道长终于在星辰手心重重的一滑，那是个杀字，一撇一捺两笔如同箭头指向薛洋的方向。</p> 
+<p>第二笔还没写完，霜华就出鞘了，和紧随其后的拂雪一起直奔薛洋心窝。</p> 
+<p>尸毒粉还没能散开，战斗就结束了。薛洋死不瞑目看着晓星辰，而宋道长一阵寒意又补了一剑。</p> 
+<p>“是谁？”星辰擦拭着霜华询问。</p> 
+<p>宋道长伸出手轻轻抚摸星辰本来是眼睛的地方。</p> 
+<p>“是他。”星辰叹了口气。</p> 
+<p>一旁的阿箐惊讶无比，星辰道长居然能毫不犹豫的杀人，他明明不是这样的人，刚刚宋道长在他手心到底写下了什么，可看着一直手挽手缓缓前行的两个背影，又觉得此事无需再问。</p> 
+<p>灵感来源是这个视频：</p> 
+<p><a target="_blank" rel="nofollow" href="http://www.bilibili.com/video/av5692379/index_3.html"  >http://www.bilibili.com/video/av5692379/index_3.html</a><br /></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_d524dc1#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_c1293ab">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_c1293ab" class="post-title-link" itemprop="url">失去与找回 --- 钢之炼金术师2003</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2016-08-19 11:12:20" itemprop="dateCreated datePublished" datetime="2016-08-19T11:12:20+08:00">2016-08-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-14 23:33:03" itemprop="dateModified" datetime="2019-03-14T23:33:03+08:00">2019-03-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p dir="ltr"  ><b>《剧透注意》</b><br /></p> 
+<p dir="ltr"  >平行宇宙中存在两个世界。世界A是墒增的，世界B是墒减的。世界A增加一部分墒，世界B的炼金术士通过炼金术使用等量的墒减。</p> 
+<p dir="ltr"  >只要准备足够的质量和魔法，就能实战炼金术，可以修复钟表，制造巨大的建筑，杀人和救人。多么方便的技能，可以满足人类大多数需求，但人的贪欲是无限的，有的人想要永远活下来，有的人想要复活已经死去的生命，有的人想要获取更强的力量，还有的人祈求世界和平。</p> 
+<p dir="ltr"  >两个渴望永生的人以无数生命为代价炼出贤者之石，以在人间一次又一次的转向不同的肉体，以永远活下去。</p> 
+<p dir="ltr"  >其中一人则培养了人造人怪胎，并在人间制造灾难以人类的血泪炼就新的贤者之石。&nbsp;</p> 
+<p dir="ltr"  >而另一个人找到真爱，离开永生之路，并生下两个孩子之后，离开了家庭。</p> 
+<p dir="ltr"  >这两个孩子便是故事的主角，他们为了复活深爱的母亲，付出躯壳为代价。而后为了招呼缺失的身体踏上漫漫征程。</p> 
+<p dir="ltr"  >这个过程中，他们遇到无数人，终于不停的反思自己想要的东西。</p> 
+<p dir="ltr"  >贤者之石？不。</p> 
+<p dir="ltr"  >躯壳？不。</p> 
+<p dir="ltr"  >阻止坏人？似乎是的。但不完全。</p> 
+<p dir="ltr"  >当失去更多的时候，他们才发现最想要的是彼此的陪伴。</p> 
+<p dir="ltr"  >但这个时候他们已经相隔两个世界了。</p> 
+<p dir="ltr"  >努力找回失去的东西，每一次失去更多。如果一开始就知道，会不会坚持找回，还是留在那个小村子里，做一对快乐的兄弟。</p> 
+<p dir="ltr"  >但不追寻，大概永远不会有答案。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_c1293ab#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_ad87b07">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_ad87b07" class="post-title-link" itemprop="url">山河旧事 章节目录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2016-05-04 01:42:33" itemprop="dateCreated datePublished" datetime="2016-05-04T01:42:33+08:00">2016-05-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-17 23:40:31" itemprop="dateModified" datetime="2019-03-17T23:40:31+08:00">2019-03-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p reblogfrom="reblogfrom"  ><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9a2488c"  >疏山问竹:</a></p> 
+<blockquote> 
+ <p>山河旧事章节列表<br /></p> 
+ <p><br /></p> 
+ <p>卷一&nbsp;杏花疏影里</p> 
+ <p><br /></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_983d610"  >章一&nbsp;年夜饭</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_98559b7"  >章二&nbsp;钢笔</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_986f390"  >章三&nbsp;《自由引导人民》</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_98c1b69"  >章四&nbsp;皱纹</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_98d1fdb"  >章五&nbsp;电影院</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_991709e"  >章六&nbsp;《自由颂》</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_995f949"  >章七&nbsp;牵挂与吻</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9a2488e"  >章八&nbsp;悠闲时光</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9a5aef1"  >章九&nbsp;磨砺以须</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9a7474f"  >章十&nbsp;项庄舞剑</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9a96c12"  >章十一&nbsp;兵马未动粮草先行</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9afcaef"  >章十二&nbsp;波罗塞戏</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9b34cdd"  >章十三&nbsp;风吹水面层层浪</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9b6518c"  >章十四&nbsp;人应思惟死无定期</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9bafdfc"  >章十五&nbsp;春冰虎尾</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9c29ed5"  >章十六&nbsp;长沟流月去无声</a></p> 
+ <p><br /></p> 
+ <p>卷二&nbsp;明月不胜愁</p> 
+ <p><br /></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9d04664"  >章一&nbsp;山雨欲来</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9d3591c"  >章二&nbsp;万马齐喑</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9d81a61"  >章三&nbsp;投石问路</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9dd5c33"  >章四&nbsp;螳螂捕蝉黄雀在后</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9e3a3c9"  >章五&nbsp;长是人千里</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9e9cad7"  >章六&nbsp;云波诡谲</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9f07fbc"  >章七&nbsp;目迷五色</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_9fb7220"  >章八&nbsp;月晕而风础润而雨</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a08afe6"  >章九&nbsp;白衣苍狗</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a14145e"  >章十&nbsp;抱火厝薪</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a275333"  >章十一&nbsp;连天芳树</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a2bef02"  >章十二&nbsp;别时茫茫</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a37f684"  >章十三&nbsp;情之所系</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a457bfa"  >章十四&nbsp;何年何夕</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a4f45f4"  >章十五&nbsp;蓬山万重</a></p> 
+ <p><strong><br /></strong></p> 
+ <p><strong>卷三&nbsp;岁岁常相见</strong></p> 
+ <p><br /></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a7808aa"  >章一&nbsp;梁上无燕</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a81ed1c"  >章二&nbsp;独行踽踽</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a83555f"  >章三&nbsp;故人再遇</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a840e21"  >章四&nbsp;引日成岁</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a863c82"  >章五&nbsp;寻寻觅觅</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a870834"  >章六&nbsp;两地空传</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_a9ab8eb"  >章七&nbsp;隐约心事</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_aaca719"  >章八&nbsp;东海扬尘</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_ab5ff5b"  >章九&nbsp;他年相逢</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_ac108ca"  >章十&nbsp;平地风波</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_ac4a00f"  >章十一&nbsp;刀过竹解</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_aca7de5"  >章十二&nbsp;朝衣东市</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_acce480"  >章十三&nbsp;风舂雨硙</a><br /></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_ad4a71b"  >章十四&nbsp;穷根寻叶</a></p> 
+ <p><a target="_blank" href="http://hailkingsman.lofter.com/post/1d28b33b_ad7b08c"  >章十五&nbsp;触景生情</a></p> 
+</blockquote>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_ad45b93">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_ad45b93" class="post-title-link" itemprop="url">丹麦女孩：爱到第几层的ta</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2016-05-02 10:57:33 / Modified: 13:29:30" itemprop="dateCreated datePublished" datetime="2016-05-02T10:57:33+08:00">2016-05-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong><br />爱到第几层</strong></p> 
+<p>你爱的人在你面前一层层剥离，你能爱到第几层，能否接受外壳下毫无隐藏的ta。这电影省略了很多东西，唯独把这点刻画的非常细腻，最终莉莉死在爱人的怀抱中。</p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/4936508141652476468.png)
+<br /><br /></p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/6598197865648215735.png)
+</p> 
+<p><strong>蝴蝶</strong></p> 
+<p>男主不算特好看，但是脸上有种脆弱的感觉，就像随时都可能飞走的蝴蝶。</p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/4862761697754452070.png)
+<br />
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/4857976623150439605.png)
+<br />
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/4831799450315727816.png)
+<br />
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/6598159382741248721.png)
+<br />
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/3760787163931673932.png)
+<br />
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/1624392090698590254.png)
+<br /><br /></p> 
+<p><strong>画中的凝视</strong></p> 
+<p>比起男主真实的面容，我更喜欢画中的他。最开始为这个片子心痛的瞬间，就是第一次手术之后，女主描绘他容貌的一刻，画中这美丽的面容即将消逝，很痛心。</p> 
+<p><strong>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnNKTkhSV2swUmVwZEVhbzU1VDFjdXREcUtOcUdpTTQxZlB0UU56QjZYNlh3PT0.jpg)
+
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnM0azBBbHVSOVo2aXIwNnkweG5NN2Z2akpiTk55dUFjb3J3cm1NcmVhaENnPT0.jpg"><br><br /></strong></p> </p>
+<p><strong>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnM0azBBbHVSOVo2cnRFWXR5SGhHS3lVdW5MamlaRWlNOWJ3c3NjV1JyZzd3PT0.jpg)
+<br />
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnM0azBBbHVSOVo2Z3JzY2I4ZG95Mm5ueDdNRG0wZm9USzVsdE51YVdYS0hBPT0.jpg)
+<br /><br /></strong></p> 
+<p>真实的丹麦女孩莉莉</p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/6598194567113332541.png)
+<br /><br /></p> 
+<p>真实的莉莉画像。<strong><br /></strong></p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/4940167316349674226.png)
+<br /><br /></p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/4940167316349674221.png)
+<br /><br /></p>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_ab31f08">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_ab31f08" class="post-title-link" itemprop="url">[超蝠]论绝妙人设对避免战争产生的积极影响（三）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2016-04-20 13:44:31" itemprop="dateCreated datePublished" datetime="2016-04-20T13:44:31+08:00">2016-04-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>心跳不受控制了呢，韦恩先生。</strong><br /></p> 
+<p reblogfrom="reblogfrom"  ><a target="_blank" href="http://kengwangbai.lofter.com/post/1cbd0e8f_ab2cfae"  >白酱:</a></p> 
+<blockquote> 
+ <p>三、</p> 
+ <p><br /></p> 
+ <p>其实克拉克已经暗中怀疑布鲁斯&middot;韦恩很久了。</p> 
+ <p><br /></p> 
+ <p>早在听说了哥谭那位著名的“黑暗裁决者（外界评价）”以后，因为无法认同对方在某些方面的作为，克拉克其实一直有对蝙蝠侠加以关注，而越是关注，克拉克便越是笃定——蝙蝠侠的身后一定有着某个彩礼丰厚的势力支持，否则这难以解释对方那些层出不穷的高科技装备是从哪里来的。不过在此之前，克拉克专注于自己的事情，没有认真追查过这种在他看来无关紧要的事，而且在他看来，只要对方不堕落到利用能力侵害社会，就算理念不合，他还是愿意尊重对方的想法，不会随便地插手进去。不过这一次，因为某些原因（比如报社和主编什么的），克拉克突然又对蝙蝠侠的事情起了一定兴趣，他对比了一下哥谭上层社会的势力分布，从中圈出数个他认为有能力为蝙蝠侠提供支持的人，然后大略翻阅了一遍蝙蝠侠这些年来的事迹资料，以及上述几人被新闻记录下来的踪迹，最后将与蝙蝠侠的重合最多的布鲁斯&middot;韦恩挑选了出来。</p> 
+ <p><br /></p> 
+ <p>布鲁斯&middot;韦恩，哥谭宠儿，一个富二代加花花公子（啧，这个形容有点儿耳熟）。说真的，克拉克在最开始是怀疑过布鲁斯&middot;韦恩的，毕竟他与蝙蝠侠重合的踪迹实在是太多了，只是在一些明确是由蝙蝠侠制造出来的事件中，布鲁斯&middot;韦恩都在外地度假，不在场证明无懈可击，而且再想一想，布鲁斯&middot;韦恩的日常生活丰富得简直可以养活整个哥谭的娱乐小报了——这一点与曾经的钢铁侠简直一模一样，两人都不愧是一个人能养活一城狗仔的模范标杆，连克拉克这种无心八卦的人都会不经意间被人灌上一耳朵类似于“布鲁斯&middot;韦恩昨晚的床伴辣透了”这样的消息来，其“丰功伟绩”简直要传遍整个哥谭。在这样的情况下，若他晚上竟然还有精力披上风衣化身蝙蝠……地球人的身体应该是扛不住的吧？说起来，布鲁斯&middot;韦恩的身体其实是非常健康的，虽然有些因熬夜而引起的小毛病，身体上又有不少疤痕，不过想想他多姿多彩的夜生活，以及他痴迷极限运动的爱好，这倒也能够解释得通。</p> 
+ <p><br /></p> 
+ <p>不过，即使排除了布鲁斯&middot;韦恩在蝙蝠侠真实身份上的嫌疑，克拉克依旧认为布鲁斯与蝙蝠侠是有着某种联系的，这其中除了一些隐晦的传闻，以及两人在纸面上的踪迹重合证据外，还有个克拉克说不出口但的确让他深以为然的有力证据——直觉。</p> 
+ <p><br /></p> 
+ <p>咳，虽然没有科学依据，但是氪星人的敏锐直觉有时候是非常实用的，而且克拉克觉得，作为哥谭有钱有势的一员，布鲁斯&middot;韦恩竟然很少对蝙蝠侠的存在发表什么看法，偶尔被人问到也只是例行公事地随意敷衍几句便算，他好像就是……对蝙蝠侠的存在不太感兴趣？可是以他表现出来的实在不怎么不讨氪星人喜欢的个性来说，这样的行为，真的是有些反常的。</p> 
+ <p><br /></p> 
+ <p>所以在被布鲁斯识破身份后，克拉克原本是想不去理会，直接离开的——与外人想象的不同，他其实不是很在意自己的身份是否暴露，虽然身份暴露会给他身边亲近的人带去危险，但想想从小到大，克拉克早被周围的人发现过无数次异常了，如果真的有心查证，这身份其实一戳就破。所以，这身份能不被人发现当然最好，真的被发现的话，克拉克也不太在乎，总之就是兵来将挡，水来土掩，真等事情发展到那地步，自然会有解决的办法，克拉克并不特别在意。</p> 
+ <p><br /></p> 
+ <p>只是，就在克拉克想要转身离去时，他突然想起了宴会上布鲁斯的异常，对方潜入卢瑟的私人空间安置了什么装备，又与一位魅力非凡的女性发生了争执，再加上宴会刚开始时，自己询问他有关蝙蝠侠的事情时，他那副“懒得和你这种凡人废话”的姿态，让克拉克突然觉得……也许对蝙蝠侠身份的探索，能够在今天取得一些进展？于是克拉克带着对方飞回了韦恩宅，又故意挑衅了他，使他的情绪略有失控，同时说上一些似是而非的话，然后……</p> 
+ <p><br /></p> 
+ <p>“心跳不受控制了呢，韦恩先生。”克拉克勾了下唇角，突然觉得心情有些愉悦：一些是为了被他成功试探出来的真相，另一些则是因为……看着这个死面瘫被他气得火冒三丈，眼珠都要被瞪出来的样子，啧，真是让人的心情瞬间就好得不得了呢。</p> 
+ <p><br /></p> 
+ <p><br /></p> 
+ <p><strong>更新完毕，1500+，作为段子来说字数爆了……</strong></p> 
+ <p><strong>天然黑的亨超和面无表情的本蝠……总裁不要打我嘛，谁让你辣么喜欢面无表情呢～⊙▽⊙</strong></p> 
+</blockquote>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_a5dd240">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_a5dd240" class="post-title-link" itemprop="url">66</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2016-03-23 03:33:08 / Modified: 07:34:02" itemprop="dateCreated datePublished" datetime="2016-03-23T03:33:08+08:00">2016-03-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Photo/" itemprop="url" rel="index"><span itemprop="name">Photo</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>昨日雪如花，今日花如雪。</p> 
+<p>20160322于西安青龙寺赏樱。</p>
+
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnY1cG9QSFI0RVRhTmtmRTZDa05HQngzZ294ZjlHWi8zTU5Db09hcnBpNGlRPT0.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnY1cG9QSFI0RVRhSXZtTmlvMFViM0tGZ3BZeVpubTZrV0IyTW5jWC9qYWZBPT0.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnY1cG9QSFI0RVRhS0gzZ0w3OVhvRVpZMWVjYURWNHBxQlRpcGJYVzNVZ09BPT0.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnY1cG9QSFI0RVRhRTNQRmZ1UVQwaFRrNElEZzNqWldYNk1EYm52MkNRVmtBPT0.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnY1cG9QSFI0RVRhTXpvTDBsNmlGN1pHV1hCb1dQbGg1Qkt2ZEd0aklaRzZBPT0.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnY1cG9QSFI0RVRhSUt3WVpMcHVpSVZWMG0xa1ovOFd3ekM1a3FJekNVdVhRPT0.jpg"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_a1e097e">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_a1e097e" class="post-title-link" itemprop="url">【Hellsing英文同人翻译】生理课与骚扰狂[第三章完结]</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2016-02-29 08:34:29" itemprop="dateCreated datePublished" datetime="2016-02-29T08:34:29+08:00">2016-02-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-19 23:17:20" itemprop="dateModified" datetime="2019-03-19T23:17:20+08:00">2019-03-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p dir="ltr"  >没有什么好告诉你的！我又没有月经周期！</p> 
+<p dir="ltr"  ><a href="http://missionfromgod.lofter.com/post/253694_24b80e6" target="_blank"  >Mission From God:</a></p> 
+<blockquote> 
+ <p dir="ltr"  ><b><a rel="nofollow" href="http://www.fanfiction.net/s/2972621/3/Pointers-and-Fangs" target="_blank"  >Pointers and Fangs [chapter 3]</a></b></p> 
+ <p dir="ltr"  >&nbsp;</p> 
+ <p dir="ltr"  ><b>作者</b>：<a rel="nofollow" href="http://www.fanfiction.net/u/934500/Sanis" target="_blank"  >Sanis</a></p> 
+ <p dir="ltr"  ><b>翻译</b>：Cypher48 &nbsp;&nbsp;&nbsp;&nbsp;校对感谢：&nbsp;<a href="http://www.lofter.com/mentionredirect.do?blogId=2482311" target="_blank"  >@Ericcil</a></p> 
+ <p dir="ltr"  ><b>状态</b>：<b>暂未授权</b>（依旧……</p> 
+ <p dir="ltr"  ><b>CP向</b>：Alucard x Integra，Walter</p> 
+ <p dir="ltr"  ><b>弃权</b>：人物全不属于我，我只是个翻译</p> 
+ <p dir="ltr"  >1.作者标的分级为<b>M(R-18)</b>，实际上<b>除了低级笑话之外没有出格内容</b>，请不要期待</p> 
+ <p dir="ltr"  >2.作者其他同人推荐见底部<br /></p> 
+ <p dir="ltr"  ><b><a href="http://missionfromgod.lofter.com/post/253694_bf576a" target="_blank"  >【第一章】</a></b>&nbsp;<b><a href="http://missionfromgod.lofter.com/post/253694_11de3d8" target="_blank"  >【第二章】</a></b><br /></p> 
+ <p dir="ltr"  >第三章（完结）<br /></p> 
+ <p dir="ltr"  >Integra坐在自己床上焦虑地等待着。自从Walter离开她去获取必需品之后，似乎以她的身体为舞台上演了一系列及其有意思的活动。</p> 
+ <p dir="ltr"  >这感觉就好像一切都从她的骨架上融化下来，在她脚边堆成了乱七八糟的一团。她把自己的胃堵在喉咙口，避免了一场与马桶的激烈冲突。</p> 
+ <p dir="ltr"  >说起来，那只马桶被维护得真是极好。负责收拾卫生间的那个人应当涨工资。Integra心想，只要可以保证往马桶里呕得天翻地覆的时候看不到某些奇怪的恶心东西，出多少钱都是值得的。否则该是多么不合乎礼数啊。</p> 
+ <p dir="ltr"  >她忍受着身体中一波接一波的痛楚。不管Walter是怎么保证的，她腹中狂野翻腾的感觉现在越来越厉害了。她只能坐着承受这一切。</p> 
+ <p dir="ltr"  >这是正常的吗？她很肯定不该是这么疼的……</p> 
+ <p dir="ltr"  >就在那犹疑不定的一刻，她没有母亲这个事实忽然清晰地浮现出来。没有一个人能够依自身经验告诉她接下来会发生何事。她独自一人留在一个男性的世界里。</p> 
+ <p dir="ltr"  >这太沉重了，她开始变得消沉。她的眼眶湿润起来，而更让她沮丧的是，她感到有泪水滑落脸颊。</p> 
+ <p dir="ltr"  >她飞快地伸手擦掉了眼泪。真是的，为什么要哭呢？她没觉得伤心，并没到那种程度。她从来都没有母亲；所以她当然没有蠢到要现在来为这事哀叹。</p> 
+ <p dir="ltr"  >与悲伤一样迅速随之而来的是气愤。</p> 
+ <p dir="ltr"  >上帝怎么能留她一个人在满是男人的世界上，却连条出路也不指给她？</p> 
+ <p dir="ltr"  >不管Walter的存在有多么令人欣慰，也不能弥补他没有阴道的缺陷，光这一条就足以鄙视他了。</p> 
+ <p dir="ltr"  >他居然还敢可怜她！</p> 
+ <p dir="ltr"  >该死，就算是Alucard都比他好点儿。至少他大体上上对血还是有点经验的。</p> 
+ <p dir="ltr"  >随即她如梦初醒。</p> 
+ <p dir="ltr"  >她觉得自己傻极了。</p> 
+ <p dir="ltr"  >“ALUCARD！”她在床上喊。他们刚刚才近距离接触过，之后在这么短的时间内就召唤他，肯定会让他惊讶的。但这是要紧事！她可没时间跟些蠢货一样，羞于面对一个懂得如何占便宜，懂得如何合理动嘴的男人。</p> 
+ <p dir="ltr"  >Integra暗笑。反正这不就是他留在这机构里的用意吗？如果不是现在这种情况，她绝对会因为他的别出心裁而奖励他。</p> 
+ <p dir="ltr"  >“ALUCARD！”她又叫了一遍。他去哪儿了？</p> 
+ <p dir="ltr"  >他没让她等太久。</p> 
+ <p dir="ltr"  >一团暗色的雾很快从她床底浮上来。她看着雾气从容地一路从地板上升起，钻到她的被单下，开始成型。</p> 
+ <p dir="ltr"  >她翻了翻眼睛。</p> 
+ <p dir="ltr"  >“别搞那么多花样，”她不耐烦道，“我得问你一个问题。”</p> 
+ <p dir="ltr"  >他扬起一条眉毛。</p> 
+ <p dir="ltr"  >“怎么了？”她问。</p> 
+ <p dir="ltr"  >他扬起第二条眉毛。</p> 
+ <p dir="ltr"  >“在你问我私密的问题前，难道不打算确认一下Walter没有在附近昂首阔步地偷看我们吗？”他问。</p> 
+ <p dir="ltr"  >她盯着他看了足足有一分钟，心想到底有没有必要问他任何事情，毕竟她早就清楚，朝他开两枪就足够大快人心了。</p> 
+ <p dir="ltr"  >“谁说我要问私密的问题了？”她问，“而且，我派Walter执行一项任务去了。”</p> 
+ <p dir="ltr"  >Alucard咧嘴笑起来，抬起一条胳膊撑着头。</p> 
+ <p dir="ltr"  >“我知道的事情可多了，主人。”他回答了她的第一个问题。“那么，你把咱们亲爱的Walter派到哪里去了？”</p> 
+ <p dir="ltr"  >她没有回答。</p> 
+ <p dir="ltr"  >她感觉到Alucard拉扯着她的思想防线，寻找那个她不会说出口的答案。她没有阻止他。</p> 
+ <p dir="ltr"  >她看见他的眼睛瞪大了，笑容简直像脸上裂开的一个大口。</p> 
+ <p dir="ltr"  >“你居然派死神去买<b>塞逼的玩意儿</b>回来？”他问，完全被逗乐了，“哦，这真太可笑了。”</p> 
+ <p dir="ltr"  >“我不想没有准备，最后搞得一团糟。”她嘟哝着，被他描述女性卫生用品的粗俗用语惊住了，“我也不想让其他人知道，所以就让他去了。”</p> 
+ <p dir="ltr"  >Alucard笑出声来。说实话，她真不明白自己干嘛要告诉他这些。这个混帐畜生。</p> 
+ <p dir="ltr"  >“别担心会弄脏什么，主人，”他对她轻声道，“我会很乐意帮忙清理干净的。”</p> 
+ <p dir="ltr"  >Integra沉下脸。</p> 
+ <p dir="ltr"  >“任何一条缝里只要含着一点我的生命力，不管内容有多肮脏，你都会想扑过去吸出来的。”</p> 
+ <p dir="ltr"  >要是她没看错，Alucard似乎显得更加欣喜了。</p> 
+ <p dir="ltr"  >“这可是你说的，主人。不是我。”</p> 
+ <p dir="ltr"  >Integra有些困惑地看了他一会儿，然后恍悟了他的言外之意。</p> 
+ <p dir="ltr"  >她的眼睛迅速地睁得几乎和他的一样大，但却是因为完全不同的原因。</p> 
+ <p dir="ltr"  >“你这是在暗示你会把嘴放到我身上的那个部位去吗？”她震惊地问。</p> 
+ <p dir="ltr"  >他耸了耸肩。</p> 
+ <p dir="ltr"  >“我会做的事情可多了，”他对她说，“不过同样地，这也是你说的。”</p> 
+ <p dir="ltr"  >Integra用极度恶心又好奇的目光看着他。</p> 
+ <p dir="ltr"  >“这难道不是怪物能对人做的最恶心的事情了吗？”</p> 
+ <p dir="ltr"  >他咯咯地笑，像个修道院里的小姑娘。“主人，”他说，似乎在泄露一个天大的秘密，“大部分人类做这种事都是为了<b>取乐</b>。”</p> 
+ <p dir="ltr"  >“人……什么？”她震怒地问。</p> 
+ <p dir="ltr"  >他哼一声。“你以为我是为了什么要和他们断绝关系的？”他问，语气像在说“我他妈这么有道理怎么就没人理解我”。</p> 
+ <p dir="ltr"  >她转开眼睛，一时找不出话来反驳。“我忽然被我自己的种族恶心到了。”她宣布说。</p> 
+ <p dir="ltr"  >Alucard发出一声沉重的叹息。</p> 
+ <p dir="ltr"  >把人类结合时汁血横流的细节教导给自由世界未来的领袖这种重担，为什么要落在他的肩上呢？</p> 
+ <p dir="ltr"  >“人们喜欢做些不体面的事情，”他对她说，“我猜，这种稍微做些调皮事的想法能让他们发情。”</p> 
+ <p dir="ltr"  >“那就是说男人把嘴凑到女人的……”Integra语无伦次地说了些什么，Alucard只能猜测那是用来替代她真正想说的东西的。</p> 
+ <p dir="ltr"  >他点点头，目光真诚得吓人。“反之亦然。”他进一步向她确认道。</p> 
+ <p dir="ltr"  >Integra脸上现出一副可怕的愤慨表情。如同被人用烧热的华夫饼干铁模子在头上敲了一下，她不知该如何反应才好。</p> 
+ <p dir="ltr"  >“到……鸡鸡上？”她最终吐出几个字，“为什么？”</p> 
+ <p dir="ltr"  >Alucard顿时觉得这已经有点超出他熟悉的领域了。</p> 
+ <p dir="ltr"  >“那东西是用来<b>小便</b>的，Alucard。”她对他说，好像他是个白痴一样，“那东西<b>绝对</b>不应该进别人的嘴！”</p> 
+ <p dir="ltr"  >他明智地什么也没有说。</p> 
+ <p dir="ltr"  >一阵尴尬的沉默。</p> 
+ <p dir="ltr"  >“我不小便。”他为自己辩解。对人类则爱莫能助了。</p> 
+ <p dir="ltr"  >Integra脸色苍白。</p> 
+ <p dir="ltr"  >“就是说你以前曾经……做过……<b>那种事</b>？”</p> 
+ <p dir="ltr"  >“没有？”他温驯地试着说。</p> 
+ <p dir="ltr"  >她的脸扭出一个及其厌恶的表情。</p> 
+ <p dir="ltr"  >“呸，”她轻声说，“我简直不敢相信我竟然允许你躺到我的床上来。”</p> 
+ <p dir="ltr"  >他偏了偏脑袋，似乎在说他能够理解这种情绪。</p> 
+ <p dir="ltr"  >她深呼吸一口气。</p> 
+ <p dir="ltr"  >“我可以现在就走。”他提议道。以后总还有机会。</p> 
+ <p dir="ltr"  >“不，”她叫起来，“我让你来是有原因的。”</p> 
+ <p dir="ltr"  >她显得很痛苦，于是Alucard忽然对自己不死生命当中接下来的这段时间产生了恐惧。</p> 
+ <p dir="ltr"  >“哦，”他出于一种病态的好奇心问道，“是什么事呢？”</p> 
+ <p dir="ltr"  >“嗯，”她慢慢地说，“我在想，那是什么感觉呢……你知道的……血从身体里面流出来，身体排泄……”</p> 
+ <p dir="ltr"  >“Integra……”他打断她，“我不知道那个疯子管家跟你说了我些什么，但我绝绝对对是不会来<b>月经</b>的。”</p> 
+ <p dir="ltr"  >她脸一红。</p> 
+ <p dir="ltr"  >“Walter没这么说过，”她反驳道，“是我自己猜的。你把血全喝下去了，对不对？嗯，那总得从某个地方流出来吧……”</p> 
+ <p dir="ltr"  >这下轮到Alucard觉得不舒服了。</p> 
+ <p dir="ltr"  >他的目光好像在说她一定是疯了，而她依旧看起来老老实实的。</p> 
+ <p dir="ltr"  >“不会从哪儿<b>流出来</b>，”他坚决地说，“只不过是……消失掉了。”</p> 
+ <p dir="ltr"  >她怀疑地看着他。</p> 
+ <p dir="ltr"  >“Alucard，”她说，“那根本不可能。”</p> 
+ <p dir="ltr"  >她表示不以为然之后他也不知该说些什么了。</p> 
+ <p dir="ltr"  >他说的全是<b>实话</b>。</p> 
+ <p dir="ltr"  >“好啦，”她说，“就告诉我吧，我都告诉你了！”</p> 
+ <p dir="ltr"  >“没有什么好告诉你的！我又没有月经周期！”他低吼。</p> 
+ <p dir="ltr"  >她瞪着眼睛。他尽力表现得更有说服力一点。</p> 
+ <p dir="ltr"  >“知道吗，要是每次走进来都看到你俩这样搞，我大概就不得不给Integra大人捆上一条贞操带①了。”Walter站在门外的走廊上说，“或者更好的办法是直接，永久性地，戳死Alucard。”</p> 
+ <p dir="ltr"  >“Walter！”Integra叫道，“哦，Alucard刚才实在太不可理喻了。是真的吗，女人会舔男人的鸡鸡？”</p> 
+ <p dir="ltr"  >Walter差一点摔倒在地魂归天外。只差一点。</p> 
+ <p dir="ltr"  >“Alucard！”他大喊，“你和她说了些什么乱七八糟的东西？”</p> 
+ <p dir="ltr"  >Alucard没有理他。</p> 
+ <p dir="ltr"  >“不止是女人。”为了再多激怒管家一点儿，他告诉Integra说，由她自己去揣摩里头的含义。</p> 
+ <p dir="ltr"  >“Alucard，”他催促道，“我必须坚持要求你立即从她的床上下来。”</p> 
+ <p dir="ltr"  >Alucard露出个小狗狗一样的伤心表情。</p> 
+ <p dir="ltr"  >“可是是她叫我来的，”他对他说，这次也一样只为了看他会有什么反应。</p> 
+ <p dir="ltr"  >Walter慢慢地将目光转向Integra。她翻了翻眼睛。</p> 
+ <p dir="ltr"  >“我只是想问他喝进去的血是怎么排泄出来的。我觉得也许对我理解现在的情况会有些帮助。”在Walter好奇的注视下她觉得自己有些白痴。“Walter，我只是在做研究而已！”</p> 
+ <p dir="ltr"  >Walter眉头一皱，接着看向Alucard。</p> 
+ <p dir="ltr"  >“知道吗，这个问题问得非常好，”他一顿，“那些血都跑哪儿去了？”</p> 
+ <p dir="ltr"  >Alucard看他的眼神几乎可以杀人。</p> 
+ <p dir="ltr"  >“消失掉了。”他怒气冲冲地说。</p> 
+ <p dir="ltr"  >Walter装模作样地防备着后退一步。</p> 
+ <p dir="ltr"  >“他真敏感，”他对Integra说，“你觉得是不是因为主仆之间的联系让你们两人同步了，所以他也到了这个月的特殊期？”</p> 
+ <p dir="ltr"  >Alucard咆哮起来，效果有些搞笑，因为他身上正盖着有蕾丝边的粉红床罩，毫无威胁力。</p> 
+ <p dir="ltr"  >Walter笑了。</p> 
+ <p dir="ltr"  >Integra也笑了。</p> 
+ <p dir="ltr"  >Alucard撅起嘴。</p> 
+ <p dir="ltr"  >“Walter，”Integra柔声说，“你带我那些……小玩意来了吗？”</p> 
+ <p dir="ltr"  >Walter提起一个一直悬在身侧的袋子。他把袋子扔到她床上，不太情愿走近那个有很大可能会袭击他的吸血鬼。他已经不如从前年轻了，若非必要，他也不想被怪物追着跑。</p> 
+ <p dir="ltr"  >“里面还有个给你的惊喜。”他告诉她，自信她会喜欢。</p> 
+ <p dir="ltr"  >这趟去药店的旅程让他痛不欲生。他根本不知道还分这么多种牌子和型号。最后一位好心的女士大发慈悲，听了他“孙女”的情况之后，帮他挑了一盒合适的。他确保自己买了足够的量，短期内不需要再跑一趟了。</p> 
+ <p dir="ltr"  >他注视着她把那只大盒子从袋子里翻出来举到眼前。她对他微微一笑，然后把盒子递给Alucard，他接过来的样子就好像那东西会咬他似的。</p> 
+ <p dir="ltr"  >Integra重新转回袋子里面，看到那个惊喜时眼睛一亮。</p> 
+ <p dir="ltr"  >“Walter，”她大叫，“你怎么知道我想要这个的？”</p> 
+ <p dir="ltr"  >她从里面拿出一大板牛奶巧克力，开始拆包装。她渴望这东西很久了，却一直没能有机会得到。</p> 
+ <p dir="ltr"  >这时Alucard在她身边打开那只盒子嗅了嗅。</p> 
+ <p dir="ltr"  >“为什么要选卫生棉条？”他问，“这不是……”他没有说完。</p> 
+ <p dir="ltr"  >他抬起头看了看房间里其他两个人。</p> 
+ <p dir="ltr"  >“我不喜欢。”他直截了当地说。</p> 
+ <p dir="ltr"  >太好懂。Walter和Integra同时在心里想。</p> 
+ <p dir="ltr"  >“我不想让你从自己的第一要务上分心，”她表示，“所以我和Walter认为这是最佳解决方案。”</p> 
+ <p dir="ltr"  >Alucard做了个鬼脸。</p> 
+ <p dir="ltr"  >“但是，”他像个小孩子一样说，“但是这个……你得把它<b>塞</b>进去，主人。”</p> 
+ <p dir="ltr"  >“……我明白。”Integra慢慢说。</p> 
+ <p dir="ltr"  >Alucard看她的眼神如同在看一个傻子。</p> 
+ <p dir="ltr"  >“你居然觉得没问题。”他的口气听上去就好像她是一个小孩子。</p> 
+ <p dir="ltr"  >“我觉得会乐趣多多。”她嘲讽地说。Alucard睁大了眼睛。</p> 
+ <p dir="ltr"  >“Walter，把这些退回去。”他摇着头说，把盒子递给管家。</p> 
+ <p dir="ltr"  >“为什么？”他问，被逗乐了。</p> 
+ <p dir="ltr"  >Alucard瞪着他。</p> 
+ <p dir="ltr"  >“没有比这些东西，”他从盒子里抽出来一支卫生棉条，瞪眼望着它，“更能伤害到主人的物件了。”</p> 
+ <p dir="ltr"  >“嗯？”Walter问。</p> 
+ <p dir="ltr"  >Alucard看Walter的表情好像他脖子上长出了第二个脑袋。</p> 
+ <p dir="ltr"  >“你明白这东西应该要放到哪去吗？”他问，眼神里闪烁着疯狂。</p> 
+ <p dir="ltr"  >“那会有什么伤害？”Walter问。</p> 
+ <p dir="ltr"  >Alucard一抖。</p> 
+ <p dir="ltr"  >“我说会就会！”他大声说，“她不能把任何东西塞到那儿去！那……呃啊！不行！不行！不行！那是私有财产！”他说着，焦虑不安地把那支卫生棉条扔开了，“而这个东西绝绝对对地就是入侵者！”</p> 
+ <p dir="ltr"  >他一缩身子，宣告了发言的结束。</p> 
+ <p dir="ltr"  >Integra看向Walter，然后咧嘴笑了。她把盒子抓过来，来回翻转了一会儿，找到了一张叠起来的纸条。她打开纸条，尖叫一声。</p> 
+ <p dir="ltr"  >“Alucard，”她开心地说，“看看这个！”</p> 
+ <p dir="ltr"  >那是一份使用说明书。一份描述得非常详尽的说明书。她举在手里朝他挥了挥。</p> 
+ <p dir="ltr"  >他好像害怕被烧伤一样迅速躲开了。</p> 
+ <p dir="ltr"  >“如何放入卫生棉条，”她读起来，“先选择一个令自己舒适的姿势，放松……”</p> 
+ <p dir="ltr"  >“<b>停下来！</b>”Alucard捂住耳朵喊道。</p> 
+ <p dir="ltr"  >“Integra，”Walter责备她，“别那么坏，他现在很脆弱。”</p> 
+ <p dir="ltr"  >Alucard没等他们两人来得及反应，一把夺过那只盒子消失了，穿过地板去向他的房间。</p> 
+ <p dir="ltr"  >“该死，”Integra大声说，“现在好了，我的卫生棉条没了！”</p> 
+ <p dir="ltr"  >Walter咧嘴一笑。</p> 
+ <p dir="ltr"  >“不尽然。”他冷静地说道，“那只是其中之一罢了。”</p> 
+ <p dir="ltr"  >Integra的嘴张成一个完美的圆型。</p> 
+ <p dir="ltr"  >“我真心绝对不会愿意再去买一次这些东西了。”他补充说，“一小时内我就拿更多的来给你。”</p> 
+ <p dir="ltr"  >他转身离开去沏茶了。</p> 
+ <p dir="ltr"  >Integra倚靠回枕头上，暂时忘却了腹中的疼痛。</p> 
+ <p dir="ltr"  >这大概会比她预想的要好过些吧。</p> 
+ <p dir="ltr"  >&nbsp;</p> 
+ <p dir="ltr"  >【全文完】<br /></p> 
+ <p dir="ltr"  >注释：</p> 
+ <p dir="ltr"  >①<a rel="nofollow" href="http://zh.wikipedia.org/wiki/%E8%B2%9E%E6%93%8D%E5%B8%B6" target="_blank"  >贞操带</a>：一种为了保持女性贞洁而设计的围在下体上的金属或橡胶制锁带。后也发展出了男款。</p> 
+ <p dir="ltr"  ><span style="text-decoration:line-through;"  >有幸在本地的中古冷兵器店（？）里亲眼见过实物（？</span><br /></p> 
+ <p dir="ltr"  >完结啦！小甜饼够吃吗！</p> 
+ <p dir="ltr"  >来推一推这位（大部分是）AxI的大手<a rel="nofollow" href="http://www.fanfiction.net/u/934500/Sanis" target="_blank"  >Sanis</a>的其他几篇比较赞的作品</p> 
+ <p dir="ltr"  >她的风格是……不管狗血还是搞笑傻白甜还是虐心都特别能写到点上，而且狗血搞笑傻白甜虐心也一个都不缺。有时候可能会为了这些而有些OOC，……但是管他呢饿起来都好吃QAQ</p> 
+ <p dir="ltr"  >所以人家才是在FFN上本CP同人里唯一get了回复超三百的大大啊_(:з」∠)_</p> 
+ <p dir="ltr"  ><span style="text-decoration:line-through;"  >冷得又哭了起来</span><br /></p> 
+ <p dir="ltr"  ><b><a rel="nofollow" href="https://www.fanfiction.net/s/3692686/1/Fire-and-Ice" target="_blank"  >Fire and Ice</a></b></p> 
+ <p dir="ltr"  >中篇。女王逼婚。OC人物。政治联姻。虐心。<b>R18。</b>生子。</p> 
+ <p dir="ltr"  >总之一切可以想得到的雷点……和萌点……和OOC……和傻白甜治愈小甜饼………………</p> 
+ <p dir="ltr"  >想象一个与别人婚礼的前夜蹲在老A紧闭的门口抱膝哭泣的局长吧（笑哭<br /></p> 
+ <p dir="ltr"  ><a rel="nofollow" href="https://www.fanfiction.net/s/4159618/1/Seven" target="_blank"  ><b>Seven</b></a></p> 
+ <p dir="ltr"  >短篇。七个同一句话开头的小片段。甜。能把人笑断气。</p> 
+ <p dir="ltr"  >但，是，居，然，是，<b>BE</b>！！！！<br /></p> 
+ <p dir="ltr"  ><a rel="nofollow" href="https://www.fanfiction.net/s/4210214/1/Crackling-Tele" target="_blank"  ><b>Crackling Tele</b></a></p> 
+ <p dir="ltr"  >短篇。推这篇的唯一理由是神偷卡门姐姐（x<br /></p> 
+ <p dir="ltr"  ><a rel="nofollow" href="https://www.fanfiction.net/s/2853009/1/Nibbles" target="_blank"  ><b>Nibbles</b></a></p> 
+ <p dir="ltr"  >中篇。变态老爹。失忆。OC人物。生子。</p> 
+ <p dir="ltr"  >前文提及的FFN上本CP唯一过三百回复的高人气作品。第一章堪称经典（个人意见）。旦那的童年那一段也非常棒。</p> 
+ <p dir="ltr"  >剩下的就是狗血，雷和甜交织的崎岖展开。<br /></p> 
+ <p dir="ltr"  ><a rel="nofollow" href="https://www.fanfiction.net/s/6977325/1/Saved" target="_blank"  ><b>Saved</b></a></p> 
+ <p dir="ltr"  ><a href="http://missionfromgod.lofter.com/post/253694_8c2c0a" target="_blank"  ><b>已翻译</b></a>（暂未授权）</p> 
+ <p dir="ltr"  >短篇。<span style="text-decoration:line-through;"  >大大爬墙前的遗产。</span>相当于是对CP间两人的关系做了个小结吧，难得文风十分严肃。</p> 
+ <p dir="ltr"  ><span style="text-decoration:line-through;"  >然后她就写犬夜叉去了_(:з」∠)_写完犬夜叉去哪了我扒不出来_(:з」∠)_</span><br /> </p> 
+</blockquote> 
+<p dir="ltr"  ><br /> </p>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_a161928">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_a161928" class="post-title-link" itemprop="url">前进，黑翼少女(二胎带来的灵感，关于重男轻女。敏感词缘故改了好多遍，记得刷新)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2016-02-26 09:35:26" itemprop="dateCreated datePublished" datetime="2016-02-26T09:35:26+08:00">2016-02-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-19 23:17:35" itemprop="dateModified" datetime="2019-03-19T23:17:35+08:00">2019-03-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p dir="ltr"  >全文字数：4422 </p> 
+<p dir="ltr"  >&nbsp;配图来自网络，侵删。</p> 
+<p dir="ltr"  >阳光明媚的下午，金发碧眼的老外们正晒太阳，我坐在街心广场的长椅上喝咖啡，一边刷知乎一边等狼狼。她那踩在切分音上的高跟鞋声，非常好认。</p> 
+<p dir="ltr"  >我们在知乎上认识，她的知乎头像就是穿高跟鞋的双脚，鞋上装饰着小小十字架。</p> 
+<p dir="ltr"  >当时我发了个问题：</p> 
+<p dir="ltr"  >
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/61c4906cjw1f1cuoq55t1g20fg05h0so.gif)
+</p> 
+<p dir="ltr"  >一般的回答是打工攒钱，或者助学贷款。狼狼比较特别，她用私信发我qq号，在qq上，问我更具体的信息。</p> 
+<p dir="ltr"  >本来，我不会跟陌生人说那么多，但是我很慌，妈妈已经怀孕了，我马上就要退学，出去打工供养弟弟。</p> 
+<p dir="ltr"  >我想找人指路，而当时狼狼的头像——踩着高跟鞋的成熟女性——恰好是我的梦想。</p> 
+<p dir="ltr"  >
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/61c4906cjw1f1cup5teu5j20ew0agjrw.jpg)
+</p> 
+<p dir="ltr"  >我把家里条件，父母态度，还有我自己的打算，都告诉她。qq那边沉默了半天，我以为自己太激动，把对方吓跑了，就一遍又一遍地刷新桌面。那时我在镇里网吧上网，每分钟都是钱。大概五分钟之后，我想关上页面走人。</p> 
+<p dir="ltr"  >这时狼狼回复了：你弟弟出生之后，你的未来就确定了吗？真的没有别的出路？</p> 
+<p dir="ltr"  >我：我妈让我退学打工，因为光靠爸爸，养不起弟弟。</p> 
+<p dir="ltr"  >狼狼：打工的时候能跑吗？</p> 
+<p dir="ltr"  >我：不能，我妈托县城的亲戚看住我，打工的厂子也是亲戚开的。</p> 
+<p dir="ltr"  >狼狼：你能自己想清楚，阻碍你的是什么？把什么东西排除掉，你就能上大学。</p> 
+<p dir="ltr"  >我沉默了一会儿，打出两个字：弟弟</p> 
+<p dir="ltr"  >狼狼：你能不能阻止他出生。</p> 
+<p dir="ltr"  >我：阻止？</p> 
+<p dir="ltr"  >狼狼：对，让你妈妈流产。</p> 
+<p dir="ltr"  >我：但我妈会再次怀孕的，直到生出男孩。</p> 
+<p dir="ltr"  >狼狼：你可以让她这辈子都生不出来。</p> 
+<p dir="ltr"  >之后就是技术环节，涉及打胎药和避孕药。</p> 
+<p dir="ltr"  >高二暑假，我妈流产了，我在她床前一直照顾她，让她也发觉我的好，感慨“女儿真是妈妈的小棉袄”。之后她一直没怀孕，也就死心了，而我上了大学，靠助学金毕业，又公费出国，出国之后给家里留了一笔钱，就基本断了联系。</p> 
+<p dir="ltr"  >如果不是狼狼，可能我现在应该山沟沟里给一个陌生的男人生孩子，做家务，做农活。现代社会出头的方式很多，但对农村女孩来说，上学是唯一的出路。</p> 
+<p dir="ltr"  >我和狼狼这样结识。她在自己的专业数一数二，也在国外工作，出差时还能跟我聚一聚。</p> 
+<p dir="ltr"  >前几天，我回国，到她老家，把她交代的事情办完。但办完之后，还有很多问题，正好她也有有空，我们就约到这里见个面。</p> 
+<p dir="ltr"  >delete，&nbsp;我把知乎上“&nbsp;我的妈妈要生二胎&nbsp;”的问题删掉。</p> 
+<p dir="ltr"  >这可能成为我的罪证，尽管身处国外，我还是会做噩梦，梦到妈妈带着一群亲戚跑来，把我抓回去嫁人换彩礼，供养弟弟。</p> 
+<p dir="ltr"  >网页显示删除的同时，踩在切分音上的高跟鞋声响起，狼狼的节奏很特别，在熙熙攘攘的人群里都能精确辨认。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >我从手机上抬头，先看到她的高跟鞋和鞋上摇曳的十字架，她肯定不信救世主，否则不会把圣物放在鞋上。</p> 
+<p dir="ltr"  >狼狼坐下，喝着手里热腾腾的黑咖啡。</p> 
+<p dir="ltr"  >我：“事情都办妥了。不过我有些问题。”</p> 
+<p dir="ltr"  >狼狼：“你问吧。”</p> 
+<p dir="ltr"  >我：“你有个哥哥。他在你高三的时候失踪了，是不是跟你有关？”</p> 
+<p dir="ltr"  >狼狼：“你不需要知道。”</p> 
+<p dir="ltr"  >我：“我需要知道，你托我办的事情，可能跟你哥失踪有关。”</p> 
+<p dir="ltr"  >狼狼：“跟你无关，知道我的秘密对你没好处。”</p> 
+<p dir="ltr"  >我：“我帮你办了事情，就是你的共犯，我已经被牵连进去了。”</p> 
+<p dir="ltr"  >狼狼：“我也帮你办过事情，我也是你的共犯，不，教唆犯。”</p> 
+<p dir="ltr"  >我：“我们是共犯关系，最好保持信任，你知道我的秘密，我也必须知道你的，不然就太不对等了。如果你不肯说，我会继续查下去。”</p> 
+<p dir="ltr"  >狼狼沉默，低头喝了一口黑咖啡，再抬头，看着广场上金发碧眼没心没肺的北欧百姓，就像从那些笑容满面的老外身上吸收能量。能量充足了，她终于松了一口气。</p> 
+<p dir="ltr"  >狼狼：“好，反正我们都在国外了，不用担心被抓回去。”</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >狼狼：“我跟你一样，都是农村女孩，家里也重男轻女，我妈妈生了一个儿子还想再要个儿子，偏偏生了我。妈妈从小就把我当丫鬟使唤，每天吃饭，他们三个在桌上吃，我在厨房吃剩菜，过年吃顿炒鸡蛋，但没我的份。我能上学，全都是我爹坚持，他是村里的教师，收入低，但好歹让我们都上学了。不过他性子弱，又好面子，别的事做不了主。”</p> 
+<p dir="ltr"  >“那你哥对你很坏吧？”</p> 
+<p dir="ltr"  >“小时候，我哥哥对我挺好的，把家里好吃偷出来给我。那时家里搬家了，老宅子就空了，我们经常废弃的老宅里玩。他还给我做土电话。”</p> 
+<p dir="ltr"  >
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/61c4906cjw1f1cuqf6hbrj20dz0jsmy8.jpg)
+</p> 
+<p dir="ltr"  >她把咖啡的纸杯放在耳朵边上，歪头倾听杯子里的声音，温柔的说：“土电话就是用一次性纸杯加线连起来的电话，在很远的地方也能听到对方的声音，那是我小时候唯一的玩具。</p> 
+<p dir="ltr"  >我妈一直骂他“反正总是要嫁出去的，对她好都是扔水里”。开始我哥不听，说的多了……小孩子，没什么是非观念，妈说啥就是啥。后来他跟村里男的一起玩了，也不怎么理我了。</p> 
+<p dir="ltr"  >我像杂草一样长到高中，妈妈想给哥哥说一门亲事，想把我嫁了，给哥哥换媳妇。可我不想啊，我想上大学，我想去大城市工作，我想出国，我想永远摆脱妈妈。”</p> 
+<p dir="ltr"  >“所以你杀你了你哥？”</p> 
+<p dir="ltr"  >“杀人跟让人流产是两种事情，光为了上大学，我也不会杀人。我可以跑，离家出走，打工攒钱。”</p> 
+<p dir="ltr"  >“但你哥失踪了。”</p> 
+<p dir="ltr"  >“是的，我哥失踪了…因为…也不是什么大不了的事情……她犹豫了半天，不知道从何说起，精致的面容也泛红。</p> 
+<p dir="ltr"  >“你要说不出口，可以不说。”</p> 
+<p dir="ltr"  >她警觉的看了看周围，确认周围没人能听懂中文，然后咬了咬牙，还是出口。</p> 
+<p dir="ltr"  >“因为我哥强了我。”</p> 
+<p dir="ltr"  >这次轮到我沉默了。</p> 
+<p dir="ltr"  >“当时我表姐结婚，他去闹洞房，村里的闹洞房都非常过分，那群小年轻喝多了差点把伴娘给那啥了。当时我哥满脸红光的回来了，那会儿，我正在废弃老宅子喂兔子，顺便背英语，然后他喝多了，就。。。”</p> 
+<p dir="ltr"  >“然后你杀了他？”</p> 
+<p dir="ltr"  >“我当时很害怕，因为村里女的被强，就没人要了，没法给哥哥换老婆，我妈肯定要打死我。”</p> 
+<p dir="ltr"  >“错的不是你啊。”</p> 
+<p dir="ltr"  >“当时我太害怕了，就先把衣服洗了，然后爹妈回来，我就旁敲侧击的问他们‘听说隔壁村有个女被强了’。我爸沉默，我妈说：‘那女的贱，拿着浪【洞】穴勾汉子’，对，在我们那地方， QJ就是女的错。”</p> 
+<p dir="ltr"  >“然后你谁都没说？也没报警？”</p> 
+<p dir="ltr"  >“没有，被强本身就是丑事，还是被自己的亲哥哥。”</p> 
+<p dir="ltr"  >“后来呢？”</p> 
+<p dir="ltr"  >“当时的事情，只有兔子看到。所以我哥就经常把我叫到老宅子，用‘告诉妈妈’威胁我做那事。。。”</p> 
+<p dir="ltr"  >“没想到，你还有这种黑历史。”</p> 
+<p dir="ltr"  >“不久我怀孕了，走了几公里山路跑到县城医院把孩子打掉，从医院出来的时候我身体都空了，一步一个血脚印，差点死在山路上……这件事情之后，我对我哥没任何感情了。”狼狼看着手头的杯子，那是土电话原材料，眼神很悲伤：“那以后，我只想上大学，彻底离开这里。所以我不停的想，是什么阻碍我上学。”</p> 
+<p dir="ltr"  >狼狼深吸了一口气，恢复了平静：“最后，我想清楚了，是<b>我哥</b>。如果没有哥哥，我就不用嫁人给他换老婆，如果没有哥哥，我就是家里唯一的希望，就能继续上学，如果没有哥哥，我也不会被强。只要摆脱哥哥，就能摆脱这一切。我其实一点都不恨他，我只是把他当成路上的障碍。”</p> 
+<p dir="ltr"  >“然后你就动手了？”</p> 
+<p dir="ltr"  >“那天，我去镇上参加同学生日会，去之前，我偷偷搭车跑回家，把哥叫到老宅子里，假装跟他好，灌醉了塞到废井里，又在井里放了石头，然后赶回镇上跟过生日的同学合影留念，做不在场证明。我干之前计划了很久，还演练过很多次，村里的山路我都跑熟了，过程还算顺利。”我看到她手机上照片，像素很差，上面是两个女孩对着镜头甜美的微笑。</p> 
+<p dir="ltr"  >
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/61c4906cjw1f1curau865j209o0dojrt.jpg)
+</p> 
+<p dir="ltr"  >“过后，没人找到哥哥，算作失踪人口了。妈妈以为他被拐到小煤窑做黑工。那段时间她以泪洗面，但这也终结不了她传宗接代的心。很快她又怀孕了。我之前打过胎，手里还有堕胎药和避孕药。”</p> 
+<p dir="ltr"  >“你让她永远生不出孩子吗？”</p> 
+<p dir="ltr"  >“是的。”</p> 
+<p dir="ltr"  >“但是这也止不住她传宗接代的心，她想了个更绝的招。”</p> 
+<p dir="ltr"  >“她不会给你爹找代孕吧。”</p> 
+<p dir="ltr"  >“是呀，她找了代孕，但我家那么穷，谁能免费替我爹生孩子？”</p> 
+<p dir="ltr"  >“该不会。。。”</p> 
+<p dir="ltr"  >“是的，她把我爹灌醉了，然后把我推到炕上，锁上门。”</p> 
+<p dir="ltr"  >“天啊，这会生出畸形儿的。”</p> 
+<p dir="ltr"  >“她一个没受过教育的农村妇女，根本不懂这些。”</p> 
+<p dir="ltr"  >“你爹不是没那么坏吗？他应该没对你做什么吧。”</p> 
+<p dir="ltr"  >“可我想上学，所以我跟喝醉的爹做了那事情。我之前提过，我爹是个教师，性子弱，又极好面子。事后他吓得差点自杀，我拿这件丑事威胁他，告诉他要是不供我上大学，我就把这丑事说出去，我还专门留了证据。”</p> 
+<p dir="ltr"  >“这算是求知若渴吧。”</p> 
+<p dir="ltr"  >“我只是把路上障碍都给干掉。我爹虽然性子弱，兔子逼急也能咬人，那天他唯一一次打了我妈，我妈泼妇一样在地上哭喊打滚，还试图撞墙……她那时候刚刚流产，身体弱，这一下病的更重了。”她露出微妙的笑容：“重到管不了我。”</p> 
+<p dir="ltr"  >“然后你就上大学了？”</p> 
+<p dir="ltr"  >“是的，我上了大学，改名换姓，申请出国，我根本不在乎什么专业，什么方向，只要能出国，只要能远离他们就行。直到现在我还做噩梦，梦见我母亲骂我是骚货，带着亲戚把我抓回去嫁给弱智。”</p> 
+<p dir="ltr"  >“我也经常做这个噩梦。”</p> 
+<p dir="ltr"  >我握住她的手，拿着热咖啡的手不该这么冰冷。我们一起默契的看了看周围，确认这是阳光明媚北欧小城，身边都是金发碧眼无忧无虑的北欧百姓。老外的眼睛蓝得让人羡慕，就好象什么恶心事都没经历过。这里很安全。</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >“该说都说了。你办的事情，什么结果。”</p> 
+<p dir="ltr"  >“按照你的吩咐，我托人买了你的老宅那块地，但是在那口井里没有发现尸骨。”</p> 
+<p dir="ltr"  >“不可能！”她停顿了一下，突然明白了什么，锋利的盯住我：“你是怎么知道的。”</p> 
+<p dir="ltr"  >“我有把柄在你手里，我想……最好也抓住你的把柄。买地的时候，我在你老家打听你的事情，得知你哥哥失踪。我猜到肯定跟你有关，而且你哥失踪的线索应该藏在那块地里。我在那个老宅里细细查找，还翻开那口井，但是里面什么都没有。只有两种可能：你哥没死，或你哥的尸体被其他人发现了。”</p> 
+<p dir="ltr"  >狼狼手中的纸杯掉落，咖啡全洒出来，但是很快又弯腰捡起纸杯。沉默中，她的鞋跟有节奏的敲着地面，踩着切分音，鞋上的十字架撞击脚踝，她在思考。</p> 
+<p dir="ltr"  >“你不会背叛我吧。”她猛然抬头警惕的问到，又自顾自的摇头，肯定的重复：“不，你当然不会背叛我。”</p> 
+<p dir="ltr"  >“背叛你，对我没好处。而且我替你买了那块地，已经是你的共犯了。”</p> 
+<p dir="ltr"  >“以后，我们尽可能不见面，所有网络通信都必须加密。我会处理掉所有联系过的痕迹。”</p> 
+<p dir="ltr"  >“嗯。”</p> 
+<p dir="ltr"  >“这件事情我会处理好，即使不幸被抓，我也不会供出你。”</p> 
+<p dir="ltr"  >“我也一样，不会供出你。”</p> 
+<p dir="ltr"  >“我要走了，还有很多事情要做。”</p> 
+<p dir="ltr"  >她伸出手，想跟我握手，但我拥抱了她，这也许是最后一次见面。</p> 
+<p dir="ltr"  >“谢谢。”她在我怀里轻轻的说。</p> 
+<p dir="ltr"  >“谢谢你，狼狼。”</p> 
+<p dir="ltr"  >&nbsp;</p> 
+<p dir="ltr"  >此时暮色降至，月升灯明，呼吸的白雾中，雪飘在她黑色的头发，我们从彼此身上感受到久违的温暖和信赖。然而天已经黑了，必须赶最后一趟车回去了，我松开了她，雪落在我们拥抱过的部位，残留温暖中异样的冷。</p> 
+<p dir="ltr"  >“以后尽可能不要联系我。”她拿起喝完咖啡的一次性纸杯放在耳朵边上。</p> 
+<p dir="ltr"  >“嗯，联系越少，暴露的可能性越小。”我也顺手拿起纸杯放在耳朵边上，就像两个纸杯之间有无形的线连着。</p> 
+<p dir="ltr"  >她笑了，在大雪中转身离去，在无人的街道上，踩着切分音，独自踏着弗拉门戈的舞步，跳舞的时候多半在思考，怎样解决道路上的障碍。</p> 
+<p dir="ltr"  >
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/61c4906cjw1f1cuu3ufv9j20fb08mt8z.jpg)
+</p> 
+<p dir="ltr"  >这天晚上我做了另一个梦，梦到背着黑翼的少女，对阵长角的恶魔，那恶魔手持锁链锁住天地，但是看似柔弱的少女却勇敢的冲上去，用利刃劈开遮天黑暗，为自己开出通往光明的道路。</p> 
+<p dir="ltr"  >我希望黑翼少女继续前进，不择手段的前进。</p> 
+<p dir="ltr"  >
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/61c4906cjw1f1cuu81zw4j20fd0cg0th.jpg)
+<br /></p>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/29ac09_974c884">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/29ac09_974c884" class="post-title-link" itemprop="url">寻龙诀：他那么丑，丑到连深情都变得好笑</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2015-12-31 12:07:45" itemprop="dateCreated datePublished" datetime="2015-12-31T12:07:45+08:00">2015-12-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-01-24 16:09:09" itemprop="dateModified" datetime="2019-01-24T16:09:09+08:00">2019-01-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Text/" itemprop="url" rel="index"><span itemprop="name">Text</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnZIRGJLK3FHcCs3SmJnOVJIV3dIekNKNmY0VnlpT2lUbUxwOUpGUko2MnhBPT0.jpg)
+<br /></p> 
+<p>&nbsp;<br />&nbsp;</p> 
+<ul> 
+ <li><p><span style="text-decoration:underline;"  >丑男人也要谈恋爱</span></p></li> 
+</ul> 
+<p>王凯旋，他那么丑，丑到连深情都变得好笑。可他那么肆意，忘不了的就是忘不了，那就一辈子追寻对她的承诺，直到生命结束。<br />“<strong>只要你喜欢就算它开在阴曹地府，我也会摘回来送你。</strong>”情话max，而且王胖子还做到了。</p> 
+<p><br /></p> 
+<p>胖子丑，油嘴滑舌，不会耍帅撩妹，本职工作不如基友，这么实在的爷们，一旦深情起来，简直是老木头房子闹火灾般的烈焰万丈。<br />相比而言胡八一就搓多了，内心还是忘不了过去，骗自己忘掉了，可现在过得无比凑活，睡了雪梨还不敢承认，估计把人当免费炮友。<br />这角色不够风魔。而我们看电影就是为了脱离那个不现实的世界，就是为了那些纯粹肆意的感情---无法拥有，却又渴望。</p> 
+<p><br /></p> 
+<ul> 
+ <li><p><span style="text-decoration:underline;"  >深情款款和排除万难</span></p></li> 
+</ul> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnZIRGJLK3FHcCs3Q2RZcURvajhBMklmUVBIakdGRkdOUkFhOGsyYVJoUDJBPT0.jpg)
+<br /><br /></p> 
+<p>其实这电影删了胡八一都能拍下去，只要王凯旋还记得小丁，他就一定会去神女墓找彼岸花。&nbsp;<br />&nbsp;<strong>王凯旋</strong><strong>的意志是故事的核心驱动力。</strong>&nbsp;<br />这待遇一般会给电影主角。常见结构是：主角渴望某事，再排除万难完成这件事情。&nbsp;<br />王凯旋是本作的驱动人物，负责深情款款，而胡八一则负责排除万难的部分，负责摸金耍帅，盗墓闯关。&nbsp;<br />盗墓闯关的部分太少，才三个关卡，爽，但还不够爽。所以胡八一在剧情里被王凯旋爆成渣渣。&nbsp;</p> 
+<ul> 
+ <li><p><span style="text-decoration:underline;"  >女神和小丑</span></p></li> 
+</ul> 
+<p>片里最残忍部分，是王凯旋把彼岸花交给女神的时候，而女神变成了基友，丑男人到死也没摸到女神的手。<br />不过，胖子大概会解除心结吧，因为他已经把彼岸花带给女神，还有甘愿为他出生入死的好基友。阳光灿烂幸福时光的过去，也会真正成为过去。<br /></p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnZIRGJLK3FHcCs3T3BGOWs0RTZISXNhQVBzVkc0TklSdjZCdXhnRXZMRmFnPT0.jpg)
+<br /><br /></p> 
+<p>PS：年轻时代的黄渤挺好看的。。。估计丑也只是一种人设。</p> 
+<p>
+![](https://raw.githubusercontent.com/ncnocure/Pictures/master/img_anZvRmd0QmFUSnZIRGJLK3FHcCs3T0RrcGdnbWthN2xBOVZMQ0RCVHBiaU9ZdWNseUM2WUVBPT0.jpg)
+<br /><br /></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/29ac09_974c884#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">112</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">82</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
